@@ -103,7 +103,7 @@ const Produk = () => {
                 fontFamily: 'Montserrat',
                 color: '#4f4f4f',
                 textAlign: 'center',
-                marginBottom: "1rem"
+                marginBottom: '1rem',
               }}
             >
               berikut produk yang kami sediakan untuk mahasiswa
@@ -134,26 +134,19 @@ const Produk = () => {
                   </Grid>
                   <hr />
 
-                  <Grid container spacing={2}>
-                    {card.item.map((items, index) => (
-                      <div key={index}>
-                        <Grid item xs={1} md={1} lg={1} >
-                          <DoneIcon style={{ color: '#0895CA' }} />
-                        </Grid>
-                        <Grid item xs={11} md={11} lg={11}>
-                          <h6
-                            style={{
-                              color: '#4f4f4f',
-                              marginBottom: 0,
-                              marginTop: '0.5rem',
-                            }}
-                          >
-                            {items}
-                          </h6>
-                        </Grid>
-                      </div>
-                    ))}
-                  </Grid>
+                  {card.item.map((items, index) => (
+                    <p
+                      style={{
+                        color: '#4f4f4f',
+                        marginBottom: 0,
+                        marginTop: '0.5rem',
+                      }}
+                      key={index}
+                    >
+                      <DoneIcon style={{ color: '#0895CA' }} />
+                      {items}
+                    </p>
+                  ))}
 
                   <Grid container spacing={4}>
                     <Grid item xs={12}>
@@ -177,7 +170,10 @@ const Produk = () => {
 
                   <Grid container spacing={4}>
                     <Grid item xs={12}>
-                      <a href='https://wa.me/628992021306' style={{textDecoration: "none"}}>
+                      <a
+                        href='https://wa.me/628992021306'
+                        style={{ textDecoration: 'none' }}
+                      >
                         <Button
                           m='auto'
                           variant='contained'
