@@ -1,0 +1,75 @@
+import React from 'react';
+import { Container, Grid } from '@material-ui/core';
+import japri from '../Images/japri.png';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import logo from '../Images/garansi.svg';
+import { CopyrightOutlined } from '@material-ui/icons';
+
+const produk = [logo, logo, logo, logo, logo, logo];
+
+const Footer = () => {
+  return (
+    <React.Fragment>
+      <div
+        style={{
+          backgroundColor: '#0895CA',
+          marginTop: '4rem',
+          padding: '2rem',
+          color: '#ffff',
+        }}
+      >
+        <Container maxWidth='lg'>
+          <Grid container spacing={4}>
+            <Grid item xs={12} md={6} lg={4}>
+              <img src={japri} alt='japri logo' width='50%' />
+              <h4 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h4>
+              <p>
+                <WhatsAppIcon /> Gg. Macan II, Kel Kahuripan, Kecamatan Tawang
+                Kota Tasikmalaya
+              </p>
+            </Grid>
+
+            <Grid item xs={12} md={6} lg={4}>
+              <h4 style={{ color: '#ffff' }}>Media Sosial</h4>
+              <p>
+                <WhatsAppIcon /> 08992021306
+              </p>
+              <p>
+                <InstagramIcon /> japricorp
+              </p>
+              <p>
+                <MailOutlineIcon /> japri.corporation@gmail.com
+              </p>
+            </Grid>
+
+            <Grid item xs={12} md={6} lg={4}>
+              <h4 style={{ color: '#ffff' }}>Semua Produk</h4>
+              <Grid container spacing={2}>
+                {produk.map((item, index) => (
+                  <Grid item xs={3} md={3} lg={3} key={index}>
+                    <a href='/'>
+                      <img src={item} alt='produk' width='100%' />
+                    </a>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        </Container>
+      </div>
+
+      <div style={{ backgroundColor: '#F7DA64' }}>
+        
+        <Container maxWidth='lg'>
+          <p style={{ textAlign: 'center', padding: "1rem 0", margin: "0" }}>
+            Copyright <CopyrightOutlined/> 2021. All right reserved. Powered by Japri
+          </p>
+        </Container>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default Footer;
