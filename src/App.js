@@ -7,6 +7,7 @@ import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Footer from "./Components/Footer"
 import AddTestimoni from "./Components/AddTestimoni"
+import CaraPesan from "./Components/CaraPesan"
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -22,8 +23,12 @@ function App() {
           <Home/>
         </Route>
 
-        <Route path='/add-testimoni'>
+        <Route path='/tambah-testimoni'>
           <AddTestimoni/>
+        </Route>
+
+        <Route path='/cara-pesan'>
+          <CaraPesan/>
         </Route>
 
         <Route path='/about'>

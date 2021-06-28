@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
-import desain from '../Images/desain.svg';
+import desain from '../Images/kotak.svg';
 
 const galeri = [
   {

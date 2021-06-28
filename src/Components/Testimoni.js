@@ -8,7 +8,7 @@ const Testimoni = () => {
       <Container maxWidth='lg'>
         <Grid container id="testimoni">
           <Grid item xs={12}>
-            <h2
+            <h3
               style={{
                 margin: '2rem 0',
                 fontWeight: '700',
@@ -23,7 +23,7 @@ const Testimoni = () => {
               >
                 Testimoni
               </span>
-            </h2>
+            </h3>
 
             <p
               style={{

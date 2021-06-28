@@ -60,20 +60,20 @@ const CollapseMenu = (props) => {
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <Link href='/' onClick={props.handleNavbar}>
+            <Link to='/' onClick={props.handleNavbar}>
               Produk
             </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <Link href='/' onClick={props.handleNavbar}>
+            <Link to='/' onClick={props.handleNavbar}>
               Cara Pesan
             </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
             <Link to='/about' onClick={props.handleNavbar}>
-              Tentang Kami
+              Tentang Japri
             </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
