@@ -86,7 +86,7 @@ const Navbar = (props) => {
             <a href='/'>Produk</a>
             <a href='/'>Cara Pesan</a>
             <Link to='/about'>Tentang Kami</Link>
-            <a href='/'>Testimoni</a>
+            <a href='#testimoni'>Testimoni</a>
             <a href='https://wa.me/628992021306'><WhatsAppIcon/></a>
             <a href='https://www.instagram.com/japricorp/'><InstagramIcon/></a>
             <a href='mailto:japri.corporation@gmail.com'><MailOutlineIcon/></a>

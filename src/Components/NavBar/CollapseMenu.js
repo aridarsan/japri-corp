@@ -78,7 +78,7 @@ const CollapseMenu = (props) => {
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <Link href='/' onClick={props.handleNavbar}>
+            <Link to='/' onClick={props.handleNavbar}>
               Testimoni
             </Link>
           </li>

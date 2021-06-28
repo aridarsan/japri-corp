@@ -4,10 +4,15 @@ import japri from '../Images/japri.png';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import logo from '../Images/garansi.svg';
-import { CopyrightOutlined } from '@material-ui/icons';
+import { CopyrightOutlined, LocationOnOutlined } from '@material-ui/icons';
+import print from '../Images/footer/print.svg';
+import percetakan from '../Images/footer/percetakan.svg';
+import konveksi from '../Images/footer/konveksi.svg';
+import wisuda from '../Images/footer/wisuda.svg';
+import referensi from '../Images/footer/referensi.svg';
+import service from '../Images/footer/service.svg';
 
-const produk = [logo, logo, logo, logo, logo, logo];
+const produk = [print, percetakan, konveksi, wisuda, referensi, service];
 
 const Footer = () => {
   return (
@@ -26,7 +31,7 @@ const Footer = () => {
               <img src={japri} alt='japri logo' width='50%' />
               <h4 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h4>
               <p>
-                <WhatsAppIcon /> Gg. Macan II, Kel Kahuripan, Kecamatan Tawang
+                <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan Tawang
                 Kota Tasikmalaya
               </p>
             </Grid>
@@ -49,7 +54,7 @@ const Footer = () => {
               <Grid container spacing={2}>
                 {produk.map((item, index) => (
                   <Grid item xs={3} md={3} lg={3} key={index}>
-                    <a href='/'>
+                    <a href='#produk'>
                       <img src={item} alt='produk' width='100%' />
                     </a>
                   </Grid>

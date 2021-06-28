@@ -6,7 +6,7 @@ const Testimoni = () => {
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
-        <Grid container>
+        <Grid container id="testimoni">
           <Grid item xs={12}>
             <h2
               style={{
@@ -30,7 +30,7 @@ const Testimoni = () => {
                 fontFamily: 'Montserrat',
                 color: '#4f4f4f',
                 textAlign: 'center',
-                marginBottom: '1rem',
+                marginBottom: '3rem',
               }}
             >
               Apa yang pelanggan katakan pada pelayanan kami

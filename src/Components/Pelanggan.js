@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
-import japri from '../Images/desain.svg'
+import japri from '../Images/kotak.svg'
 
 const customer = [
   {image: japri, nama: 'Pelanggan Mahasiswa' },
@@ -23,7 +23,7 @@ const Pelanggan = () => {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
-            <h2
+            <h3
               style={{
                 margin: '2rem 0',
                 fontWeight: '700',
@@ -38,7 +38,7 @@ const Pelanggan = () => {
               >
                 Pelanggan
               </span>
-            </h2>
+            </h3>
 
             <p
               style={{

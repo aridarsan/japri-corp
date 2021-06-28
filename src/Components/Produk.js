@@ -79,9 +79,9 @@ const Produk = () => {
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
-        <Grid container>
+        <Grid container id="produk">
           <Grid item xs={12}>
-            <h2
+            <h3
               style={{
                 margin: '2rem 0',
                 fontWeight: '700',
@@ -96,14 +96,14 @@ const Produk = () => {
               >
                 Produk Kami
               </span>
-            </h2>
+            </h3>
 
             <p
               style={{
                 fontFamily: 'Montserrat',
                 color: '#4f4f4f',
                 textAlign: 'center',
-                marginBottom: '1rem',
+                marginBottom: '3rem',
               }}
             >
               berikut produk yang kami sediakan untuk mahasiswa
@@ -111,7 +111,7 @@ const Produk = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} className={classes.card}>
+        <Grid container spacing={4} className={classes.card} >
           {/* <Carousel cols={3} rows={1} gap={10} responsiveLayout={responsif} loop> */}
             {produk.map((card, index) => (
               // <Carousel.Item key={index}>
@@ -187,6 +187,7 @@ const Produk = () => {
                               borderRadius: '0',
                               fontFamily: 'Montserrat',
                             }}
+                            size="lg"
                           >
                             Pesan sekarang
                           </Button>

@@ -6,6 +6,7 @@ import GlobalStyle from "./Styles/Global"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Footer from "./Components/Footer"
+import AddTestimoni from "./Components/AddTestimoni"
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -19,6 +20,10 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home/>
+        </Route>
+
+        <Route path='/add-testimoni'>
+          <AddTestimoni/>
         </Route>
 
         <Route path='/about'>

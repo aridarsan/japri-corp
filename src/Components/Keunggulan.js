@@ -22,7 +22,7 @@ const Keunggulan = () => {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
-            <h2
+            <h3
               style={{
                 margin: '2rem 0',
                 fontWeight: '700',
@@ -37,14 +37,14 @@ const Keunggulan = () => {
               >
                 Keunggulan
               </span>
-            </h2>
+            </h3>
 
             <p
               style={{
                 fontFamily: 'Montserrat',
                 color: '#4f4f4f',
                 textAlign: 'center',
-                marginBottom: '1rem',
+                marginBottom: '3rem',
               }}
             >
               kami memiliki berbagai keunggulan dalam pelayanan
