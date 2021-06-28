@@ -5,6 +5,9 @@ import Keunggulan from "../Components/Keunggulan"
 import Pemberdayaan from "../Components/Pemberdayaan"
 import Capaian from "../Components/Capaian"
 import Pelanggan from "../Components/Pelanggan"
+import TanyaJawab from "../Components/TanyaJawab"
+import Testimoni from "../Components/Testimoni"
+import Masukan from "../Components/Masukan"
 
 const Home = () => {
 
@@ -16,6 +19,9 @@ const Home = () => {
       <Pemberdayaan/>
       <Capaian/>
       <Pelanggan/>
+      <Testimoni/>
+      <TanyaJawab/>
+      <Masukan/>
     </React.Fragment>
   )
 }

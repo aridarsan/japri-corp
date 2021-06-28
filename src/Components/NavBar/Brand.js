@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../Images/japri.png';
+import {Link} from "react-router-dom"
 
 const Brand = () => {
   return (
-    <a href='/'>
+    <Link to='/'>
       {' '}
       <Image src={logo} alt='japri logo' />
-    </a>
+    </Link>
   );
 };
 

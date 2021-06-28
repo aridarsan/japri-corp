@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import {Link} from "react-router-dom"
 import { useSpring, animated } from 'react-spring';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -54,33 +54,33 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li>
-            <a href='/' onClick={props.handleNavbar}>
+            <Link to='/' onClick={props.handleNavbar}>
               Home
-            </a>
+            </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <a href='/' onClick={props.handleNavbar}>
+            <Link href='/' onClick={props.handleNavbar}>
               Produk
-            </a>
+            </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <a href='/' onClick={props.handleNavbar}>
+            <Link href='/' onClick={props.handleNavbar}>
               Cara Pesan
-            </a>
+            </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <a href='/about' onClick={props.handleNavbar}>
+            <Link to='/about' onClick={props.handleNavbar}>
               Tentang Kami
-            </a>
+            </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <a href='/' onClick={props.handleNavbar}>
+            <Link href='/' onClick={props.handleNavbar}>
               Testimoni
-            </a>
+            </Link>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
