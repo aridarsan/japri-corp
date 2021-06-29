@@ -6,7 +6,7 @@ const Testimoni = () => {
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
-        <Grid container id="testimoni">
+        <Grid container id='testimoni'>
           <Grid item xs={12}>
             <h3
               style={{
@@ -39,14 +39,15 @@ const Testimoni = () => {
         </Grid>
 
         <Grid container>
-          <Carousel cols={3} rows={1} gap={10}  showDots loop>
+          <Carousel cols={3} rows={1} gap={10} showDots loop>
             <Carousel.Item>
               <img
                 width='100%'
-                src='https://picsum.photos/800/600?random=1'
+                src='https://picsum.photos/800/600?random=4'
                 alt='ran1'
               />
             </Carousel.Item>
+
             <Carousel.Item>
               <img
                 width='100%'
@@ -54,6 +55,7 @@ const Testimoni = () => {
                 alt='ran1'
               />
             </Carousel.Item>
+
             <Carousel.Item>
               <img
                 width='100%'
@@ -71,14 +73,14 @@ const Testimoni = () => {
             <Carousel.Item>
               <img
                 width='100%'
-                src='https://picsum.photos/800/600?random=2'
+                src='https://picsum.photos/800/600?random=5'
                 alt='ran1'
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 width='100%'
-                src='https://picsum.photos/800/600?random=3'
+                src='https://picsum.photos/800/600?random=6'
                 alt='ran1'
               />
             </Carousel.Item>

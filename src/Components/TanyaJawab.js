@@ -102,7 +102,7 @@ export default function TanyaJawab() {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
-            <h2
+            <h3
               style={{
                 margin: '2rem 0',
                 fontWeight: '700',
@@ -117,7 +117,7 @@ export default function TanyaJawab() {
               >
                 Tanya Jawab
               </span>
-            </h2>
+            </h3>
 
             <p
               style={{

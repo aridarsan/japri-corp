@@ -7,6 +7,13 @@ html {
   --secondary: #f7da64;
 }
 
+h5 a:hover{
+  text-decoration: none !important;
+}
+a{
+  text-decoration: none !important;
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 62.5%;

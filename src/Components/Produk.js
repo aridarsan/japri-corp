@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Card, CardContent, Container, Button } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import DoneIcon from '@material-ui/icons/Done';
 import print from '../Images/print.svg';
 import konveksi from '../Images/konveksi.svg';
@@ -8,18 +8,20 @@ import percetakan from '../Images/percetakan.svg';
 import wisuda from '../Images/wisuda.svg';
 import service from '../Images/service.svg';
 import referensi from '../Images/referensi.svg';
+import { Link } from 'react-router-dom';
+// import Carousel from 'react-grid-carousel';
 
-const useStyles = makeStyles({
-  card: {
-    display: 'flex',
-    marginBottom: '0.5rem',
-    // flexWrap : "nowrap",
-    // overflowY: "auto",
-  },
-  cardMedia: {
-    width: 160,
-  },
-});
+// const useStyles = makeStyles({
+//   card: {
+//     display: 'flex',
+//     marginBottom: '0.5rem',
+//     // flexWrap : "nowrap",
+//     // overflowY: "auto",
+//   },
+//   cardMedia: {
+//     width: 160,
+//   },
+// });
 
 const produk = [
   {
@@ -75,11 +77,11 @@ const produk = [
 ];
 
 const Produk = () => {
-  const classes = useStyles();
+  // const classes = useStyles();
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
-        <Grid container id="produk">
+        <Grid container id='produk'>
           <Grid item xs={12}>
             <h3
               style={{
@@ -111,91 +113,98 @@ const Produk = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} className={classes.card} >
-          {/* <Carousel cols={3} rows={1} gap={10} responsiveLayout={responsif} loop> */}
+        <Grid container spacing={4} >
+          {/* <Carousel cols={3} rows={1} gap={10} loop> */}
             {produk.map((card, index) => (
               // <Carousel.Item key={index}>
-                <Grid item xs={12} sm={12} md={4} mt={4} key={index}> 
-                <Card style={{ borderRadius: 0, border: '2px solid #0895CA', }}>
-                  <CardContent>
-                    <Grid container mt={2} spacing={2} justify='center'>
-                      <Grid item xs={4} md={3}>
-                        <img
-                          style={{
-                            width: '100%',
-                          }}
-                          src={card.src}
-                          alt='icon'
-                          className='img-latbel'
-                        />
-                      </Grid>
-                      <Grid item xs={8} md={9}>
-                        <h4>{card.title}</h4>
-                        <small>{card.description}</small>
-                      </Grid>
-                    </Grid>
-                    <hr />
-
-                    {card.item.map((items, index) => (
-                      <p
-                        style={{
-                          color: '#4f4f4f',
-                          marginBottom: 0,
-                          marginTop: '0.5rem',
-                        }}
-                        key={index}
-                      >
-                        <DoneIcon style={{ color: '#0895CA' }} />
-                        {items}
-                      </p>
-                    ))}
-
-                    <Grid container spacing={4}>
-                      <Grid item xs={12}>
-                        <Button
-                          m='auto'
-                          variant='outlined'
-                          style={{
-                            width: '100%',
-                            borderRadius: '0',
-                            border: '2px solid #0895CA',
-                            fontWeight: '600',
-                            marginTop: '1rem',
-                            color: '#0895CA',
-                            fontFamily: 'Montserrat',
-                          }}
-                        >
-                          Cara pesan
-                        </Button>
-                      </Grid>
-                    </Grid>
-
-                    <Grid container spacing={4}>
-                      <Grid item xs={12}>
-                        <a
-                          href='https://wa.me/628992021306'
-                          style={{ textDecoration: 'none' }}
-                        >
-                          <Button
-                            m='auto'
-                            variant='contained'
+                <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
+                  <Card
+                    style={{ borderRadius: 0, border: '2px solid #0895CA' }}
+                  >
+                    <CardContent>
+                      <Grid container mt={2} spacing={2} justify='center'>
+                        <Grid item xs={4} md={3}>
+                          <img
                             style={{
                               width: '100%',
-                              backgroundColor: '#0895CA',
-                              fontWeight: '600',
-                              color: '#ffffff',
-                              borderRadius: '0',
-                              fontFamily: 'Montserrat',
                             }}
-                            size="lg"
-                          >
-                            Pesan sekarang
-                          </Button>
-                        </a>
+                            src={card.src}
+                            alt='icon'
+                            className='img-latbel'
+                          />
+                        </Grid>
+                        <Grid item xs={8} md={9}>
+                          <h4>{card.title}</h4>
+                          <small>{card.description}</small>
+                        </Grid>
                       </Grid>
-                    </Grid>
-                  </CardContent>
-                </Card>
+                      <hr />
+
+                      {card.item.map((items, index) => (
+                        <p
+                          style={{
+                            color: '#4f4f4f',
+                            marginBottom: 0,
+                            marginTop: '0.5rem',
+                          }}
+                          key={index}
+                        >
+                          <DoneIcon style={{ color: '#0895CA' }} />
+                          {items}
+                        </p>
+                      ))}
+
+                      <Grid container spacing={4}>
+                        <Grid item xs={12}>
+                          <Link
+                            to='cara-pesan'
+                            style={{ textDecoration: 'none' }}
+                          >
+                            <Button
+                              m='auto'
+                              variant='outlined'
+                              style={{
+                                width: '100%',
+                                borderRadius: '0',
+                                border: '2px solid #0895CA',
+                                fontWeight: '600',
+                                marginTop: '1rem',
+                                color: '#0895CA',
+                                fontFamily: 'Montserrat',
+                              }}
+                            >
+                              Cara pesan
+                            </Button>
+                          </Link>
+                        </Grid>
+                      </Grid>
+
+                      <Grid container spacing={4}>
+                        <Grid item xs={12}>
+                          <a
+                            href='https://wa.me/628992021306'
+                            style={{ textDecoration: 'none' }}
+                          >
+                            <Button
+                              m='auto'
+                              variant='contained'
+                              style={{
+                                width: '100%',
+                                backgroundColor: '#0895CA',
+                                fontWeight: '600',
+                                color: '#ffffff',
+                                borderRadius: '0',
+                                fontFamily: 'Montserrat',
+                              }}
+                              size='lg'
+                            >
+                              Pesan sekarang
+                            </Button>
+                          </a>
+                        </Grid>
+                      </Grid>
+                    </CardContent>
+                  </Card>
                 </Grid>
               // </Carousel.Item>
             ))}

@@ -47,7 +47,7 @@ const Keunggulan = () => {
                 marginBottom: '3rem',
               }}
             >
-              kami memiliki berbagai keunggulan dalam pelayanan
+              Kami memiliki berbagai keunggulan dalam pelayanan
             </p>
           </Grid>
         </Grid>
@@ -55,17 +55,17 @@ const Keunggulan = () => {
         <Grid container spacing={5} mt={2} >
           {unggul.map((item, index) => (
             <Grid item xs={4} md={4} lg={2} m='auto' key={index}>
-              <Grid container spacing={8} justify='center' alignItems='center'>
+              <Grid container spacing={3} justify='center' alignItems='center'>
                 <img
                   src={item.img}
                   alt='produk'
                   width='50%'
-                  style={{ margin: "2rem 0" }}
+                  style={{ margin: "1rem 0" }}
                 />
               </Grid>
-              <h6 style={{ textAlign: 'center', margin: '2rem 0' }}>
+              <p style={{ textAlign: 'center' }}>
                 {item.label}
-              </h6>
+              </p>
             </Grid>
           ))}
         </Grid>

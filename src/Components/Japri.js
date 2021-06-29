@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Card, CardContent, Container, Paper } from '@material-ui/core';
-import japri from '../Images/kotak.svg';
+import japri from '../Images/direksi.png';
 import Timeline from '@material-ui/lab/Timeline';
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
@@ -11,7 +11,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    padding: '1rem 2rem',
+    padding: '1rem',
     borderRadius: 0,
   },
 }));
@@ -58,7 +58,7 @@ const Japri = () => {
           <Grid item xs={12} md={12} lg={12}>
             <img src={japri} alt='masukan' width='100%' />
 
-            <Card style={{ backgroundColor: '#F7DA64', marginTop: '2rem' }}>
+            <Card style={{ backgroundColor: '#F7DA64' }}>
               <CardContent>
                 <h4>Sekilas Japri</h4>
 
@@ -71,7 +71,7 @@ const Japri = () => {
                   inovasi disrupsi ini terus eksis?
                 </p>
                 <p>
-                  Japri Selaku startup platform multifungs, ingin menjadi solusi
+                  Japri Selaku startup platform multifungsi, ingin menjadi solusi
                   bagi mahasiswa dalam pemenuhan kebutuhannya. Aktifitas
                   tersebut teroptimasi dengan tersedianya Kru-kru japri di
                   setiap ceruk pasar kampus. Dengannya, Japri mengusung ide

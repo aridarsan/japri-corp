@@ -16,7 +16,7 @@ import { Grid, Container } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    padding: '1rem 2rem',
+    padding: '1rem',
     borderRadius: 0
   }
 }));

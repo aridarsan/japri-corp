@@ -83,10 +83,10 @@ const Navbar = (props) => {
           <NavLinks style={linkAnimation}>
           <a href='/'></a>
             <Link to='/'>Home</Link>
-            <a href='/'>Produk</a>
+            <Link to='/'>Produk</Link>
             <Link to='/cara-pesan'>Cara Pesan</Link>
-            <Link to='/about'>Tentang Kami</Link>
-            <a href='/'>Testimoni</a>
+            <Link to='/about'>Tentang Japri</Link>
+            <Link to='/'>Testimoni</Link>
             <a href='https://wa.me/628992021306'><WhatsAppIcon/></a>
             <a href='https://www.instagram.com/japricorp/'><InstagramIcon/></a>
             <a href='mailto:japri.corporation@gmail.com'><MailOutlineIcon/></a>
