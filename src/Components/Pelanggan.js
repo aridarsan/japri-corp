@@ -1,20 +1,20 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
-import japri from '../Images/kotak.svg'
+import japri from '../Images/kotak.svg';
 
 const customer = [
-  {image: japri, nama: 'Pelanggan Mahasiswa' },
-  {image: japri, nama: 'Pelanggan Organisasi' },
-  {image: japri, nama: 'Buku Dipesan' },
-  {image: japri, nama: 'Transaksi Perminggu' },
-  {image: japri, nama: 'PDH Dibuat Pertahun' },
-  {image: japri, nama: 'Skrips Dicetak' },
-  {image: japri, nama: 'Pelanggan Mahasiswa' },
-  {image: japri, nama: 'Pelanggan Organisasi' },
-  {image: japri, nama: 'Buku Dipesan' },
-  {image: japri, nama: 'Transaksi Perminggu' },
-  {image: japri, nama: 'PDH Dibuat Pertahun' },
-  {image: japri, nama: 'Skrips Dicetak' },
+  { image: japri, nama: 'Pelanggan Mahasiswa' },
+  { image: japri, nama: 'Pelanggan Organisasi' },
+  { image: japri, nama: 'Buku Dipesan' },
+  { image: japri, nama: 'Transaksi Perminggu' },
+  { image: japri, nama: 'PDH Dibuat Pertahun' },
+  { image: japri, nama: 'Skrips Dicetak' },
+  { image: japri, nama: 'Pelanggan Mahasiswa' },
+  { image: japri, nama: 'Pelanggan Organisasi' },
+  { image: japri, nama: 'Buku Dipesan' },
+  { image: japri, nama: 'Transaksi Perminggu' },
+  { image: japri, nama: 'PDH Dibuat Pertahun' },
+  { image: japri, nama: 'Skrips Dicetak' },
 ];
 
 const Pelanggan = () => {
@@ -48,7 +48,8 @@ const Pelanggan = () => {
                 marginBottom: '3rem',
               }}
             >
-              Kami telah dipercaya oleh mahasiswa dari berbagai kampus dan organisasi/ komunitas
+              Kami telah dipercaya oleh mahasiswa dari berbagai kampus dan
+              organisasi/ komunitas
             </p>
           </Grid>
         </Grid>
@@ -56,7 +57,7 @@ const Pelanggan = () => {
         <Grid container spacing={2} mt={2}>
           {customer.map((item, index) => (
             <Grid item xs={3} md={3} lg={1} m='auto' key={index}>
-              <img src={item.image} alt={item.nama} width="100%"/>
+              <img src={item.image} alt={item.nama} width='100%' />
             </Grid>
           ))}
         </Grid>

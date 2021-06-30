@@ -71,8 +71,8 @@ const Japri = () => {
                   inovasi disrupsi ini terus eksis?
                 </p>
                 <p>
-                  Japri Selaku startup platform multifungsi, ingin menjadi solusi
-                  bagi mahasiswa dalam pemenuhan kebutuhannya. Aktifitas
+                  Japri Selaku startup platform multifungsi, ingin menjadi
+                  solusi bagi mahasiswa dalam pemenuhan kebutuhannya. Aktifitas
                   tersebut teroptimasi dengan tersedianya Kru-kru japri di
                   setiap ceruk pasar kampus. Dengannya, Japri mengusung ide
                   'Pemberdayaan Manusia'. Pemberdayaan secara ekonomi yang

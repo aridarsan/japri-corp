@@ -81,7 +81,7 @@ const Masukan = () => {
                   color: '#ffffff',
                   borderRadius: '0',
                   fontFamily: 'Montserrat',
-                  marginTop: "2rem"
+                  marginTop: '2rem',
                 }}
               >
                 Kirim Pesan

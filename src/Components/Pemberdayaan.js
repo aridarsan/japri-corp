@@ -6,7 +6,13 @@ import pemberdayaan from '../Images/pemberdayaan.svg';
 const Pemberdayaan = () => {
   return (
     <React.Fragment>
-      <div style={{ backgroundColor: '#F7DA64', margin: "4rem 0", padding: "2rem 0" }}>
+      <div
+        style={{
+          backgroundColor: '#F7DA64',
+          margin: '4rem 0',
+          padding: '2rem 0',
+        }}
+      >
         <Container maxWidth='lg'>
           <Grid container>
             <Grid item xs={12}>
@@ -32,7 +38,7 @@ const Pemberdayaan = () => {
                   fontFamily: 'Montserrat',
                   color: '#4f4f4f',
                   textAlign: 'center',
-                  marginBottom: "1rem"
+                  marginBottom: '1rem',
                 }}
               >
                 Lahirnya Japri Corporation karena dilatar belakangi keinginan
@@ -43,7 +49,15 @@ const Pemberdayaan = () => {
 
           <Grid container spacing={4} mt={2}>
             <Grid item xs={12} md={6} lg={6}>
-              <h3 style={{borderLeft: "0.25rem  solid #0895CA", paddingLeft:"1rem"}}> Customer Relation Officer (CRO)</h3>
+              <h3
+                style={{
+                  borderLeft: '0.25rem  solid #0895CA',
+                  paddingLeft: '1rem',
+                }}
+              >
+                {' '}
+                Customer Relation Officer (CRO)
+              </h3>
               <p>
                 CRO merupakan bagian dari Japri yang akan mendapatkan komisi
                 dengan melaksanakan beberapa tugas yang diberikan seperti:
@@ -61,7 +75,15 @@ const Pemberdayaan = () => {
                 membeli produk Japri Wisuda
               </p>
               <br />
-              <h3 style={{borderLeft: "0.25rem solid #0895CA", paddingLeft:"1rem"}}> Crew</h3>
+              <h3
+                style={{
+                  borderLeft: '0.25rem solid #0895CA',
+                  paddingLeft: '1rem',
+                }}
+              >
+                {' '}
+                Crew
+              </h3>
               <p>
                 Bisnis yang baik ialah bisnis yang tidak hanya memperkaya
                 perusahaannya sendiri namun bisnis yang baik haruslah mempunyai

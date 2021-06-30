@@ -54,7 +54,8 @@ const Galeri = () => {
                 marginBottom: '3rem',
               }}
             >
-              Banyak kegiatan yang sudah kami laksanakan dalam rangka mengembangkan Japri dan memberdayakan mahasiswa
+              Banyak kegiatan yang sudah kami laksanakan dalam rangka
+              mengembangkan Japri dan memberdayakan mahasiswa
             </p>
           </Grid>
         </Grid>

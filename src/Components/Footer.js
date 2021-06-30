@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Grid } from '@material-ui/core';
+import { CopyrightOutlined, LocationOnOutlined } from '@material-ui/icons';
 import japri from '../Images/japri.png';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import { CopyrightOutlined, LocationOnOutlined } from '@material-ui/icons';
 import print from '../Images/footer/print.svg';
 import percetakan from '../Images/footer/percetakan.svg';
 import konveksi from '../Images/footer/konveksi.svg';

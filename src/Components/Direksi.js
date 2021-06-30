@@ -5,12 +5,12 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
 import { Twitter } from '@material-ui/icons';
-import wanda from "../Images/direksi/wanda.png"
-import roni from "../Images/direksi/roni.png"
-import reza from "../Images/direksi/reza.png"
-import ade from "../Images/direksi/ade.png"
-import ahmad from "../Images/direksi/ahmad.png"
-import ari from "../Images/direksi/ari.png"
+import wanda from '../Images/direksi/wanda.png';
+import roni from '../Images/direksi/roni.png';
+import reza from '../Images/direksi/reza.png';
+import ade from '../Images/direksi/ade.png';
+import ahmad from '../Images/direksi/ahmad.png';
+import ari from '../Images/direksi/ari.png';
 
 const tim = [
   {
@@ -21,7 +21,7 @@ const tim = [
     twitter: '/',
     instagram: '/',
     email: '/',
-    web: ""
+    web: '',
   },
   {
     nama: 'Roni Iskandar',
@@ -31,7 +31,7 @@ const tim = [
     twitter: '/',
     instagram: '/',
     email: '/',
-    web: ""
+    web: '',
   },
   {
     nama: 'M Reza Maulana A',
@@ -41,7 +41,7 @@ const tim = [
     twitter: '/',
     instagram: '/',
     email: '/',
-    web: ""
+    web: '',
   },
   {
     nama: 'Ade Rohimat',
@@ -51,7 +51,7 @@ const tim = [
     twitter: '/',
     instagram: '/',
     email: '/',
-    web: ""
+    web: '',
   },
   {
     nama: 'Muchamad Ahmad M',
@@ -61,7 +61,7 @@ const tim = [
     twitter: '/',
     instagram: '/',
     email: '/',
-    web: ""
+    web: '',
   },
   {
     nama: 'Ari Darsan',
@@ -71,7 +71,7 @@ const tim = [
     twitter: '/',
     instagram: '/',
     email: '/',
-    web: "https://aridarsan.xyz"
+    web: 'https://aridarsan.xyz',
   },
 ];
 
@@ -114,7 +114,13 @@ const Direksi = () => {
         <Grid container spacing={2}>
           {tim.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
-              <Card style={{ padding: '2rem', backgroundColor: '#F7DA64', borderRadius: "0" }}>
+              <Card
+                style={{
+                  padding: '2rem',
+                  backgroundColor: '#F7DA64',
+                  borderRadius: '0',
+                }}
+              >
                 <CardContent>
                   <Grid
                     container
@@ -122,25 +128,27 @@ const Direksi = () => {
                     justify='center'
                     alignItems='center'
                   >
-                  <Grid item xs={4} lg={12} style={{padding: 0}}>
-                    <Grid container justify="center">
-                  
-                      <img
-                        src={item.foto}
-                        alt='direksi'
-                        width='80%'
-                        style={{ borderRadius: '100%' }}
-                      />
+                    <Grid item xs={4} lg={12} style={{ padding: 0 }}>
+                      <Grid container justify='center'>
+                        <img
+                          src={item.foto}
+                          alt='direksi'
+                          width='80%'
+                          style={{ borderRadius: '100%' }}
+                        />
+                      </Grid>
                     </Grid>
-                    </Grid>
-                    <Grid item xs={8} lg={12} style={{padding: 0}}>
-                    <h4 className="direksi" style={{ margin: '1rem 0', textAlign: 'center'}}>
-                      {item.nama}
-                    </h4>
-                    
-                    <h6 className="direksi" style={{ textAlign: 'center' }}>
-                      {item.jabatan}
-                    </h6>
+                    <Grid item xs={8} lg={12} style={{ padding: 0 }}>
+                      <h4
+                        className='direksi'
+                        style={{ margin: '1rem 0', textAlign: 'center' }}
+                      >
+                        {item.nama}
+                      </h4>
+
+                      <h6 className='direksi' style={{ textAlign: 'center' }}>
+                        {item.jabatan}
+                      </h6>
                     </Grid>
                   </Grid>
                 </CardContent>
@@ -199,14 +207,14 @@ const Direksi = () => {
                       }}
                     />{' '}
                   </a>
-                  <a href={item.web} >
+                  <a href={item.web}>
                     {' '}
                     <LanguageIcon
                       style={{
                         color: '#ffff',
                         textDecoration: 'none',
                         margin: '.5rem',
-                        display: item.web !== "" ? "" : "none",
+                        display: item.web !== '' ? '' : 'none',
                       }}
                     />{' '}
                   </a>
