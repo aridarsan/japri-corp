@@ -13,9 +13,9 @@ const tanyajawab = [
     panel: 'panel1',
     aria: 'panel1bh-content',
     id: 'panel1bh-header',
-    tanya: 'ApakahJapri bisnis yang bergerak di print aja ?',
+    tanya: 'Apakah Japri bisnis yang bergerak di print aja ?',
     jawab:
-      'Pada mulanya ketika awal-awal beridiri Japri memang fokus terhadap produk print yang berhubungan dengan tugas mata kulaih seperti mencetak makalah, jurnal, artikel ilmiah, draft ujian proposal, draft ujian skripsi dan lain sebagainya. Namun, lambat launJapri pun melakukan diversifikasi produk dan meluaskan visi serta misi dengan menjadi platform kebutuhan mahasiswa',
+      'Pada mulanya ketika awal-awal beridiri Japri memang fokus terhadap produk print yang berhubungan dengan tugas mata kulaih seperti mencetak makalah, jurnal, artikel ilmiah, draft ujian proposal, draft ujian skripsi dan lain sebagainya. Namun, lambat laun Japri pun melakukan diversifikasi produk dan meluaskan visi serta misi dengan menjadi platform kebutuhan mahasiswa',
   },
   {
     panel: 'panel2',

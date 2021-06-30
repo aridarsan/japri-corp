@@ -25,6 +25,10 @@ a{
   margin: 0.5rem 1rem;
 }
 
+.img-testimoni{
+  border-radius: 100%;
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 62.5%;

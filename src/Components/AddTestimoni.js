@@ -9,12 +9,12 @@ const AddTestimoni = () => {
   const [value, setValue] = React.useState(0);
   return (
     <React.Fragment>
-      <Container maxWidth='lg' style={{ marginTop: '5rem' }}>
+      <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
             <h3
               style={{
-                margin: '2rem 0',
+                margin: '3rem 0 2rem 0',
                 fontWeight: '700',
                 fontFamily: 'Montserrat',
                 color: '#0895CA',
