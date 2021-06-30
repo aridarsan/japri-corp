@@ -19,10 +19,17 @@ a{
   border-bottom: 2px solid var(--secondary) !important;
 }
 
+.icon-direksi {
+  color: #ffff;
+  text-decoration: none;
+  margin: 0.5rem 1rem;
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 62.5%;
-  } /*12px*/
+    /* font-size: 75%; */
+  } /*10px*/
 
   body {
     font-weight: 400;

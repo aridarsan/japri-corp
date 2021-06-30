@@ -5,8 +5,8 @@ import Navbar from './Components/NavBar/Navbar';
 import GlobalStyle from "./Styles/Global"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
+import Testimonis from "./Pages/Testimonis"
 import Footer from "./Components/Footer"
-import AddTestimoni from "./Components/AddTestimoni"
 import CaraPesan from "./Components/CaraPesan"
 import NotFound from "./Components/NotFound"
 import ScrollToTop from "./Components/ScrollToTop"
@@ -26,8 +26,8 @@ function App() {
           <Home/>
         </Route>
 
-        <Route path='/tambah-testimoni'>
-          <AddTestimoni/>
+        <Route path='/testimoni'>
+          <Testimonis/>
         </Route>
 
         <Route path='/cara-pesan'>

@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link, NavLink} from "react-router-dom"
+import { Link, NavLink } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const CollapseWrapper = styled(animated.div)`
-  background: #0895CA;
+  background: #0895ca;
   position: fixed;
   top: 4.5rem;
   left: 0;
@@ -25,12 +25,14 @@ const NavLinks = styled.ul`
   }
 
   & a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 2;
-    color: #dfe6e9;
+    color: #ffff;
     text-decoration: none;
     cursor: pointer;
-
+  & p {
+    margin: 1rem;
+  }
     & :hover {
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
@@ -55,50 +57,95 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li>
-            <NavLink exact to='/' activeClassName="active" onClick={props.handleNavbar}>
-              Home
+            <NavLink
+              exact
+              to='/'
+              activeClassName='active'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>Home</p>
+              </div>
             </NavLink>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
             <Link to='/' onClick={props.handleNavbar}>
-              Produk
+              <div>
+                <p>Produk</p>
+              </div>
             </Link>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
-            <NavLink to='/cara-pesan' activeClassName="active" onClick={props.handleNavbar}>
-              Cara Pesan
+            <NavLink
+              to='/cara-pesan'
+              activeClassName='active'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>Cara Pesan</p>
+              </div>
             </NavLink>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
-            <NavLink to='/about' activeClassName="active" onClick={props.handleNavbar}>
-              Tentang Japri
+            <NavLink
+              to='/about'
+              activeClassName='active'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>Tentang Japri</p>
+              </div>
             </NavLink>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
-            <NavLink to='/tambah-testimoni' activeClassName="active" onClick={props.handleNavbar}>
-              Testimoni
+            <NavLink
+              to='/testimoni'
+              activeClassName='active'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>Testimoni</p>
+              </div>
             </NavLink>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
             <a href='https://wa.me/628992021306' onClick={props.handleNavbar}>
-              <WhatsAppIcon/> 08992021306
+              <div>
+                <p>
+                  <WhatsAppIcon /> 08992021306
+                </p>
+              </div>
             </a>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
-            <a href='https://www.instagram.com/japricorp/' onClick={props.handleNavbar}>
-              <InstagramIcon/> japricorp
+            <a
+              href='https://www.instagram.com/japricorp/'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>
+                  <InstagramIcon /> japricorp
+                </p>
+              </div>
             </a>
           </li>
-          <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
+          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
           <li>
-            <a href='mailto:japri.corporation@gmail.com' onClick={props.handleNavbar}>
-              <MailOutlineIcon/> japri.corporation@gmail.com
+            <a
+              href='mailto:japri.corporation@gmail.com'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>
+                  <MailOutlineIcon /> japri.corporation@gmail.com
+                </p>
+              </div>
             </a>
           </li>
         </NavLinks>

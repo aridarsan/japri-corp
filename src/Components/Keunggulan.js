@@ -63,7 +63,7 @@ const Keunggulan = () => {
                   style={{ margin: '1rem 0' }}
                 />
               </Grid>
-              <p style={{ textAlign: 'center' }}>{item.label}</p>
+              <p style={{ textAlign: 'center', margin: "0.5rem 0" }}>{item.label}</p>
             </Grid>
           ))}
         </Grid>

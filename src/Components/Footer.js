@@ -21,14 +21,14 @@ const Footer = () => {
         style={{
           backgroundColor: '#0895CA',
           marginTop: '4rem',
-          padding: '2rem',
+          padding: '2rem 0',
           color: '#ffff',
         }}
       >
         <Container maxWidth='lg'>
           <Grid container spacing={4}>
             <Grid item xs={12} md={6} lg={4}>
-              <img src={japri} alt='japri logo' width='50%' />
+              <img src={japri} alt='japri logo' width='30%' />
               <h4 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h4>
               <p>
                 <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan Tawang

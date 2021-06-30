@@ -78,7 +78,7 @@ const tim = [
 const Direksi = () => {
   return (
     <React.Fragment>
-      <Container maxWidth='lg' style={{ marginTop: '5rem' }}>
+      <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
             <h3
@@ -94,7 +94,7 @@ const Direksi = () => {
                 className='borderBottom'
                 style={{ borderBottom: '.25rem solid #0895CA' }}
               >
-                Team Japri
+                Tim Japri
               </span>
             </h3>
 
@@ -170,50 +170,32 @@ const Direksi = () => {
                   <a href={item.whatsapp}>
                     {' '}
                     <WhatsAppIcon
-                      style={{
-                        color: '#ffff',
-                        textDecoration: 'none',
-                        margin: '.5rem',
-                      }}
+                      className="icon-direksi"
                     />{' '}
                   </a>
                   <a href={item.instagram}>
                     {' '}
                     <InstagramIcon
-                      style={{
-                        color: '#ffff',
-                        textDecoration: 'none',
-                        margin: '.5rem',
-                      }}
+                      className="icon-direksi"
                     />{' '}
                   </a>
                   <a href={item.twitter}>
                     {' '}
                     <Twitter
-                      style={{
-                        color: '#ffff',
-                        textDecoration: 'none',
-                        margin: '.5rem',
-                      }}
+                      className="icon-direksi"
                     />{' '}
                   </a>
                   <a href={item.email}>
                     {' '}
                     <MailOutlineIcon
-                      style={{
-                        color: '#ffff',
-                        textDecoration: 'none',
-                        margin: '.5rem',
-                      }}
+                      className="icon-direksi"
                     />{' '}
                   </a>
                   <a href={item.web}>
                     {' '}
                     <LanguageIcon
+                    className="icon-direksi"
                       style={{
-                        color: '#ffff',
-                        textDecoration: 'none',
-                        margin: '.5rem',
                         display: item.web !== '' ? '' : 'none',
                       }}
                     />{' '}
