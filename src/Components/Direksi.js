@@ -4,14 +4,19 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
-import kotak from '../Images/kotak.svg';
 import { Twitter } from '@material-ui/icons';
+import wanda from "../Images/direksi/wanda.png"
+import roni from "../Images/direksi/roni.png"
+import reza from "../Images/direksi/reza.png"
+import ade from "../Images/direksi/ade.png"
+import ahmad from "../Images/direksi/ahmad.png"
+import ari from "../Images/direksi/ari.png"
 
 const tim = [
   {
     nama: 'Wanda Lugina',
     jabatan: 'Chief Executive Officer',
-    foto: kotak,
+    foto: wanda,
     whatsapp: '/',
     twitter: '/',
     instagram: '/',
@@ -21,7 +26,7 @@ const tim = [
   {
     nama: 'Roni Iskandar',
     jabatan: 'Chief Financial Officer',
-    foto: kotak,
+    foto: roni,
     whatsapp: '/',
     twitter: '/',
     instagram: '/',
@@ -31,7 +36,7 @@ const tim = [
   {
     nama: 'M Reza Maulana A',
     jabatan: 'Chief Operational Officer',
-    foto: kotak,
+    foto: reza,
     whatsapp: '/',
     twitter: '/',
     instagram: '/',
@@ -41,7 +46,7 @@ const tim = [
   {
     nama: 'Ade Rohimat',
     jabatan: 'Chief Marketing Officer',
-    foto: kotak,
+    foto: ade,
     whatsapp: '/',
     twitter: '/',
     instagram: '/',
@@ -51,7 +56,7 @@ const tim = [
   {
     nama: 'Muchamad Ahmad M',
     jabatan: 'Chief Technology Officer',
-    foto: kotak,
+    foto: ahmad,
     whatsapp: '/',
     twitter: '/',
     instagram: '/',
@@ -61,7 +66,7 @@ const tim = [
   {
     nama: 'Ari Darsan',
     jabatan: 'Manager DMD & Web Developer',
-    foto: kotak,
+    foto: ari,
     whatsapp: '/',
     twitter: '/',
     instagram: '/',
@@ -106,10 +111,10 @@ const Direksi = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={4}>
+        <Grid container spacing={2}>
           {tim.map((item, index) => (
-            <Grid item xs={12} md={4} lg={4} key={index}>
-              <Card style={{ padding: '2rem', backgroundColor: '#F7DA64' }}>
+            <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
+              <Card style={{ padding: '2rem', backgroundColor: '#F7DA64', borderRadius: "0" }}>
                 <CardContent>
                   <Grid
                     container
@@ -117,18 +122,26 @@ const Direksi = () => {
                     justify='center'
                     alignItems='center'
                   >
-                    <img
-                      src={kotak}
-                      alt='direksi'
-                      width='200px'
-                      style={{ borderRadius: '100%' }}
-                    />
-                    <h4 style={{ margin: '1rem 0', textAlign: 'center' }}>
+                  <Grid item xs={4} lg={12} style={{padding: 0}}>
+                    <Grid container justify="center">
+                  
+                      <img
+                        src={item.foto}
+                        alt='direksi'
+                        width='80%'
+                        style={{ borderRadius: '100%' }}
+                      />
+                    </Grid>
+                    </Grid>
+                    <Grid item xs={8} lg={12} style={{padding: 0}}>
+                    <h4 className="direksi" style={{ margin: '1rem 0', textAlign: 'center'}}>
                       {item.nama}
                     </h4>
-                    <h6 style={{ textAlign: 'center' }}>
+                    
+                    <h6 className="direksi" style={{ textAlign: 'center' }}>
                       {item.jabatan}
                     </h6>
+                    </Grid>
                   </Grid>
                 </CardContent>
               </Card>

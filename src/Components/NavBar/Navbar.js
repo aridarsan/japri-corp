@@ -2,7 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useSpring, animated, config } from 'react-spring';
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import Brand from './Brand';
 import Burgermenu from './Burgermenu';
 import CollapseMenu from './CollapseMenu';
@@ -16,8 +16,9 @@ width: 100%;
 top: 0;
 left: 0;
 background: #0895CA;
-z-index: 1;
+z-index: 100;
 font-size: 1rem;
+box-shadow: 0 12px 10px -10px #0895CA;
 `;
 
 const FlexContainer = styled.div`
@@ -48,7 +49,7 @@ const NavLinks = styled(animated.ul)`
       // border-bottom: 1px solid #fdcb6e;
     }
 
-    @media (max-width: 1049px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   }
@@ -57,7 +58,7 @@ const NavLinks = styled(animated.ul)`
 const BurgerWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 1050px) {
+  @media (min-width: 1100px) {
     display: none;
   }
 `;
@@ -82,11 +83,11 @@ const Navbar = (props) => {
           <Brand />
           <NavLinks style={linkAnimation}>
           <a href='/'></a>
-            <Link to='/'>Home</Link>
+            <NavLink exact to='/' activeClassName="active">Home</NavLink>
             <Link to='/'>Produk</Link>
-            <Link to='/cara-pesan'>Cara Pesan</Link>
-            <Link to='/about'>Tentang Japri</Link>
-            <Link to='/'>Testimoni</Link>
+            <NavLink to='/cara-pesan' activeClassName="active">Cara Pesan</NavLink>
+            <NavLink to='/about' activeClassName="active">Tentang Japri</NavLink>
+            <NavLink to='/tambah-testimoni' activeClassName="active">Testimoni</NavLink>
             <a href='https://wa.me/628992021306'><WhatsAppIcon/></a>
             <a href='https://www.instagram.com/japricorp/'><InstagramIcon/></a>
             <a href='mailto:japri.corporation@gmail.com'><MailOutlineIcon/></a>

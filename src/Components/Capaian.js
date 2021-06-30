@@ -50,7 +50,7 @@ const Capaian = () => {
 
       <div style={{backgroundColor: "#0895CA", marginBottom: "2rem"}}>
         <Container maxWidth='lg'>
-          <Grid container spacing={5} mt={2} >
+          <Grid container spacing={4} mt={2} >
             {capaian.map((item, index) => (
               <Grid item xs={4} md={4} lg={2} m='auto' key={index}>
                 <h2 style={{ textAlign: 'center', color: "#F7DA64", fontWeight: "700" }}>{item.jumlah}</h2>

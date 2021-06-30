@@ -38,7 +38,7 @@ const produk = [
       'Japri menawarkan produk percetakan kualitas tinggi dengan harga murah',
     item: [
       'Sticker A3',
-      'Pin Alumunium/ Plastik',
+      'Pin',
       'Gantungan Kunci',
       'Banner/ X Banner.',
     ],
@@ -48,7 +48,7 @@ const produk = [
     title: 'Japri Konveksi',
     description:
       'Japri menawarkan produk konveksi kualitas nomor 1 dan harga bersahabat',
-    item: ['Pakaian Dinas Harian(PDH)', 'Jaket', 'T-Shirt', 'Polo Shirt dll.'],
+    item: ['PDH/ PDL', 'Jaket', 'T-Shirt', 'Polo Shirt dll.'],
   },
   {
     src: wisuda,
@@ -96,7 +96,7 @@ const Produk = () => {
                 className='borderBottom'
                 style={{ borderBottom: '.25rem solid #0895CA' }}
               >
-                Produk Kami
+                Produk Japri
               </span>
             </h3>
 
@@ -113,28 +113,29 @@ const Produk = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} >
+        <Grid container spacing={2} >
           {/* <Carousel cols={3} rows={1} gap={10} loop> */}
             {produk.map((card, index) => (
               // <Carousel.Item key={index}>
-                <Grid item xs={12} sm={12} md={4} lg={4} key={index}>
+                <Grid item xs={6} sm={6} md={4} lg={4} key={index}>
                   <Card
                     style={{ borderRadius: 0, border: '2px solid #0895CA' }}
                   >
                     <CardContent>
                       <Grid container mt={2} spacing={2} justify='center'>
-                        <Grid item xs={4} md={3}>
+                        <Grid item xs={12} sm={3} md={3}>
                           <img
                             style={{
                               width: '100%',
+                              margin: "auto"
                             }}
                             src={card.src}
                             alt='icon'
                             className='img-latbel'
                           />
                         </Grid>
-                        <Grid item xs={8} md={9}>
-                          <h4>{card.title}</h4>
+                        <Grid item xs={12} sm={9} md={9}>
+                          <h5>{card.title}</h5>
                           <small>{card.description}</small>
                         </Grid>
                       </Grid>
@@ -196,7 +197,7 @@ const Produk = () => {
                                 borderRadius: '0',
                                 fontFamily: 'Montserrat',
                               }}
-                              size='lg'
+                              size='medium'
                             >
                               Pesan sekarang
                             </Button>

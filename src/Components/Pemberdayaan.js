@@ -41,7 +41,7 @@ const Pemberdayaan = () => {
             </Grid>
           </Grid>
 
-          <Grid container spacing={5} mt={2}>
+          <Grid container spacing={4} mt={2}>
             <Grid item xs={12} md={6} lg={6}>
               <h3 style={{borderLeft: "0.25rem  solid #0895CA", paddingLeft:"1rem"}}> Customer Relation Officer (CRO)</h3>
               <p>

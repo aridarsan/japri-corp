@@ -69,12 +69,12 @@ const Prestasi = () => {
 
         <Grid container spacing={4}>
           {prestasi.map((item, index) => (
-            <Grid item xs={12} sm={6} lg={3} key={index}>
+            <Grid item xs={6} sm={6} lg={3} key={index}>
               <img
                 src={item.image}
                 alt='prestasi'
                 width='100%'
-                style={{ marginBottom: '2rem' }}
+                style={{ marginBottom: '1rem' }}
               />
               <h4>{item.peringkat}</h4>
               <h6>{item.nama}</h6>

@@ -52,9 +52,9 @@ const Keunggulan = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={5} mt={2} >
+        <Grid container spacing={4} mt={2} >
           {unggul.map((item, index) => (
-            <Grid item xs={4} md={4} lg={2} m='auto' key={index}>
+            <Grid item xs={4} md={3} lg={2} m='auto' key={index}>
               <Grid container spacing={3} justify='center' alignItems='center'>
                 <img
                   src={item.img}

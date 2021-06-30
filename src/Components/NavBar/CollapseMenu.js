@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 import { useSpring, animated } from 'react-spring';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -13,6 +13,7 @@ const CollapseWrapper = styled(animated.div)`
   left: 0;
   right: 0;
   z-index: 1300;
+  box-shadow: 0 5px 10px -10px black;
 `;
 
 const NavLinks = styled.ul`
@@ -54,9 +55,9 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li>
-            <Link to='/' onClick={props.handleNavbar}>
+            <NavLink exact to='/' activeClassName="active" onClick={props.handleNavbar}>
               Home
-            </Link>
+            </NavLink>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
@@ -66,21 +67,21 @@ const CollapseMenu = (props) => {
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <Link to='/cara-pesan' onClick={props.handleNavbar}>
+            <NavLink to='/cara-pesan' activeClassName="active" onClick={props.handleNavbar}>
               Cara Pesan
-            </Link>
+            </NavLink>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <Link to='/about' onClick={props.handleNavbar}>
+            <NavLink to='/about' activeClassName="active" onClick={props.handleNavbar}>
               Tentang Japri
-            </Link>
+            </NavLink>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>
-            <Link to='/' onClick={props.handleNavbar}>
+            <NavLink to='/tambah-testimoni' activeClassName="active" onClick={props.handleNavbar}>
               Testimoni
-            </Link>
+            </NavLink>
           </li>
           <hr style={{margin: "0px 2rem 0 0", color:"#ffffff"}}/>
           <li>

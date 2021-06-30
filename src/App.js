@@ -8,6 +8,8 @@ import About from "./Pages/About"
 import Footer from "./Components/Footer"
 import AddTestimoni from "./Components/AddTestimoni"
 import CaraPesan from "./Components/CaraPesan"
+import NotFound from "./Components/NotFound"
+import ScrollToTop from "./Components/ScrollToTop"
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -18,6 +20,7 @@ function App() {
     <React.Fragment>
       <Navbar navbarState={navbarOpen} handleNavbar={handleNavbar} />
       <GlobalStyle/>
+      <ScrollToTop/>
       <Switch>
         <Route exact path='/'>
           <Home/>
@@ -33,6 +36,10 @@ function App() {
 
         <Route path='/about'>
           <About/>
+        </Route>
+
+        <Route path="*">
+          <NotFound/>
         </Route>
       </Switch>
       <Footer/>

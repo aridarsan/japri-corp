@@ -61,7 +61,7 @@ const Galeri = () => {
 
         <Grid container spacing={2}>
           {galeri.map((item, index) => (
-            <Grid item xs={6} sm={4} lg={2} key={index}>
+            <Grid item xs={3} sm={3} lg={2} key={index}>
               <img
                 src={item.image}
                 alt='galeri'
