@@ -113,7 +113,7 @@ const Direksi = () => {
 
         <Grid container spacing={2}>
           {tim.map((item, index) => (
-            <Grid item xs={12} sm={6} md={4} lg={4} key={index}>
+            <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
               <Card
                 style={{
                   padding: '2rem',
@@ -128,7 +128,7 @@ const Direksi = () => {
                     justify='center'
                     alignItems='center'
                   >
-                    <Grid item xs={4} lg={12} style={{ padding: 0 }}>
+                    <Grid item xs={4} md={12} lg={12} style={{ padding: 0 }}>
                       <Grid container justify='center'>
                         <img
                           src={item.foto}
@@ -138,7 +138,7 @@ const Direksi = () => {
                         />
                       </Grid>
                     </Grid>
-                    <Grid item xs={8} lg={12} style={{ padding: 0 }}>
+                    <Grid item xs={8} md={12} lg={12} style={{ padding: 0 }}>
                       <h4
                         className='direksi'
                         style={{ margin: '1rem 0', textAlign: 'center' }}

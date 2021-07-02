@@ -29,7 +29,7 @@ const Footer = () => {
           <Grid container spacing={4}>
             <Grid item xs={12} md={6} lg={4}>
               <img src={japri} alt='japri logo' width='30%' />
-              <h4 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h4>
+              <h5 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h5>
               <p>
                 <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan Tawang
                 Kota Tasikmalaya
@@ -37,7 +37,7 @@ const Footer = () => {
             </Grid>
 
             <Grid item xs={12} md={6} lg={4}>
-              <h4 style={{ color: '#ffff' }}>Media Sosial</h4>
+              <h5 style={{ color: '#ffff' }}>Media Sosial</h5>
               <p>
                 <WhatsAppIcon /> 08992021306
               </p>

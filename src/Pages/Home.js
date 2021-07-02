@@ -6,8 +6,9 @@ import Pemberdayaan from "../Components/Pemberdayaan"
 import Capaian from "../Components/Capaian"
 import Pelanggan from "../Components/Pelanggan"
 import TanyaJawab from "../Components/TanyaJawab"
-import Testimoni from "../Components/Testimoni"
 import Masukan from "../Components/Masukan"
+import GaleriPelanggan from "../Components/GaleriPelanggan"
+import Testimoni from "../Components/Testimoni"
 
 const Home = () => {
 
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero/>
       <Produk/>
       <Keunggulan/>
+      <GaleriPelanggan/>
       <Pemberdayaan/>
       <Capaian/>
       <Pelanggan/>

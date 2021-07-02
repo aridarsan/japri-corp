@@ -73,6 +73,7 @@ const layout =
       width: isActive ? '2rem' : '.5rem',
       borderRadius: "10px",
       background: isActive ? '#0895CA' : '#4f4f4f',
+      marginTop: "2rem",
       overflow: "visible"
     }}
   ></span>
@@ -105,7 +106,6 @@ const Testimoni = (props) => {
                 Testimoni
               </span>
             </h3>
-
             <p
               style={{
                 fontFamily: 'Montserrat',
@@ -119,15 +119,15 @@ const Testimoni = (props) => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} style={{overflow: "hidden"}}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
           <Carousel cols={3} rows={1} gap={10} autoplay={2000} dot={MyDot} responsiveLayout={layout} showDots loop>
           {testi.map((card, index) => (
             <Carousel.Item key={index}>
-              <Grid item xs={6} sm={12} md={12} lg={12}>
                 <Card style={{ borderRadius: 0, border: '2px solid #0895CA', margin: "auto" }}>
                   <CardContent>
                     <Grid container spacing={2}>
-                      <Grid item xs={5} sm={6} md={3}>
+                      <Grid item xs={3} sm={2} md={3} lg={3}>
                         <img
                           style={{
                             width: '100%',
@@ -138,7 +138,7 @@ const Testimoni = (props) => {
                           className='img-testimoni'
                         />
                       </Grid>
-                      <Grid item xs={7} sm={6} md={9}>
+                      <Grid item xs={9} sm={10} md={9} lg={9}>
                         <h5>{card.nama}</h5>
                         <p style={{marginBottom: 0}}>{card.produk}</p>
                         <Rating
@@ -161,10 +161,10 @@ const Testimoni = (props) => {
                       </p>
                   </CardContent>
                 </Card>
-              </Grid>
             </Carousel.Item>
           ))}
           </Carousel>
+          </Grid>
           </Grid>
 
 

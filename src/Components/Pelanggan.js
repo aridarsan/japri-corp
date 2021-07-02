@@ -56,7 +56,7 @@ const Pelanggan = () => {
 
         <Grid container spacing={2} mt={2}>
           {customer.map((item, index) => (
-            <Grid item xs={3} md={3} lg={1} m='auto' key={index}>
+            <Grid item xs={3} md={2} lg={1} m='auto' key={index}>
               <img src={item.image} alt={item.nama} width='100%' />
             </Grid>
           ))}

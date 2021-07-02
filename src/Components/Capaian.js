@@ -54,7 +54,7 @@ const Capaian = () => {
             {capaian.map((item, index) => (
               <Grid item xs={4} md={4} lg={2} m='auto' key={index}>
                 <h2 style={{ textAlign: 'center', color: "#F7DA64", fontWeight: "700" }}>{item.jumlah}</h2>
-                <p style={{ textAlign: 'center', color: "#ffff" }}>
+                <p style={{ textAlign: 'center', color: "#ffff", margin: "0" }}>
                   {item.label}
                 </p>
               </Grid>
