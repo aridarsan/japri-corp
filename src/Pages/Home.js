@@ -16,7 +16,7 @@ import chefhimagi from "../Images/foto-testi/2.png"
 import skripsiprabayar from "../Images/foto-testi/3.png"
 import topihimagri from "../Images/foto-testi/4.png"
 import pdhbemfeb from "../Images/foto-testi/5.png"
-import printpasca from "../Images/foto-testi/6.png"
+import kaosunigal from "../Images/foto-testi/6.png"
 import printpasca2 from "../Images/foto-testi/7.png"
 import hardcover from "../Images/foto-testi/8.png"
 
@@ -64,8 +64,8 @@ const pelanggan = [
   {img: pdhbemfeb,
   name: "PDH BEM FEB"
   },
-  {img: printpasca,
-  name: "Print Pascabayar"
+  {img: kaosunigal,
+  name: "T-shirt Unigal"
   },
   {img: printpasca2,
   name: "Print Pascabayar"
