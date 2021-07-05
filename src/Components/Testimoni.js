@@ -11,73 +11,66 @@ const testi = [
   {
     src: kotak,
     nama: 'Dimas Suseno',
-    produk:
-      'Print Skripsi',
-    kata: "Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.",
-    nilai: 5
+    produk: 'Print Skripsi',
+    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+    nilai: 5,
   },
   {
     src: kotak,
     nama: 'Fuji Ardinto',
-    produk:
-      'Pesan Jaket',
-    kata: "Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.",
-    nilai: 4
+    produk: 'Pesan Jaket',
+    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+    nilai: 4,
   },
   {
     src: kotak,
     nama: 'Sinta Permata',
-    produk:
-      'Pesan PDH',
-    kata: "Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.",
-    nilai: 5
+    produk: 'Pesan PDH',
+    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+    nilai: 5,
   },
   {
     src: kotak,
     nama: 'Soni Kuncoro',
-    produk:
-      'Order Merchandise',
-    kata: "Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.",
-    nilai: 5
+    produk: 'Order Merchandise',
+    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+    nilai: 5,
   },
   {
     src: kotak,
     nama: 'Gonardi',
-    produk:
-      'Order Booklet',
-    kata: "Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.",
-    nilai: 4
+    produk: 'Order Booklet',
+    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+    nilai: 4,
   },
   {
     src: kotak,
     nama: 'Badru Zaman',
-    produk:
-      'Order Bucket',
-    kata: "Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.",
-    nilai: 5
-  }
+    produk: 'Order Bucket',
+    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+    nilai: 5,
+  },
 ];
 
-const layout = 
-  [
-    { breakpoint: 1000, cols: 2, autoplay: 2000 },
-    { breakpoint: 600, cols: 2, rows: 1, gap: 5, autoplay: 2000, loop: true  },
-    { breakpoint: 300, cols: 2, rows: 1, autoplay: 2000, loop: true }
-  ];
+const layout = [
+  { breakpoint: 1000, cols: 2, autoplay: 2000 },
+  { breakpoint: 600, cols: 2, rows: 1, gap: 5, autoplay: 2000, loop: true },
+  { breakpoint: 300, cols: 2, rows: 1, autoplay: 2000, loop: true },
+];
 
-  const MyDot = ({ isActive }) => (
+const MyDot = ({ isActive }) => (
   <span
     style={{
       display: 'inline-block',
       height: isActive ? '.5rem' : '.5rem',
       width: isActive ? '2rem' : '.5rem',
-      borderRadius: "10px",
+      borderRadius: '10px',
       background: isActive ? '#0895CA' : '#4f4f4f',
-      marginTop: "2rem",
-      overflow: "visible"
+      marginTop: '2rem',
+      overflow: 'visible',
     }}
   ></span>
-)
+);
 
 const Testimoni = (props) => {
   const history = useHistory();
@@ -121,33 +114,48 @@ const Testimoni = (props) => {
 
         <Grid container spacing={2}>
           <Grid item xs={12} sm={12} md={12} lg={12}>
-          <Carousel cols={3} rows={1} gap={10} autoplay={2000} dot={MyDot} responsiveLayout={layout} showDots loop>
-          {testi.map((card, index) => (
-            <Carousel.Item key={index}>
-                <Card style={{ borderRadius: 0, border: '2px solid #0895CA', margin: "auto" }}>
-                  <CardContent>
-                    <Grid container spacing={2}>
-                      <Grid item xs={3} sm={2} md={3} lg={3}>
-                        <img
-                          style={{
-                            width: '100%',
-                            margin: 'auto',
-                          }}
-                          src={card.src}
-                          alt='icon'
-                          className='img-testimoni'
-                        />
+            <Carousel
+              cols={3}
+              rows={1}
+              gap={10}
+              autoplay={2000}
+              dot={MyDot}
+              responsiveLayout={layout}
+              showDots
+              loop
+            >
+              {testi.map((card, index) => (
+                <Carousel.Item key={index}>
+                  <Card
+                    style={{
+                      borderRadius: 0,
+                      border: '2px solid #0895CA',
+                      margin: 'auto',
+                    }}
+                  >
+                    <CardContent>
+                      <Grid container spacing={2}>
+                        <Grid item xs={3} sm={2} md={3} lg={3}>
+                          <img
+                            style={{
+                              width: '100%',
+                              margin: 'auto',
+                            }}
+                            src={card.src}
+                            alt='icon'
+                            className='img-testimoni'
+                          />
+                        </Grid>
+                        <Grid item xs={9} sm={10} md={9} lg={9}>
+                          <h5>{card.nama}</h5>
+                          <p style={{ marginBottom: 0 }}>{card.produk}</p>
+                          <Rating
+                            name='simple-controlled'
+                            value={card.nilai}
+                            size='small'
+                          />
+                        </Grid>
                       </Grid>
-                      <Grid item xs={9} sm={10} md={9} lg={9}>
-                        <h5>{card.nama}</h5>
-                        <p style={{marginBottom: 0}}>{card.produk}</p>
-                        <Rating
-                          name='simple-controlled'
-                          value={card.nilai}
-                          size="small"
-                        />
-                      </Grid>
-                    </Grid>
 
                       <p
                         style={{
@@ -157,19 +165,19 @@ const Testimoni = (props) => {
                         }}
                         key={index}
                       >
-                        {card.kata} <FormatQuoteIcon/> 
+                        {card.kata} <FormatQuoteIcon />
                       </p>
-                  </CardContent>
-                </Card>
-            </Carousel.Item>
-          ))}
-          </Carousel>
+                    </CardContent>
+                  </Card>
+                </Carousel.Item>
+              ))}
+            </Carousel>
           </Grid>
-          </Grid>
+        </Grid>
 
-
-          <Grid container justify="center">
-          <Button  m='auto'
+        <Grid container justify='center'>
+          <Button
+            m='auto'
             variant='contained'
             style={{
               backgroundColor: '#0895CA',
@@ -177,13 +185,16 @@ const Testimoni = (props) => {
               color: '#ffffff',
               borderRadius: '0',
               fontFamily: 'Montserrat',
-              marginTop: "2rem",
-              display: props.display
-
+              marginTop: '2rem',
+              display: props.display,
             }}
             onClick={handleClick}
-            size='medium'> Lihat Lebih banyak <ChevronRightIcon/></Button>
-          </Grid>
+            size='medium'
+          >
+            {' '}
+            Lihat Lebih banyak <ChevronRightIcon />
+          </Button>
+        </Grid>
       </Container>
     </React.Fragment>
   );

@@ -67,7 +67,7 @@ const Prestasi = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} justify="center">
+        <Grid container spacing={2} justify='center'>
           {prestasi.map((item, index) => (
             <Grid item xs={6} sm={6} md={4} lg={3} key={index}>
               <img

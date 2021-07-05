@@ -67,11 +67,11 @@ const tim = [
     nama: 'Ari Darsan',
     jabatan: 'Manager DMD & Web Developer',
     foto: ari,
-    whatsapp: '/',
-    twitter: '/',
-    instagram: '/',
-    email: '/',
-    web: 'https://aridarsan.xyz',
+    whatsapp: 'https://wa.me/6281222288153',
+    twitter: 'https://www.twitter.com/darsan_ari',
+    instagram: 'https://www.instagram.com/ari_darsan/',
+    email: 'mailto:aridarsan09@gmail.com',
+    web: 'https://aridarsan.me',
   },
 ];
 
@@ -169,32 +169,24 @@ const Direksi = () => {
                 >
                   <a href={item.whatsapp}>
                     {' '}
-                    <WhatsAppIcon
-                      className="icon-direksi"
-                    />{' '}
+                    <WhatsAppIcon className='icon-direksi' />{' '}
                   </a>
                   <a href={item.instagram}>
                     {' '}
-                    <InstagramIcon
-                      className="icon-direksi"
-                    />{' '}
+                    <InstagramIcon className='icon-direksi' />{' '}
                   </a>
                   <a href={item.twitter}>
                     {' '}
-                    <Twitter
-                      className="icon-direksi"
-                    />{' '}
+                    <Twitter className='icon-direksi' />{' '}
                   </a>
                   <a href={item.email}>
                     {' '}
-                    <MailOutlineIcon
-                      className="icon-direksi"
-                    />{' '}
+                    <MailOutlineIcon className='icon-direksi' />{' '}
                   </a>
                   <a href={item.web}>
                     {' '}
                     <LanguageIcon
-                    className="icon-direksi"
+                      className='icon-direksi'
                       style={{
                         display: item.web !== '' ? '' : 'none',
                       }}

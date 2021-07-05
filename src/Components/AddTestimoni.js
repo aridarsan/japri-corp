@@ -12,17 +12,11 @@ const AddTestimoni = () => {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
-            <h3
-            className="heading3">
-              <span
-                className='borderBottom'
-              >
-                Tambah Testimoni
-              </span>
+            <h3 className='heading3'>
+              <span className='borderBottom'>Tambah Testimoni</span>
             </h3>
 
-            <p className="pjudul"
-            >
+            <p className='pjudul'>
               Katakan bagaimana pengalaman transaksi anda di Japri
             </p>
           </Grid>
@@ -36,7 +30,7 @@ const AddTestimoni = () => {
                 label='Nama'
                 variant='filled'
                 color='primary'
-                className="inputan"
+                className='inputan'
               />
               <br />
               <TextField
@@ -44,7 +38,7 @@ const AddTestimoni = () => {
                 label='Produk'
                 variant='filled'
                 color='primary'
-                className="inputan"
+                className='inputan'
               />
               <br />
               <Box component='fieldset' mb={3} borderColor='transparent'>
@@ -53,7 +47,7 @@ const AddTestimoni = () => {
                   name='simple-controlled'
                   value={value}
                   defaultValue={0}
-                  size="large"
+                  size='large'
                   onChange={(event, newValue) => {
                     setValue(newValue);
                   }}
@@ -66,7 +60,7 @@ const AddTestimoni = () => {
                 color='primary'
                 multiline
                 rows={5}
-                className="inputan"
+                className='inputan'
               />
               <br />
               <Button

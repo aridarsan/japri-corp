@@ -60,7 +60,7 @@ const Galeri = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} justify="center">
+        <Grid container spacing={2} justify='center'>
           {galeri.map((item, index) => (
             <Grid item xs={3} sm={3} md={3} lg={2} key={index}>
               <img

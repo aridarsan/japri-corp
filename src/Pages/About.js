@@ -7,11 +7,11 @@ import Direksi from '../Components/Direksi';
 const About = () => {
   return (
     <React.Fragment>
-      <div style={{margin: "5rem 0"}}>
-        <Japri/>
-        <Direksi/>
+      <div style={{ margin: '5rem 0' }}>
+        <Japri />
+        <Direksi />
         <Prestasi />
-        <Galeri/>
+        <Galeri />
       </div>
     </React.Fragment>
   );

@@ -12,7 +12,6 @@ import ReceiptIcon from '@material-ui/icons/Receipt';
 import Paper from '@material-ui/core/Paper';
 import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 import { Grid, Container } from '@material-ui/core';
-// import carapesan from '../Images/cara pesan.svg';
 
 const useStyles = makeStyles((theme) => ({
   paper: {

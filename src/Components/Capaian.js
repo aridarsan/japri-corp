@@ -38,7 +38,7 @@ const Capaian = () => {
                 fontFamily: 'Montserrat',
                 color: '#4f4f4f',
                 textAlign: 'center',
-                marginBottom: "3rem"
+                marginBottom: '3rem',
               }}
             >
               Setelah berdiri selama 5 tahun, banyak pencapaian yang telah kami
@@ -48,13 +48,21 @@ const Capaian = () => {
         </Grid>
       </Container>
 
-      <div style={{backgroundColor: "#0895CA", marginBottom: "2rem"}}>
+      <div style={{ backgroundColor: '#0895CA', marginBottom: '2rem' }}>
         <Container maxWidth='lg'>
-          <Grid container spacing={4} mt={2} >
+          <Grid container spacing={4} mt={2}>
             {capaian.map((item, index) => (
               <Grid item xs={4} md={4} lg={2} m='auto' key={index}>
-                <h2 style={{ textAlign: 'center', color: "#F7DA64", fontWeight: "700" }}>{item.jumlah}</h2>
-                <p style={{ textAlign: 'center', color: "#ffff", margin: "0" }}>
+                <h2
+                  style={{
+                    textAlign: 'center',
+                    color: '#F7DA64',
+                    fontWeight: '700',
+                  }}
+                >
+                  {item.jumlah}
+                </h2>
+                <p style={{ textAlign: 'center', color: '#ffff', margin: '0' }}>
                   {item.label}
                 </p>
               </Grid>

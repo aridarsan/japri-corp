@@ -31,8 +31,8 @@ const Footer = () => {
               <img src={japri} alt='japri logo' width='30%' />
               <h5 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h5>
               <p>
-                <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan Tawang
-                Kota Tasikmalaya
+                <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan
+                Tawang Kota Tasikmalaya
               </p>
             </Grid>
 
@@ -66,10 +66,10 @@ const Footer = () => {
       </div>
 
       <div style={{ backgroundColor: '#F7DA64' }}>
-        
         <Container maxWidth='lg'>
-          <p style={{ textAlign: 'center', padding: "1rem 0", margin: "0" }}>
-            Copyright <CopyrightOutlined/> 2021. All right reserved. Powered by Japri
+          <p style={{ textAlign: 'center', padding: '1rem 0', margin: '0' }}>
+            Copyright <CopyrightOutlined /> 2021. All right reserved. Powered by
+            Japri
           </p>
         </Container>
       </div>

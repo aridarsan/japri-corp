@@ -22,49 +22,58 @@ const tanyajawab = [
     aria: 'panel2bh-content',
     id: 'panel2bh-header',
     tanya: 'Kenapa sih di Japri ada crew ? ',
-    jawab: 'Karena kita menyedari bahwa bisnis yang baik ialah bisnis yang mampu berdampak pada lingkungan sekitar. Dengan adanya crew dari masing-masing ceruk kampus akan membantu mahasiswa untuk belajar bersama-bersama dalam berwirausaha serta dapat meningkatkan income kepada mahasiswa.',
+    jawab:
+      'Karena kita menyedari bahwa bisnis yang baik ialah bisnis yang mampu berdampak pada lingkungan sekitar. Dengan adanya crew dari masing-masing ceruk kampus akan membantu mahasiswa untuk belajar bersama-bersama dalam berwirausaha serta dapat meningkatkan income kepada mahasiswa.',
   },
   {
     panel: 'panel3',
     aria: 'panel3bh-content',
     id: 'panel3bh-header',
-    tanya: 'Japri kan bisnisnya mahasiswa, emang selain mahasiswa masih bisa order di Japri ? ',
-    jawab: 'Bisa banget dong, meskipun Japri paltform bisnisnisnya mahasiswa namun selain dari mahasiswa boleh banget order di Japri. ',
+    tanya:
+      'Japri kan bisnisnya mahasiswa, emang selain mahasiswa masih bisa order di Japri ? ',
+    jawab:
+      'Bisa banget dong, meskipun Japri paltform bisnisnisnya mahasiswa namun selain dari mahasiswa boleh banget order di Japri. ',
   },
   {
     panel: 'panel4',
     aria: 'panel4bh-content',
     id: 'panel4bh-header',
     tanya: 'Apa aja sih produk produk yang ada di Japri ? ',
-    jawab: 'Untuk saat ini ada 6 klasifikasi produk di Japri yaitu jasa konveksi sperti pembuatan baju PDH, PDL, jaket, T-shirt, polo dsb, kemudian ada jasa printing yaitu mencetak dokumen tugas-tugas mata kuliah mahasiswa sperti jurnal, artikel ilmiah, makalah, draft porposal, draft skripsi, hard cover skripsi dsb, yang selanjutnya ada jasa percetakan seperti banner, stiker, ganci dsb, yang selanjutnya ada jasa penyedia buku referensi mata kuliah dari berbagai jurusan, selanjutnya jasa pembuatan gift wisuda seperti selempang dan bucket dan yang terakhir adalah jasa sevice software laptop.  ',
+    jawab:
+      'Untuk saat ini ada 6 klasifikasi produk di Japri yaitu jasa konveksi sperti pembuatan baju PDH, PDL, jaket, T-shirt, polo dsb, kemudian ada jasa printing yaitu mencetak dokumen tugas-tugas mata kuliah mahasiswa sperti jurnal, artikel ilmiah, makalah, draft porposal, draft skripsi, hard cover skripsi dsb, yang selanjutnya ada jasa percetakan seperti banner, stiker, ganci dsb, yang selanjutnya ada jasa penyedia buku referensi mata kuliah dari berbagai jurusan, selanjutnya jasa pembuatan gift wisuda seperti selempang dan bucket dan yang terakhir adalah jasa sevice software laptop.  ',
   },
   {
     panel: 'panel5',
     aria: 'panel5bh-content',
     id: 'panel5bh-header',
-    tanya: 'Kalau ada kesalahan proses produksi, apakah Japri akan bertanggung jawab ? ',
-    jawab: 'jika kesalahan tersebut dari pihak Japri, maka kami akan bertanggung jawab 100%.',
+    tanya:
+      'Kalau ada kesalahan proses produksi, apakah Japri akan bertanggung jawab ? ',
+    jawab:
+      'jika kesalahan tersebut dari pihak Japri, maka kami akan bertanggung jawab 100%.',
   },
   {
     panel: 'panel6',
     aria: 'panel6bh-content',
     id: 'panel6bh-header',
     tanya: 'Ribet gak sih kalau order produk di Japri ? ',
-    jawab: 'ngga ribet kok, simpel banget kamu tinggal hubungi kontak person Japri menanyakan produk yang dimaksud, terus menunggu proses produksi, melakukan pembayaran bisa dengan tunai maupun nontonai dan yang terakhir pengiriman produk. ',
+    jawab:
+      'ngga ribet kok, simpel banget kamu tinggal hubungi kontak person Japri menanyakan produk yang dimaksud, terus menunggu proses produksi, melakukan pembayaran bisa dengan tunai maupun nontonai dan yang terakhir pengiriman produk. ',
   },
   {
     panel: 'panel7',
     aria: 'panel7bh-content',
     id: 'panel7bh-header',
     tanya: 'Dimana alamat lengkap Japri, jauh gak sih ?',
-    jawab: 'Deket banget sama Kampus Unsil lebih tepatnya di Lokasi : Jl. Siliwangi, Gn. Macan 2, Kostan Pulau Biru, Kota Tasikmalaya',
+    jawab:
+      'Deket banget sama Kampus Unsil lebih tepatnya di Lokasi : Jl. Siliwangi, Gn. Macan 2, Kostan Pulau Biru, Kota Tasikmalaya',
   },
   {
     panel: 'panel8',
     aria: 'panel8bh-content',
     id: 'panel8bh-header',
     tanya: 'Kenapa sih aku harus order di Japri ? ',
-    jawab: '1. Fast Respon dalam melayani 2. Customer Kualitas produk terbaik 3. Banyak berbagai promosi produk Harga produk sangat bersahabat dengan customer 4.Bertanggung jawab apabila terjadi kesalahan dari pihak Japri Kecepatan dalam proses produksi dan Menyediakan jasa design untuk memudahkan konsumen',
+    jawab:
+      '1. Fast Respon dalam melayani 2. Customer Kualitas produk terbaik 3. Banyak berbagai promosi produk Harga produk sangat bersahabat dengan customer 4.Bertanggung jawab apabila terjadi kesalahan dari pihak Japri Kecepatan dalam proses produksi dan Menyediakan jasa design untuk memudahkan konsumen',
   },
   {
     panel: 'panel9',
@@ -78,16 +87,17 @@ const tanyajawab = [
     aria: 'panel10bh-content',
     id: 'panel10bh-header',
     tanya: 'Apakah Japri sudah punya aplikasi ? ',
-    jawab: 'Untuk saat ini Japri sedang mengembangkan platform aplikasi yang sesuai dengan kebutuhan Japri dan pelanggan Japri, jadi doain aja ya ngga lama lagi isnyaAlloh Japri akan lunching aplikasi.',
+    jawab:
+      'Untuk saat ini Japri sedang mengembangkan platform aplikasi yang sesuai dengan kebutuhan Japri dan pelanggan Japri, jadi doain aja ya ngga lama lagi isnyaAlloh Japri akan lunching aplikasi.',
   },
   {
     panel: 'panel11',
     aria: 'panel11bh-content',
     id: 'pane11bh-header',
     tanya: 'Apa sih yang membedakan Japri dengan bisnis sejenis yang lain ? ',
-    jawab: 'Kualitas produksi yang terbaik, banyak promosi atau discount, nggak usah antri dan ribet di pesaing konvensional, pengerjaan produksi yang cepat, Japri memiliki sales force crew untuk memudahkan proses marketing. ',
+    jawab:
+      'Kualitas produksi yang terbaik, banyak promosi atau discount, nggak usah antri dan ribet di pesaing konvensional, pengerjaan produksi yang cepat, Japri memiliki sales force crew untuk memudahkan proses marketing. ',
   },
-
 ];
 
 export default function TanyaJawab() {
