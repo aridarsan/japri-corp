@@ -13,29 +13,15 @@ const AddTestimoni = () => {
         <Grid container>
           <Grid item xs={12}>
             <h3
-              style={{
-                margin: '3rem 0 2rem 0',
-                fontWeight: '700',
-                fontFamily: 'Montserrat',
-                color: '#0895CA',
-                textAlign: 'center',
-              }}
-            >
+            className="heading3">
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Tambah Testimoni
               </span>
             </h3>
 
-            <p
-              style={{
-                fontFamily: 'Montserrat',
-                color: '#4f4f4f',
-                textAlign: 'center',
-                marginBottom: '3rem',
-              }}
+            <p className="pjudul"
             >
               Katakan bagaimana pengalaman transaksi anda di Japri
             </p>
@@ -50,7 +36,7 @@ const AddTestimoni = () => {
                 label='Nama'
                 variant='filled'
                 color='primary'
-                style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
+                className="inputan"
               />
               <br />
               <TextField
@@ -58,7 +44,7 @@ const AddTestimoni = () => {
                 label='Produk'
                 variant='filled'
                 color='primary'
-                style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
+                className="inputan"
               />
               <br />
               <Box component='fieldset' mb={3} borderColor='transparent'>
@@ -80,7 +66,7 @@ const AddTestimoni = () => {
                 color='primary'
                 multiline
                 rows={5}
-                style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
+                className="inputan"
               />
               <br />
               <Button

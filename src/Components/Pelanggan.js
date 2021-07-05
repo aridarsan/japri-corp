@@ -1,23 +1,14 @@
 import React from 'react';
-import { Grid, Container } from '@material-ui/core';
-import japri from '../Images/kotak.svg';
+import { Grid, Container, Button } from '@material-ui/core';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import { useHistory } from 'react-router-dom';
 
-const customer = [
-  { image: japri, nama: 'Pelanggan Mahasiswa' },
-  { image: japri, nama: 'Pelanggan Organisasi' },
-  { image: japri, nama: 'Buku Dipesan' },
-  { image: japri, nama: 'Transaksi Perminggu' },
-  { image: japri, nama: 'PDH Dibuat Pertahun' },
-  { image: japri, nama: 'Skrips Dicetak' },
-  { image: japri, nama: 'Pelanggan Mahasiswa' },
-  { image: japri, nama: 'Pelanggan Organisasi' },
-  { image: japri, nama: 'Buku Dipesan' },
-  { image: japri, nama: 'Transaksi Perminggu' },
-  { image: japri, nama: 'PDH Dibuat Pertahun' },
-  { image: japri, nama: 'Skrips Dicetak' },
-];
+const Pelanggan = (props) => {
+    const history = useHistory();
 
-const Pelanggan = () => {
+  function handleClick() {
+    history.push('/pelanggan');
+  }
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -55,12 +46,29 @@ const Pelanggan = () => {
         </Grid>
 
         <Grid container spacing={2} mt={2}>
-          {customer.map((item, index) => (
+          {props.customer.map((item, index) => (
             <Grid item xs={3} md={2} lg={1} m='auto' key={index}>
               <img src={item.image} alt={item.nama} width='100%' />
+              <p style={{textAlign: "center", fontSize: ".8rem", marginTop: ".5rem",marginBottom: 0, fontWeight:"600"}}>{item.nama}</p>
             </Grid>
           ))}
         </Grid>
+
+        <Grid container justify="center">
+          <Button  m='auto'
+            variant='contained'
+            style={{
+              backgroundColor: '#0895CA',
+              fontWeight: '600',
+              color: '#ffffff',
+              borderRadius: '0',
+              fontFamily: 'Montserrat',
+              display: props.display
+
+            }}
+            onClick={handleClick}
+            size='medium'> Lihat Lebih banyak <ChevronRightIcon/></Button>
+          </Grid>
       </Container>
     </React.Fragment>
   );

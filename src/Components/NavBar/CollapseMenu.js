@@ -13,7 +13,7 @@ const CollapseWrapper = styled(animated.div)`
   left: 0;
   right: 0;
   z-index: 1300;
-  box-shadow: 0 5px 10px -10px black;
+  box-shadow: 0 8px 10px -10px black;
 `;
 
 const NavLinks = styled.ul`
@@ -38,6 +38,11 @@ const NavLinks = styled.ul`
       border-bottom: 1px solid #fdcb6e;
     }
   }
+`;
+
+const Hr = styled.hr`
+  margin: 0px 2rem 0 0;
+  color: #ffffff;
 `;
 
 const CollapseMenu = (props) => {
@@ -68,7 +73,7 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr />
           <li>
             <Link to='/' onClick={props.handleNavbar}>
               <div>
@@ -76,7 +81,7 @@ const CollapseMenu = (props) => {
               </div>
             </Link>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr/>
           <li>
             <NavLink
               to='/cara-pesan'
@@ -88,7 +93,7 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr />
           <li>
             <NavLink
               to='/about'
@@ -100,7 +105,7 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr />
           <li>
             <NavLink
               to='/testimoni'
@@ -112,7 +117,7 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr/>
           <li>
             <a href='https://wa.me/628992021306' onClick={props.handleNavbar}>
               <div>
@@ -122,7 +127,7 @@ const CollapseMenu = (props) => {
               </div>
             </a>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr/>
           <li>
             <a
               href='https://www.instagram.com/japricorp/'
@@ -135,7 +140,7 @@ const CollapseMenu = (props) => {
               </div>
             </a>
           </li>
-          <hr style={{ margin: '0px 2rem 0 0', color: '#ffffff' }} />
+          <Hr/>
           <li>
             <a
               href='mailto:japri.corporation@gmail.com'

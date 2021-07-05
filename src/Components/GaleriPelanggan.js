@@ -3,21 +3,18 @@ import { Grid, Container, Button} from '@material-ui/core';
 import Carousel from 'react-grid-carousel';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { useHistory } from 'react-router-dom';
-import desain from '../Images/kotak.svg';
 
-const pelanggan = [desain, desain, desain, desain, desain, desain, desain, desain]
-
-  const MyDot = ({ isActive }) => (
-  <span
-    style={{
-      display: 'inline-block',
-      height: isActive ? '.5rem' : '.5rem',
-      width: isActive ? '2rem' : '.5rem',
-      borderRadius: "10px",
-      background: isActive ? '#0895CA' : '#4f4f4f',
-      overflow: "visible",
-      marginTop: "2rem"
-    }}
+const MyDot = ({ isActive }) => (
+<span
+  style={{
+    display: 'inline-block',
+    height: isActive ? '.5rem' : '.5rem',
+    width: isActive ? '2rem' : '.5rem',
+    borderRadius: "10px",
+    background: isActive ? '#0895CA' : '#4f4f4f',
+    overflow: "visible",
+    marginTop: "2rem"
+  }}
   ></span>
 )
 
@@ -25,7 +22,7 @@ const GaleriPelanggan = (props) => {
   const history = useHistory();
 
   function handleClick() {
-    history.push('/');
+    history.push('/galeri-pelanggan');
   }
   return (
     <React.Fragment>
@@ -64,15 +61,15 @@ const GaleriPelanggan = (props) => {
         <Grid container spacing={2}>
         <Grid item xs={12}>
           <Carousel cols={4} rows={1} gap={10} autoplay={2000} dot={MyDot} showDots loop>
-            {pelanggan.map((item, index) => (
-            <Carousel.Item  key={index}>
-              <img src={item} width='100%' alt="pelanggan"/>
+            {props.foto.map((item, index) => (
+            <Carousel.Item key={index}>
+              <img className="imgpelanggan" src={item.img} width='100%' alt="pelanggan"/>
+              <div className="overlay">{item.name}</div>
             </Carousel.Item>
               ))}
           </Carousel>
           </Grid>
           </Grid>
-
 
           <Grid container justify="center">
           <Button  m='auto'

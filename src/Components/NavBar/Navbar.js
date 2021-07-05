@@ -18,7 +18,7 @@ left: 0;
 background: #0895CA;
 z-index: 100;
 font-size: 1rem;
-box-shadow: 0 12px 10px -10px #0895CA;
+box-shadow: 0 0 40px rgb(0 0 0 / 10%);
 `;
 
 const FlexContainer = styled.div`
