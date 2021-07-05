@@ -6,6 +6,7 @@ import GlobalStyle from "./Styles/Global"
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Testimonis from "./Pages/Testimonis"
+import Pelanggans from "./Pages/Pelanggans"
 import GaleriPel from "./Pages/GaleriPel"
 import Footer from "./Components/Footer"
 import CaraPesan from "./Components/CaraPesan"
@@ -37,6 +38,10 @@ function App() {
 
         <Route path='/about'>
           <About/>
+        </Route>
+
+        <Route path='/pelanggan'>
+          <Pelanggans/>
         </Route>
 
         <Route path='/galeri-pelanggan'>
