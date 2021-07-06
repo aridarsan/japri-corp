@@ -119,7 +119,7 @@ const CollapseMenu = (props) => {
           </li>
           <Hr/>
           <li>
-            <a href='https://wa.me/628992021306' onClick={props.handleNavbar}>
+            <a href='https://wa.me/628992021306' onClick={props.handleNavbar} target="_blank" rel="noreferrer">
               <div>
                 <p>
                   <WhatsAppIcon /> 08992021306
@@ -131,7 +131,7 @@ const CollapseMenu = (props) => {
           <li>
             <a
               href='https://www.instagram.com/japricorp/'
-              onClick={props.handleNavbar}
+              onClick={props.handleNavbar} target="_blank" rel="noreferrer"
             >
               <div>
                 <p>
@@ -144,7 +144,7 @@ const CollapseMenu = (props) => {
           <li>
             <a
               href='mailto:japri.corporation@gmail.com'
-              onClick={props.handleNavbar}
+              onClick={props.handleNavbar} target="_blank" rel="noreferrer"
             >
               <div>
                 <p>

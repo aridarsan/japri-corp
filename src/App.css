@@ -27,6 +27,11 @@ a{
   margin: 0.5rem 1rem;
 }
 
+.icon-direksi:hover {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
 .img-testimoni{
   border-radius: 100%;
 }
@@ -73,6 +78,20 @@ a{
   z-index: 1000;
 }
 
+.footer-div:hover{
+  opacity: .8;
+  color:  var(--secondary) ;
+}
+
+.footer-img{
+  opacity: .8;
+}
+
+.footer-img:hover{
+  opacity: 1;
+  transition: .5s ease-in;
+  filter: grayscale(0%);
+}
 
 /*Mobile*/
 @media (max-width: 600px) {
@@ -130,6 +149,7 @@ a{
   }
   .overlay{
     width: 87.5%;
+    overflow: hidden;
   }
 }
 

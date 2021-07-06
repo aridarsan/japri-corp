@@ -3,6 +3,33 @@ import { Grid, Container, TextField, Button } from '@material-ui/core';
 import masukan from '../Images/masukan.svg';
 
 const Masukan = () => {
+  const [nama, setNama] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [pesan, setPesan] = React.useState("");
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwJXS-nAnD-OZWdCH0UY7OQt6DyfhRi_xTeR9EWg9JbBidDXRjfqtwy2dOhNmA9E1XW/exec'
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const data = {
+      nama: nama,
+      email: email,
+      pesan: pesan
+    }
+
+    const headers = {
+      method: 'POST',
+      body: JSON.stringify(data)
+    }
+
+    console.log(headers)
+    fetch(scriptURL, headers)
+      .then(response => {
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
+  }
+
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -45,24 +72,31 @@ const Masukan = () => {
           </Grid>
 
           <Grid item xs={12} md={6} lg={6}>
-            <form noValidate autoComplete='off'>
+            <form onSubmit={handleSubmit} noValidate autoComplete='off'>
               <TextField
+                name='nama'
                 id='nama'
                 label='Nama'
                 variant='filled'
                 color='primary'
                 style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
+                onChange={(e)=> setNama(e.target.value)}
+                required
               />
               <br />
               <TextField
+                name='email'
                 id='email'
                 label='Email'
                 variant='filled'
                 color='primary'
                 style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
+                onChange={(e)=> setEmail(e.target.value)}
+                required
               />
               <br />
               <TextField
+                name= "pesan"
                 id='pesan'
                 label='Pesan'
                 variant='filled'
@@ -70,6 +104,8 @@ const Masukan = () => {
                 multiline
                 rows={5}
                 style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
+                onChange={(e)=> setPesan(e.target.value)}
+                required
               />
               <br />
               <Button
@@ -83,6 +119,7 @@ const Masukan = () => {
                   fontFamily: 'Montserrat',
                   marginTop: '2rem',
                 }}
+                type="submit"
               >
                 Kirim Pesan
               </Button>

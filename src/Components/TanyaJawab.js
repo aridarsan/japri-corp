@@ -157,10 +157,10 @@ export default function TanyaJawab() {
                   aria-controls={item.aria}
                   id={item.id}
                 >
-                  <p style={{ margin: 0 }}>{item.tanya}</p>
+                  <h6 style={{ margin: 0, lineHeight: "1.5" }}>{item.tanya}</h6>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <small style={{ margin: 0 }}>{item.jawab}</small>
+                  <p style={{ margin: 0 }}>{item.jawab}</p>
                 </AccordionDetails>
               </Accordion>
             ))}

@@ -1,25 +1,30 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
-import desain from '../Images/kotak.svg';
+import galeri1 from "../Images/galeri/galeri1.png"
+import galeri2 from "../Images/galeri/galeri2.png"
+import galeri3 from "../Images/galeri/galeri3.png"
+import galeri4 from "../Images/galeri/galeri4.png"
+import galeri5 from "../Images/galeri/galeri5.png"
+import galeri6 from "../Images/galeri/galeri6.png"
 
 const galeri = [
   {
-    image: desain,
+    image: galeri1,
   },
   {
-    image: desain,
+    image: galeri2,
   },
   {
-    image: desain,
+    image: galeri3,
   },
   {
-    image: desain,
+    image: galeri4,
   },
   {
-    image: desain,
+    image: galeri5,
   },
   {
-    image: desain,
+    image: galeri6,
   },
 ];
 

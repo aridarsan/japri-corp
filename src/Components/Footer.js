@@ -30,23 +30,43 @@ const Footer = () => {
             <Grid item xs={12} md={6} lg={4}>
               <img src={japri} alt='japri logo' width='30%' />
               <h5 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h5>
-              <p>
-                <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan
-                Tawang Kota Tasikmalaya
-              </p>
+              <a href="https://goo.gl/maps/SAm6i6vMKKK5Au9y8" target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}} alt="maps">
+                <div className="footer-div">
+                  <p>
+                    <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan
+                    Tawang Kota Tasikmalaya
+                  </p>
+                </div>
+              </a>
             </Grid>
 
             <Grid item xs={12} md={6} lg={4}>
               <h5 style={{ color: '#ffff' }}>Media Sosial</h5>
-              <p>
-                <WhatsAppIcon /> 08992021306
-              </p>
-              <p>
-                <InstagramIcon /> japricorp
-              </p>
-              <p>
-                <MailOutlineIcon /> japri.corporation@gmail.com
-              </p>
+
+              <a href='https://wa.me/628992021306' target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}}>
+                <div className="footer-div">
+                  <p>
+                    <WhatsAppIcon /> 08992021306
+                  </p>
+                </div>
+              </a>
+            <a
+              href='https://www.instagram.com/japricorp/' target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}}>
+              <div className="footer-div">
+                <p>
+                  <InstagramIcon /> japricorp
+                </p>
+              </div>
+            </a>
+            <a
+              href='mailto:japri.corporation@gmail.com'  target="_blank" rel="noreferrer"style={{color: "#ffff", textDecoration: "none"}}
+            >
+              <div className="footer-div">
+                <p>
+                  <MailOutlineIcon /> japri.corporation@gmail.com
+                </p>
+              </div>
+            </a>
             </Grid>
 
             <Grid item xs={12} md={6} lg={4}>
@@ -55,7 +75,7 @@ const Footer = () => {
                 {produk.map((item, index) => (
                   <Grid item xs={3} md={3} lg={3} key={index}>
                     <a href='#produk'>
-                      <img src={item} alt='produk' width='100%' />
+                      <img src={item} alt='produk' width='100%' className="footer-img" />
                     </a>
                   </Grid>
                 ))}

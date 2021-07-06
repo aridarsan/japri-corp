@@ -124,7 +124,7 @@ const Produk = () => {
                         }}
                         src={card.src}
                         alt='icon'
-                        className='img-latbel'
+                        className='img-produk'
                       />
                     </Grid>
                     <Grid item xs={12} sm={9} md={9}>
@@ -175,6 +175,7 @@ const Produk = () => {
                       <a
                         href='https://wa.me/628992021306'
                         style={{ textDecoration: 'none' }}
+                        target="_blank" rel="noreferrer"
                       >
                         <Button
                           m='auto'

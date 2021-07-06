@@ -4,7 +4,6 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
-import { Twitter } from '@material-ui/icons';
 import wanda from '../Images/direksi/wanda.png';
 import roni from '../Images/direksi/roni.png';
 import reza from '../Images/direksi/reza.png';
@@ -17,50 +16,46 @@ const tim = [
     nama: 'Wanda Lugina',
     jabatan: 'Chief Executive Officer',
     foto: wanda,
-    whatsapp: '/',
-    twitter: '/',
-    instagram: '/',
-    email: '/',
+    whatsapp: 'https://wa.me/6282216017320',
+    instagram: 'https://www.instagram.com/wandalugina/',
+    email: 'mailto:wandalugina@gmail.com',
     web: '',
   },
   {
     nama: 'Roni Iskandar',
     jabatan: 'Chief Financial Officer',
     foto: roni,
-    whatsapp: '/',
-    twitter: '/',
-    instagram: '/',
-    email: '/',
+    whatsapp: 'https://wa.me/6281222651518',
+    instagram: 'https://www.instagram.com/roni_iskan/',
+    email: 'mailto:roniiskan0409@gmail.com',
     web: '',
   },
   {
     nama: 'M Reza Maulana A',
     jabatan: 'Chief Operational Officer',
     foto: reza,
-    whatsapp: '/',
-    twitter: '/',
-    instagram: '/',
-    email: '/',
+    whatsapp: 'https://wa.me/6285720705717',
+    instagram: 'https://www.instagram.com/rezamaulard/',
+    email: 'mailto:rezamaulana1327.rm@gmail.com',
     web: '',
   },
   {
     nama: 'Ade Rohimat',
     jabatan: 'Chief Marketing Officer',
     foto: ade,
-    whatsapp: '/',
-    twitter: '/',
-    instagram: '/',
-    email: '/',
+    whatsapp: 'https://wa.me/6287773148887',
+    twitter: 'https://www.twitter.com/darsan_ari',
+    instagram: 'https://www.instagram.com/ari_darsan/',
+    email: 'mailto:aderohimat163@gmail.com',
     web: '',
   },
   {
     nama: 'Muchamad Ahmad M',
     jabatan: 'Chief Technology Officer',
     foto: ahmad,
-    whatsapp: '/',
-    twitter: '/',
-    instagram: '/',
-    email: '/',
+    whatsapp: 'https://wa.me/6285770002426',
+    instagram: 'https://www.instagram.com/mucheahmad/',
+    email: 'mailto:@gmail.com',
     web: '',
   },
   {
@@ -68,7 +63,6 @@ const tim = [
     jabatan: 'Manager DMD & Web Developer',
     foto: ari,
     whatsapp: 'https://wa.me/6281222288153',
-    twitter: 'https://www.twitter.com/darsan_ari',
     instagram: 'https://www.instagram.com/ari_darsan/',
     email: 'mailto:aridarsan09@gmail.com',
     web: 'https://aridarsan.me',
@@ -113,7 +107,7 @@ const Direksi = () => {
 
         <Grid container spacing={2}>
           {tim.map((item, index) => (
-            <Grid item xs={12} sm={12} md={6} lg={4} key={index}>
+            <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
               <Card
                 style={{
                   padding: '2rem',
@@ -167,23 +161,19 @@ const Direksi = () => {
                     textAlign: 'center',
                   }}
                 >
-                  <a href={item.whatsapp}>
+                  <a href={item.whatsapp} target="_blank" rel="noreferrer">
                     {' '}
                     <WhatsAppIcon className='icon-direksi' />{' '}
                   </a>
-                  <a href={item.instagram}>
+                  <a href={item.instagram} target="_blank" rel="noreferrer">
                     {' '}
                     <InstagramIcon className='icon-direksi' />{' '}
                   </a>
-                  <a href={item.twitter}>
-                    {' '}
-                    <Twitter className='icon-direksi' />{' '}
-                  </a>
-                  <a href={item.email}>
+                  <a href={item.email} target="_blank" rel="noreferrer">
                     {' '}
                     <MailOutlineIcon className='icon-direksi' />{' '}
                   </a>
-                  <a href={item.web}>
+                  <a href={item.web} target="_blank" rel="noreferrer">
                     {' '}
                     <LanguageIcon
                       className='icon-direksi'

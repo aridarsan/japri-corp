@@ -150,9 +150,10 @@ const Testimoni = (props) => {
                           <h5>{card.nama}</h5>
                           <p style={{ marginBottom: 0 }}>{card.produk}</p>
                           <Rating
-                            name='simple-controlled'
+                            name="read-only"
                             value={card.nilai}
                             size='small'
+                            readOnly
                           />
                         </Grid>
                       </Grid>
@@ -188,8 +189,8 @@ const Testimoni = (props) => {
               marginTop: '2rem',
               display: props.display,
             }}
-            onClick={handleClick}
-            size='medium'
+            
+            size='medium'onClick={handleClick}
           >
             {' '}
             Lihat Lebih banyak <ChevronRightIcon />

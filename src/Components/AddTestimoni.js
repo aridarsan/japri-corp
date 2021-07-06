@@ -6,7 +6,15 @@ import Box from '@material-ui/core/Box';
 import testimoni from '../Images/testimoni.svg';
 
 const AddTestimoni = () => {
+  const [nama, setNama] = React.useState("");
+  const [produk, setProduk] = React.useState("");
   const [value, setValue] = React.useState(0);
+  const [pesan, setPesan] = React.useState("");
+
+  const handleAdd=(e)=> {
+    e.preventDefault();
+    console.log(nama, produk, value, pesan)
+  }
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -27,40 +35,42 @@ const AddTestimoni = () => {
             <form noValidate autoComplete='off'>
               <TextField
                 id='nama'
-                label='Nama'
+                label='nama'
                 variant='filled'
                 color='primary'
                 className='inputan'
+                onChange={(e)=> setNama(e.target.value)}
               />
               <br />
               <TextField
                 id='produk'
-                label='Produk'
+                label='produk'
                 variant='filled'
                 color='primary'
                 className='inputan'
+                onChange={(e)=> setProduk(e.target.value)}
               />
               <br />
               <Box component='fieldset' mb={3} borderColor='transparent'>
                 <Typography component='legend'>Nilai</Typography>
                 <Rating
-                  name='simple-controlled'
+                  name="simple-controlled"
                   value={value}
-                  defaultValue={0}
-                  size='large'
                   onChange={(event, newValue) => {
                     setValue(newValue);
                   }}
+                  size="large"
                 />
               </Box>
               <TextField
                 id='pesan'
-                label='Pesan'
+                label='pesan'
                 variant='filled'
                 color='primary'
                 multiline
                 rows={5}
                 className='inputan'
+                onChange={(e)=> setPesan(e.target.value)}
               />
               <br />
               <Button
@@ -74,6 +84,8 @@ const AddTestimoni = () => {
                   fontFamily: 'Montserrat',
                   marginTop: '2rem',
                 }}
+                onClick={handleAdd}
+                type="submit"
               >
                 Kirim Pesan
               </Button>

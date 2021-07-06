@@ -1,33 +1,36 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
-import desain from '../Images/kotak.svg';
 import { LocationOnOutlined } from '@material-ui/icons';
+import prestasi1 from '../Images/prestasi/prestasi1.png';
+import prestasi2 from '../Images/prestasi/prestasi2.png';
+import prestasi3 from '../Images/prestasi/prestasi3.png';
+import prestasi4 from '../Images/prestasi/prestasi4.png';
 
 const prestasi = [
   {
-    image: desain,
+    image: prestasi1,
     peringkat: 'Peringkat Pertama',
-    nama: 'Lomba bussiness plan',
-    di: 'Universitas Siliwangi',
+    nama: 'Lomba Bisnis Plan Tingkat Nasional',
+    di: 'TEMILNAS, Medan (2018)',
   },
   {
-    image: desain,
-    peringkat: 'Peringkat Pertama',
-    nama: 'Lomba bussiness plan',
-    di: 'Universitas Siliwangi',
+    image: prestasi4,
+    peringkat: 'Juara Dua',
+    nama: 'Lomba Bisnis Plan Tingkat Nasional',
+    di: 'UGM, Yogyakarta (2019)',
   },
   {
-    image: desain,
-    peringkat: 'Peringkat Pertama',
-    nama: 'Lomba bussiness plan',
-    di: 'Universitas Siliwangi',
+    image: prestasi3,
+    peringkat: 'Juara Tiga',
+    nama: 'Lomba Bisnis Plan Tingkat Nasional',
+    di: 'Telmireg, Kuningan (2017)',
   },
   {
-    image: desain,
-    peringkat: 'Peringkat Pertama',
-    nama: 'Lomba bussiness plan',
-    di: 'Universitas Siliwangi',
-  },
+    image: prestasi2,
+    peringkat: 'Juara Usaha Terfavorit',
+    nama: 'Lomba Bisnis Plan Tingkat Nasional',
+    di: 'Universitas Siliwangi (2018)',
+  }
 ];
 
 const Prestasi = () => {
