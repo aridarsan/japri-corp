@@ -1,56 +1,56 @@
 import React from 'react';
 import { Grid, Container, Button, Card, CardContent } from '@material-ui/core';
 import Carousel from 'react-grid-carousel';
-import kotak from '../Images/kotak.svg';
+// import kotak from '../Images/kotak.svg';
 import Rating from '@material-ui/lab/Rating';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import { useHistory } from 'react-router-dom';
 
-const testi = [
-  {
-    src: kotak,
-    nama: 'Dimas Suseno',
-    produk: 'Print Skripsi',
-    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-    nilai: 5,
-  },
-  {
-    src: kotak,
-    nama: 'Fuji Ardinto',
-    produk: 'Pesan Jaket',
-    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-    nilai: 4,
-  },
-  {
-    src: kotak,
-    nama: 'Sinta Permata',
-    produk: 'Pesan PDH',
-    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-    nilai: 5,
-  },
-  {
-    src: kotak,
-    nama: 'Soni Kuncoro',
-    produk: 'Order Merchandise',
-    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-    nilai: 5,
-  },
-  {
-    src: kotak,
-    nama: 'Gonardi',
-    produk: 'Order Booklet',
-    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-    nilai: 4,
-  },
-  {
-    src: kotak,
-    nama: 'Badru Zaman',
-    produk: 'Order Bucket',
-    kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-    nilai: 5,
-  },
-];
+// const testi = [
+//   {
+//     src: kotak,
+//     nama: 'Dimas Suseno',
+//     produk: 'Print Skripsi',
+//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+//     nilai: 5,
+//   },
+//   {
+//     src: kotak,
+//     nama: 'Fuji Ardinto',
+//     produk: 'Pesan Jaket',
+//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+//     nilai: 4,
+//   },
+//   {
+//     src: kotak,
+//     nama: 'Sinta Permata',
+//     produk: 'Pesan PDH',
+//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+//     nilai: 5,
+//   },
+//   {
+//     src: kotak,
+//     nama: 'Soni Kuncoro',
+//     produk: 'Order Merchandise',
+//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+//     nilai: 5,
+//   },
+//   {
+//     src: kotak,
+//     nama: 'Gonardi',
+//     produk: 'Order Booklet',
+//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+//     nilai: 4,
+//   },
+//   {
+//     src: kotak,
+//     nama: 'Badru Zaman',
+//     produk: 'Order Bucket',
+//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
+//     nilai: 5,
+//   },
+// ];
 
 const layout = [
   { breakpoint: 1000, cols: 2, autoplay: 2000 },
@@ -74,10 +74,10 @@ const MyDot = ({ isActive }) => (
 
 const Testimoni = (props) => {
   const history = useHistory();
-
   function handleClick() {
     history.push('/testimoni');
   }
+
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -124,7 +124,7 @@ const Testimoni = (props) => {
               showDots
               loop
             >
-              {testi.map((card, index) => (
+              {props.testi !== '' ? (props.testi.map((card, index) => (
                 <Carousel.Item key={index}>
                   <Card
                     style={{
@@ -141,7 +141,7 @@ const Testimoni = (props) => {
                               width: '100%',
                               margin: 'auto',
                             }}
-                            src={card.src}
+                            src={card.avatar}
                             alt='icon'
                             className='img-testimoni'
                           />
@@ -150,7 +150,7 @@ const Testimoni = (props) => {
                           <h5>{card.nama}</h5>
                           <p style={{ marginBottom: 0 }}>{card.produk}</p>
                           <Rating
-                            name="read-only"
+                            name='read-only'
                             value={card.nilai}
                             size='small'
                             readOnly
@@ -166,12 +166,12 @@ const Testimoni = (props) => {
                         }}
                         key={index}
                       >
-                        {card.kata} <FormatQuoteIcon />
+                        {card.pesan} <FormatQuoteIcon />
                       </p>
                     </CardContent>
                   </Card>
                 </Carousel.Item>
-              ))}
+              ))) : (<h1> Loading..... </h1>)}
             </Carousel>
           </Grid>
         </Grid>
@@ -189,8 +189,8 @@ const Testimoni = (props) => {
               marginTop: '2rem',
               display: props.display,
             }}
-            
-            size='medium'onClick={handleClick}
+            size='medium'
+            onClick={handleClick}
           >
             {' '}
             Lihat Lebih banyak <ChevronRightIcon />

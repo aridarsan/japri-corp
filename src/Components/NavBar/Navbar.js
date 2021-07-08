@@ -83,7 +83,7 @@ const Navbar = (props) => {
           <Brand />
           <NavLinks style={linkAnimation}>
           <a href='/'></a>
-            <NavLink exact to='/' activeClassName="active">Home</NavLink>
+            <NavLink exact to='/' activeClassName="active">Beranda</NavLink>
             <Link to='/'>Produk</Link>
             <NavLink to='/cara-pesan' activeClassName="active">Cara Pesan</NavLink>
             <NavLink to='/about' activeClassName="active">Tentang Japri</NavLink>

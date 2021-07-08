@@ -30,9 +30,9 @@ const NavLinks = styled.ul`
     color: #ffff;
     text-decoration: none;
     cursor: pointer;
-  & p {
-    margin: 1rem;
-  }
+    & p {
+      margin: 1rem;
+    }
     & :hover {
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
@@ -69,7 +69,7 @@ const CollapseMenu = (props) => {
               onClick={props.handleNavbar}
             >
               <div>
-                <p>Home</p>
+                <p>Beranda</p>
               </div>
             </NavLink>
           </li>
@@ -81,7 +81,7 @@ const CollapseMenu = (props) => {
               </div>
             </Link>
           </li>
-          <Hr/>
+          <Hr />
           <li>
             <NavLink
               to='/cara-pesan'
@@ -117,9 +117,14 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <Hr/>
+          <Hr />
           <li>
-            <a href='https://wa.me/628992021306' onClick={props.handleNavbar} target="_blank" rel="noreferrer">
+            <a
+              href='https://wa.me/628992021306'
+              onClick={props.handleNavbar}
+              target='_blank'
+              rel='noreferrer'
+            >
               <div>
                 <p>
                   <WhatsAppIcon /> 08992021306
@@ -127,11 +132,13 @@ const CollapseMenu = (props) => {
               </div>
             </a>
           </li>
-          <Hr/>
+          <Hr />
           <li>
             <a
               href='https://www.instagram.com/japricorp/'
-              onClick={props.handleNavbar} target="_blank" rel="noreferrer"
+              onClick={props.handleNavbar}
+              target='_blank'
+              rel='noreferrer'
             >
               <div>
                 <p>
@@ -140,11 +147,13 @@ const CollapseMenu = (props) => {
               </div>
             </a>
           </li>
-          <Hr/>
+          <Hr />
           <li>
             <a
               href='mailto:japri.corporation@gmail.com'
-              onClick={props.handleNavbar} target="_blank" rel="noreferrer"
+              onClick={props.handleNavbar}
+              target='_blank'
+              rel='noreferrer'
             >
               <div>
                 <p>

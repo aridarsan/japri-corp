@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../Components/Hero';
 import Produk from '../Components/Produk';
 import Keunggulan from '../Components/Keunggulan';
@@ -9,6 +9,7 @@ import TanyaJawab from '../Components/TanyaJawab';
 import Masukan from '../Components/Masukan';
 import GaleriPelanggan from '../Components/GaleriPelanggan';
 import Testimoni from '../Components/Testimoni';
+import axios from "axios"
 
 //import foto
 import blmus from '../Images/foto-testi/1.png';
@@ -60,6 +61,22 @@ const pelanggan = [
 ];
 
 const Home = () => {
+  const [isLoading, setIsLoading] = React.useState(true)
+  const [testi, setTesti] = React.useState('')
+
+  async function getTestimoni(){
+    let res = await axios.get("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni");
+    setTesti(res.data)
+    setIsLoading(false)
+  }
+
+  useEffect(() =>{
+    if (isLoading) {
+      getTestimoni()
+    }
+    // eslint-disable-next-line 
+  }, [])
+
   return (
     <React.Fragment>
       <Hero />
@@ -69,7 +86,7 @@ const Home = () => {
       <Pemberdayaan />
       <Capaian />
       <Pelanggan customer={customer} />
-      <Testimoni />
+      <Testimoni testi={testi} isLoading={isLoading} setIsLoading={setIsLoading} />
       <TanyaJawab />
       <Masukan />
     </React.Fragment>

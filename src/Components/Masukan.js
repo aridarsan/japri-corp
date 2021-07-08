@@ -1,49 +1,64 @@
 import React from 'react';
 import { Grid, Container, TextField, Button } from '@material-ui/core';
 import masukan from '../Images/masukan.svg';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 const Masukan = () => {
-  const [nama, setNama] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [pesan, setPesan] = React.useState("");
+  const [nama, setNama] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [pesan, setPesan] = React.useState('');
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwJXS-nAnD-OZWdCH0UY7OQt6DyfhRi_xTeR9EWg9JbBidDXRjfqtwy2dOhNmA9E1XW/exec'
-  const form = document.forms['submitSheet']
+  const scriptURL =
+    'https://script.google.com/macros/s/AKfycbwJXS-nAnD-OZWdCH0UY7OQt6DyfhRi_xTeR9EWg9JbBidDXRjfqtwy2dOhNmA9E1XW/exec';
+  const form = document.forms['submitSheet'];
+
+   const validation = () => {
+    if (nama === "") {
+      return false;
+    } else if (email === "") {
+      return false;
+    } else if (pesan === ""){
+      return false
+    }else{
+      setIsSubmitting(true)
+    }
+  } 
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-
-    const data = {
-      nama: nama,
-      email: email,
-      pesan: pesan
-    }
-    
-    if (data.nama, data.email, data.pesan !== ""){
-    console.log(data)
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        console.log('Success!', response)
-        Swal.fire({
-                  title: 'Terima kasih',
-                  text: 'masukan kamu sudah kami terima',
-                  icon: 'success',
-                  confirmButtonText: 'Oke, Sama-sama',
-                })
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
+    e.preventDefault();
+    if (validation() !== false){
+      const data = {
+        nama: nama,
+        email: email,
+        pesan: pesan,
+      };
+        console.log(data);
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            setIsSubmitting(false)
+            console.log('Success!', response);
+            Swal.fire({
+              title: 'Terima kasih',
+              text: 'masukan kamu sudah kami terima',
+              icon: 'success',
+              confirmButtonText: 'Ok, Sama-sama',
+            });
+            form.reset();
+          })
+          .catch((error) => {
+            console.error('Error!', error.message)
+            setIsSubmitting(false)
+          });
       } else {
-      Swal.fire({
-          title: 'Mohon maaf',
+        Swal.fire({
+          title: 'Maaf',
           text: 'tidak boleh ada formulir yang kosong',
           icon: 'warning',
           confirmButtonText: 'Ok, coba lagi',
-        })
-    }
-  }
-
+        });
+      }
+  };
 
   return (
     <React.Fragment>
@@ -87,7 +102,12 @@ const Masukan = () => {
           </Grid>
 
           <Grid item xs={12} md={6} lg={6}>
-            <form onSubmit={handleSubmit} name="submitSheet" noValidate autoComplete='off'>
+            <form
+              onSubmit={handleSubmit}
+              name='submitSheet'
+              noValidate
+              autoComplete='off'
+            >
               <TextField
                 name='nama'
                 id='nama'
@@ -95,7 +115,7 @@ const Masukan = () => {
                 variant='filled'
                 color='primary'
                 style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
-                onChange={(e)=> setNama(e.target.value)}
+                onChange={(e) => setNama(e.target.value)}
                 required
               />
               <br />
@@ -106,12 +126,12 @@ const Masukan = () => {
                 variant='filled'
                 color='primary'
                 style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
-                onChange={(e)=> setEmail(e.target.value)}
+                onChange={(e) => setEmail(e.target.value)}
                 required
               />
               <br />
               <TextField
-                name= "pesan"
+                name='pesan'
                 id='pesan'
                 label='Pesan'
                 variant='filled'
@@ -119,7 +139,7 @@ const Masukan = () => {
                 multiline
                 rows={5}
                 style={{ width: '100%', borderRadius: 0, marginBottom: '2rem' }}
-                onChange={(e)=> setPesan(e.target.value)}
+                onChange={(e) => setPesan(e.target.value)}
                 required
               />
               <br />
@@ -133,10 +153,11 @@ const Masukan = () => {
                   borderRadius: '0',
                   fontFamily: 'Montserrat',
                   marginTop: '2rem',
+                  cursor: isSubmitting ? "not-allowed" : ""
                 }}
-                type="submit"
+                type='submit'
               >
-                Kirim Pesan
+                {isSubmitting ? "loading....." : "kirim masukan"}
               </Button>
             </form>
           </Grid>
