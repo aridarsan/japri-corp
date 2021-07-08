@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Container, TextField, Button } from '@material-ui/core';
 import masukan from '../Images/masukan.svg';
+import Swal from 'sweetalert2'
 
 const Masukan = () => {
   const [nama, setNama] = React.useState("");
@@ -8,27 +9,41 @@ const Masukan = () => {
   const [pesan, setPesan] = React.useState("");
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwJXS-nAnD-OZWdCH0UY7OQt6DyfhRi_xTeR9EWg9JbBidDXRjfqtwy2dOhNmA9E1XW/exec'
+  const form = document.forms['submitSheet']
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
     const data = {
       nama: nama,
       email: email,
       pesan: pesan
     }
-
-    const headers = {
-      method: 'POST',
-      body: JSON.stringify(data)
-    }
-
-    console.log(headers)
-    fetch(scriptURL, headers)
+    
+    if (data.nama, data.email, data.pesan !== ""){
+    console.log(data)
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         console.log('Success!', response)
+        Swal.fire({
+                  title: 'Terima kasih',
+                  text: 'masukan kamu sudah kami terima',
+                  icon: 'success',
+                  confirmButtonText: 'Oke, Sama-sama',
+                })
+        form.reset()
       })
       .catch(error => console.error('Error!', error.message))
+      } else {
+      Swal.fire({
+          title: 'Mohon maaf',
+          text: 'tidak boleh ada formulir yang kosong',
+          icon: 'warning',
+          confirmButtonText: 'Ok, coba lagi',
+        })
+    }
   }
+
 
   return (
     <React.Fragment>
@@ -72,7 +87,7 @@ const Masukan = () => {
           </Grid>
 
           <Grid item xs={12} md={6} lg={6}>
-            <form onSubmit={handleSubmit} noValidate autoComplete='off'>
+            <form onSubmit={handleSubmit} name="submitSheet" noValidate autoComplete='off'>
               <TextField
                 name='nama'
                 id='nama'
