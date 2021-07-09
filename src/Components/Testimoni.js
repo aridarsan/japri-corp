@@ -3,8 +3,9 @@ import { Grid, Container, Button, Card, CardContent } from '@material-ui/core';
 import Carousel from 'react-grid-carousel';
 // import kotak from '../Images/kotak.svg';
 import Rating from '@material-ui/lab/Rating';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+// import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
+import AddIcon from '@material-ui/icons/Add';
 import { useHistory } from 'react-router-dom';
 
 // const testi = [
@@ -193,7 +194,7 @@ const Testimoni = (props) => {
             onClick={handleClick}
           >
             {' '}
-            Lihat Lebih banyak <ChevronRightIcon />
+            <AddIcon />  Tambah testimoni 
           </Button>
         </Grid>
       </Container>

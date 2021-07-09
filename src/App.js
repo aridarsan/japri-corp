@@ -8,6 +8,7 @@ import About from "./Pages/About"
 import Testimonis from "./Pages/Testimonis"
 import Pelanggans from "./Pages/Pelanggans"
 import GaleriPel from "./Pages/GaleriPel"
+import TestiContextApi from "./Pages/TestiContextApi"
 import Footer from "./Components/Footer"
 import CaraPesan from "./Components/CaraPesan"
 import NotFound from "./Components/NotFound"
@@ -30,6 +31,10 @@ function App() {
 
         <Route path='/testimoni'>
           <Testimonis/>
+        </Route>
+
+        <Route path='/testimoni-context-api'>
+          <TestiContextApi/>
         </Route>
 
         <Route path='/cara-pesan'>
