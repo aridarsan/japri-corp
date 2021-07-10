@@ -1,19 +1,11 @@
-import React, { useEffect, useContext } from "react"
+import React, { useEffect, useContext } from 'react';
 import AddTestimoni from '../Components/AddTestimoni';
 import Testimoni from '../Components/Testimoni';
-// import axios from "axios"
-// Context
-import ContextApi from "../Context/ContextApi"
-import ContextState from "../Context/ContextState"
+import ContextApi from '../Context/ContextApi';
+import ContextState from '../Context/ContextState';
 
 const TestiContextApi = () => {
-
-  const { getTesti, testi, loading } = useContext(ContextApi)
-
-  useEffect(() => {
-    getTesti()
-    // eslint-disable-next-line
-  }, [])
+  const { getTesti, testi, loading } = useContext(ContextApi);
 
   // const [isLoading, setIsLoading] = React.useState(true)
   // const [testi, setTesti] = React.useState('')
@@ -28,20 +20,25 @@ const TestiContextApi = () => {
   //   if (isLoading) {
   //     getTestimoni()
   //   }
-  //   // eslint-disable-next-line 
+  //   // eslint-disable-next-line
   // }, [])
 
+  useEffect(() => {
+    getTesti();
+    // eslint-disable-next-line
+  }, []);
+
   return (
-    <React.Fragment>
-      <ContextState>
-      {loading ? <h1>Loading</h1> : 
+    <ContextState>
+      {loading ? (
+        <h1> Loading </h1>
+      ) : (
         <div style={{ margin: '5rem 0' }}>
           <Testimoni testi={testi} display='none' />
           <AddTestimoni />
         </div>
-        }
-      </ContextState>
-    </React.Fragment>
+      )}
+    </ContextState>
   );
 };
 export default TestiContextApi;

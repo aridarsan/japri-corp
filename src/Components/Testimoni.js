@@ -1,12 +1,11 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import { Grid, Container, Button, Card, CardContent } from '@material-ui/core';
 import Carousel from 'react-grid-carousel';
-// import kotak from '../Images/kotak.svg';
 import Rating from '@material-ui/lab/Rating';
-// import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
 import AddIcon from '@material-ui/icons/Add';
 import { useHistory } from 'react-router-dom';
+import ContextApi from '../Context/ContextApi';
 
 // const testi = [
 //   {
@@ -73,7 +72,16 @@ const MyDot = ({ isActive }) => (
   ></span>
 );
 
+
 const Testimoni = (props) => {
+
+  const { getTesti } = useContext(ContextApi);
+
+  useEffect(() => {
+    getTesti();
+    // eslint-disable-next-line
+  }, []);
+
   const history = useHistory();
   function handleClick() {
     history.push('/testimoni');
@@ -125,7 +133,7 @@ const Testimoni = (props) => {
               showDots
               loop
             >
-              {props.testi !== '' ? (props.testi.map((card, index) => (
+              {props.testi !== [] ? props.testi.data.map((card, index) => (
                 <Carousel.Item key={index}>
                   <Card
                     style={{
@@ -172,7 +180,7 @@ const Testimoni = (props) => {
                     </CardContent>
                   </Card>
                 </Carousel.Item>
-              ))) : (<h1> Loading..... </h1>)}
+              )) : (<h1 style={{marginTop: "5rem"}}> Loading..... </h1>)}
             </Carousel>
           </Grid>
         </Grid>

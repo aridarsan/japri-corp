@@ -1,73 +1,83 @@
-import React, { useReducer } from "react"
-import axios from "axios"
+import React, { useReducer } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 // Bring the context
-import ContextApi from "./ContextApi"
+import ContextApi from './ContextApi';
 // Bring the reducer
-import ContextReducer from "./ContextReducer"
+import ContextReducer from './ContextReducer';
 // Bring the types
-import { GET_TESTIMONI, SET_TESTIMONI, CLEAR_TESTIMONI, CREATE_TESTIMONI, DELETE_TESTIMONI } from "./ContextTypes"
+import {
+  GET_TESTIMONI,
+  SET_TESTIMONI,
+  CLEAR_TESTIMONI,
+  CREATE_TESTIMONI,
+  DELETE_TESTIMONI,
+} from './ContextTypes';
 
 const ContextState = ({ children }) => {
-
-  const url = "https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni"
+  const url = 'https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni';
 
   // Define our state
   const initialState = {
     testi: [],
-    data: "",
-    loading: true
-  }
+    data: '',
+    loading: true,
+  };
 
   // Dispatch the reducer
   // This come from useReducer from ReactJS
-  const [state, dispatch] = useReducer(ContextReducer, initialState)
+  const [state, dispatch] = useReducer(ContextReducer, initialState);
 
   // Get testi
   const getTesti = async () => {
     try {
-      const testi = await axios.get(url)
-
-      dispatch({ type: GET_TESTIMONI, payload: testi })
-      console.log(testi)
+      const testi = await axios.get(url);
+      dispatch({ type: GET_TESTIMONI, payload: testi });
+      // console.log(testi);
     } catch (err) {
-      console.error(err.message)
+      console.error("ini error massage nya", err.message);
     }
-  }
+  };
 
   // Set the testimoni for the new testimoni
   // This will change whenever user type in the form later
   const setTesti = (payload) => {
-    dispatch({ type: SET_TESTIMONI, payload })
-  }
+    dispatch({ type: SET_TESTIMONI, payload });
+  };
 
-
-  // Create todo
+  // Create testimoni
   const createTesti = async (data) => {
     try {
       const testi = axios.post(url, data);
-      dispatch({ type: CLEAR_TESTIMONI })
-      dispatch({ type: CREATE_TESTIMONI, payload: testi })
+      dispatch({ type: CLEAR_TESTIMONI });
+      dispatch({ type: CREATE_TESTIMONI, payload: testi });
+      Swal.fire({
+      title: 'Terima kasih',
+      text: 'Testimoni kamu sudah kami terima',
+      icon: 'success',
+      confirmButtonText: 'Ok, Sama-sama',
+    });
     } catch (err) {
-      console.error(err.message)
+      console.error(err.message);
     }
-  }
+  };
 
   // Delete Testimoni
   const deleteTesti = async (id) => {
     try {
       await fetch(`${url}/${id}`, {
-        method: "DELETE"
-      })
+        method: 'DELETE',
+      });
 
-      dispatch({ type: DELETE_TESTIMONI, payload: id })
+      dispatch({ type: DELETE_TESTIMONI, payload: id });
     } catch (err) {
-      console.error(err.message)
+      console.error(err.message);
     }
-  }
+  };
 
   // Destruct the states
-  const { testi, data, loading } = state
+  const { testi, data, loading } = state;
 
   // Here's where we gonna use this state and funcitons to dealing with the context
   // The context will wrapping our entire application with this component and accept children in it
@@ -82,12 +92,12 @@ const ContextState = ({ children }) => {
         getTesti,
         setTesti,
         createTesti,
-        deleteTesti
+        deleteTesti,
       }}
     >
       {children}
     </ContextApi.Provider>
-  )
-}
+  );
+};
 
 export default ContextState;

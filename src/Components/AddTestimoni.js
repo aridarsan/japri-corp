@@ -1,11 +1,10 @@
-import React from 'react';
-import { Grid, Container, TextField, Button } from '@material-ui/core';
+import React, { useContext } from 'react';
+import { Grid, Container, TextField, Button, Typography, Box } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
 import testimoni from '../Images/testimoni.svg';
-import axios from "axios";
+// import axios from "axios";
 import Swal from 'sweetalert2';
+import ContextApi from '../Context/ContextApi';
 
 const AddTestimoni = (props) => {
   const [nama, setNama] = React.useState('')
@@ -17,7 +16,7 @@ const AddTestimoni = (props) => {
      const validation = () => {
     if (nama === "") {
       return false;
-    } else if (produk === "") {
+    } else if (produk === ""){
       return false;
     } else if (pesan === ""){
       return false
@@ -26,42 +25,67 @@ const AddTestimoni = (props) => {
     } else{
       setIsSubmitting(true)
     }
-  } 
-
-  async function postTestimoni(data){
-    let res = await axios.post("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni", data);
-    console.log(res)
-    Swal.fire({
-      title: 'Terima kasih',
-      text: 'Testimoni kamu sudah kami terima',
-      icon: 'success',
-      confirmButtonText: 'Ok, Sama-sama',
-    });
-    setIsSubmitting(false)
-    props.setIsLoading(true)
   }
 
+  const { getTesti, setTesti, createTesti } = useContext(ContextApi)
 
-  const handleAdd= (e) => {
-    e.preventDefault();
+  const onCreateTesti = (e) => {
+    e.preventDefault()
+
     if(validation() !== false){
-    console.log(nama, produk, nilai, pesan)
       const data = {
         nama: nama,
         produk: produk,
         nilai: nilai,
         pesan: pesan
       }
-      postTestimoni(data)
-    } else {
-        Swal.fire({
-          title: 'Maaf',
-          text: 'tidak boleh ada formulir yang kosong',
-          icon: 'warning',
-          confirmButtonText: 'Ok, coba lagi',
-        });
-      }
+      setTesti(data)
+      createTesti(data)
+      setIsSubmitting(false)
+      getTesti()
+    }else {
+      Swal.fire({
+        title: 'Maaf',
+        text: 'tidak boleh ada formulir yang kosong',
+        icon: 'warning',
+        confirmButtonText: 'Ok, coba lagi',
+      });
+    }
   }
+
+  // async function postTestimoni(data){
+  //   let res = await axios.post("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni", data);
+  //   console.log(res)
+  //   Swal.fire({
+  //     title: 'Terima kasih',
+  //     text: 'Testimoni kamu sudah kami terima',
+  //     icon: 'success',
+  //     confirmButtonText: 'Ok, Sama-sama',
+  //   });
+  //   setIsSubmitting(false)
+  // }
+
+
+  // const handleAdd= (e) => {
+  //   e.preventDefault();
+  //   if(validation() !== false){
+  //   console.log(nama, produk, nilai, pesan)
+  //     const data = {
+  //       nama: nama,
+  //       produk: produk,
+  //       nilai: nilai,
+  //       pesan: pesan
+  //     }
+  //     postTestimoni(data)
+  //   } else {
+  //       Swal.fire({
+  //         title: 'Maaf',
+  //         text: 'tidak boleh ada formulir yang kosong',
+  //         icon: 'warning',
+  //         confirmButtonText: 'Ok, coba lagi',
+  //       });
+  //     }
+  // }
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -132,10 +156,10 @@ const AddTestimoni = (props) => {
                   marginTop: '2rem',
                   cursor: isSubmitting ? "not-allowed" : ""
                 }}
-                onClick={handleAdd}
+                onClick={onCreateTesti}
                 type="submit"
               >
-                {isSubmitting? "loading" : "Kirim Pesan"}
+                {isSubmitting ? "loading..." : "Kirim Pesan"}
               </Button>
             </form>
           </Grid>

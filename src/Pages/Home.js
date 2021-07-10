@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useContext  } from 'react';
 import Hero from '../Components/Hero';
 import Produk from '../Components/Produk';
 import Keunggulan from '../Components/Keunggulan';
@@ -9,7 +9,7 @@ import TanyaJawab from '../Components/TanyaJawab';
 import Masukan from '../Components/Masukan';
 import GaleriPelanggan from '../Components/GaleriPelanggan';
 import Testimoni from '../Components/Testimoni';
-import axios from "axios"
+import ContextApi from '../Context/ContextApi';
 
 //import foto
 import blmus from '../Images/foto-testi/1.png';
@@ -61,19 +61,18 @@ const pelanggan = [
 ];
 
 const Home = () => {
-  const [isLoading, setIsLoading] = React.useState(true)
-  const [testi, setTesti] = React.useState('')
+  // const [isLoading, setIsLoading] = React.useState(true)
+  // const [testi, setTesti] = React.useState('')
 
-  async function getTestimoni(){
-    let res = await axios.get("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni");
-    setTesti(res.data)
-    setIsLoading(false)
-  }
+  // async function getTestimoni(){
+  //   let res = await axios.get("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni");
+  //   setTesti(res.data)
+  //   setIsLoading(false)
+  // }
 
+  const { getTesti, testi} = useContext(ContextApi);
   useEffect(() =>{
-    if (isLoading) {
-      getTestimoni()
-    }
+      getTesti()
     // eslint-disable-next-line 
   }, [])
 
@@ -86,7 +85,7 @@ const Home = () => {
       <Pemberdayaan />
       <Capaian />
       <Pelanggan customer={customer} />
-      <Testimoni testi={testi} isLoading={isLoading} setIsLoading={setIsLoading} />
+      <Testimoni testi={testi} />
       <TanyaJawab />
       <Masukan />
     </React.Fragment>
