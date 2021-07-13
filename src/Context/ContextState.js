@@ -34,7 +34,7 @@ const ContextState = ({ children }) => {
     try {
       const testi = await axios.get(url);
       dispatch({ type: GET_TESTIMONI, payload: testi });
-      // console.log(testi);
+      console.log(testi);
     } catch (err) {
       console.error("ini error massage nya", err.message);
     }

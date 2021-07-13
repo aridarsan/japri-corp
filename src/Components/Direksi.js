@@ -50,7 +50,7 @@ const tim = [
   },
   {
     nama: 'Muchamad Ahmad M',
-    jabatan: 'Chief Technology Officer',
+    jabatan: 'Digital Marketing dan Desain',
     foto: ahmad,
     whatsapp: 'https://wa.me/6285770002426',
     instagram: 'https://www.instagram.com/mucheahmad/',
@@ -59,7 +59,7 @@ const tim = [
   },
   {
     nama: 'Ari Darsan',
-    jabatan: 'Manager DMD & Web Developer',
+    jabatan: 'DMD & Web Developer',
     foto: ari,
     whatsapp: 'https://wa.me/6281222288153',
     instagram: 'https://www.instagram.com/ari_darsan/',
@@ -110,6 +110,7 @@ const Direksi = () => {
               <Card
                 style={{
                   padding: '2rem',
+                  paddingBottom: '0',
                   backgroundColor: '#F7DA64',
                   borderRadius: '0',
                 }}
@@ -139,7 +140,7 @@ const Direksi = () => {
                         {item.nama}
                       </h4>
 
-                      <h6 className='direksi' style={{ textAlign: 'center' }}>
+                      <h6 className='direksi' style={{ textAlign: 'center', color: "#4f4f4f" }}>
                         {item.jabatan}
                       </h6>
                     </Grid>

@@ -93,6 +93,18 @@ a{
   filter: grayscale(0%);
 }
 
+.tentang{;
+  border-radius: 0 !important;
+}
+
+.tentang ~ h4{
+  opacity: 1 !important;
+}
+.tentang ~ p{
+  opacity: 1 !important;
+}
+
+
 /*Mobile*/
 @media (max-width: 600px) {
   html {
@@ -150,6 +162,10 @@ a{
   .overlay{
     width: 87.5%;
     overflow: hidden;
+  }
+  .img-produk{
+    width: 50% !important;
+    margin: 0 20% !important;
   }
 }
 

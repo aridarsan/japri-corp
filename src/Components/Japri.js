@@ -1,13 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Card, CardContent, Container, Paper } from '@material-ui/core';
-import japri from '../Images/direksi.png';
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
+// import japri from '../Images/direksi.png';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -16,7 +10,30 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Japri = () => {
+const sejarah = [
+  {
+    fase: "Fase 1",
+    text: "Japri Corporation didirikan pada tahun 14 Maret 2016 oleh beberapa orang mahasiswa bidikmisi yang peka melihat peluang bisnis bidang jasa di Unsil."
+  },
+    {
+    fase: "Fase 2",
+    text: "Pada awalnya Japri Corporation hanya memiliki satu macam produk, namun lambat laun melihat peluang dilapangan, Japri Corp pun mulai melakukan disversifikasi produk menjadi 6 produk, yaitu : Japri Print, Japri Book, Japri Konveksi."
+  },
+    {
+    fase: "Fase 3",
+    text: "Japri sadar bahwa Bisnis yang baik adalah bisnis yang memiliki noble purpose (Tujuan Mulia) yaitu Menjadikan Japri Corp menjadi tempat bertransaksi online yang unikberbasis pemberdayaan mahasiswa agar berdampak bagi masyarakat."
+  },
+    {
+    fase: "Fase 4",
+    text: "Japri Corp memberdayakan crew diberbagai jurusan sebagai sales force (garda Terdepan) dalam strategi marketing yang dijalankan. Bertujuan untuk memupuk, melatih serta membangun jiwa wirausaha bagi mahasiswa."
+  },
+    {
+    fase: "Fase 5",
+    text: "Japri Corp turut membantu mengharumkan kampus yang menjadi tonggak sejarah berdirinya plaform satrtup berbasis pemberdayaan mahasiswa yakni kampus Universitas Siliwangi pada tingkat Nasional. Terbukti dengan 5 kali juara diberbagai lomba Business Plan. Dan menjadi salah satu bisnis penyumbang piala terbanyak bagi unsil."
+  },
+]
+
+const Japrie = () => {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -56,9 +73,8 @@ const Japri = () => {
 
         <Grid container spacing={4}>
           <Grid item xs={12} md={12} lg={12}>
-            <img src={japri} alt='masukan' width='100%' />
 
-            <Card style={{ backgroundColor: '#F7DA64' }}>
+            <Card className="tentang" style={{ backgroundColor: '#F7DA64' }}>
               <CardContent>
                 <h4>Sekilas Japri</h4>
 
@@ -87,105 +103,26 @@ const Japri = () => {
               </CardContent>
             </Card>
           </Grid>
-
-          <Grid item xs={12} md={12} lg={12}>
-            <h4 style={{ textAlign: 'center' }}>
-              Sejarah Jasa Prima Corporation
-            </h4>
-            <Timeline align='alternate' style={{ fontFamily: 'Montserrat' }}>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot color='primary'></TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper elevation={3} className={classes.paper}>
-                    <h5>Fase 1</h5>
-                    <small>
-                      Japri Corporation didirikan pada tahun 14 Maret 2016 oleh
-                      beberapa orang mahasiswa bidikmisi yang peka melihat
-                      peluang bisnis bidang jasa di Unsil
-                    </small>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot color='primary'></TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper elevation={3} className={classes.paper}>
-                    <h5>Fase 2</h5>
-                    <small>
-                      Pada awalnya Japri Corporation hanya memiliki satu macam
-                      produk, namun lambat laun melihat peluang dilapangan,
-                      Japri Corp pun mulai melakukan disversifikasi produk
-                      menjadi 6 produk, yaitu : Japri Print, Japri Book, Japri
-                      Hadiah wisuda, Japri Service , Japri Percetakan, dan Japri
-                      Konveksi.
-                    </small>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot color='primary'></TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper elevation={3} className={classes.paper}>
-                    <h5>Fase 3</h5>
-                    <small>
-                      Japri sadar bahwa Bisnis yang baik adalah bisnis yang
-                      memiliki noble purpose (Tujuan Mulia) yaitu Menjadikan
-                      Japri Corp menjadi tempat bertransaksi online yang unik
-                      berbasis pemberdayaan mahasiswa agar berdampak bagi
-                      masyarakat.
-                    </small>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot color='primary'></TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper elevation={3} className={classes.paper}>
-                    <h5>Fase 4</h5>
-                    <small>
-                      Japri Corp memberdayakan crew diberbagai jurusan sebagai
-                      sales force (garda Terdepan) dalam strategi marketing yang
-                      dijalankan. Bertujuan untuk memupuk, melatih serta
-                      membangun jiwa wirausaha bagi mahasiswa
-                    </small>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot color='primary'></TimelineDot>
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Paper elevation={3} className={classes.paper}>
-                    <h5>Fase 5</h5>
-                    <small>
-                      Japri Corp turut membantu mengharumkan kampus yang menjadi
-                      tonggak sejarah berdirinya plaform satrtup berbasis
-                      pemberdayaan mahasiswa yakni kampus Universitas Siliwangi
-                      pada tingkat Nasional. Terbukti dengan 5 kali juara
-                      diberbagai lomba Business Plan. Dan menjadi salah satu
-                      bisnis penyumbang piala terbanyak bagi unsil.
-                    </small>
-                  </Paper>
-                </TimelineContent>
-              </TimelineItem>
-            </Timeline>
           </Grid>
-        </Grid>
+          <Grid container justify="center">
+            <h4 style={{ textAlign: 'center', margin: "2rem" }}>
+                Sejarah Jasa Prima Corporation
+            </h4>
+          </Grid>
+          <Grid container spacing={2} justify="center">
+          {sejarah.map((item, index) => (
+            <Grid item xs={12} md={6} lg={6}>
+              <Paper elevation={1} className={classes.paper} style={{minHeight: "10rem", border: "2px solid #0895CA"}}>
+                <h5>{item.fase}</h5>
+                <small>
+                  {item.text}
+                </small>
+              </Paper>
+            </Grid>
+            ))}
+          </Grid>
       </Container>
     </React.Fragment>
   );
 };
-export default Japri;
+export default Japrie;

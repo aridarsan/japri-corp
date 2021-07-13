@@ -1,4 +1,4 @@
-import React, { useEffect, useContext  } from 'react';
+import React from 'react';
 import Hero from '../Components/Hero';
 import Produk from '../Components/Produk';
 import Keunggulan from '../Components/Keunggulan';
@@ -9,7 +9,7 @@ import TanyaJawab from '../Components/TanyaJawab';
 import Masukan from '../Components/Masukan';
 import GaleriPelanggan from '../Components/GaleriPelanggan';
 import Testimoni from '../Components/Testimoni';
-import ContextApi from '../Context/ContextApi';
+// import ContextApi from '../Context/ContextApi';
 
 //import foto
 import blmus from '../Images/foto-testi/1.png';
@@ -70,11 +70,11 @@ const Home = () => {
   //   setIsLoading(false)
   // }
 
-  const { getTesti, testi} = useContext(ContextApi);
-  useEffect(() =>{
-      getTesti()
-    // eslint-disable-next-line 
-  }, [])
+  // const { getTesti, testi} = useContext(ContextApi);
+  // useEffect(() =>{
+  //     getTesti()
+  //   // eslint-disable-next-line 
+  // }, [])
 
   return (
     <React.Fragment>
@@ -85,7 +85,7 @@ const Home = () => {
       <Pemberdayaan />
       <Capaian />
       <Pelanggan customer={customer} />
-      <Testimoni testi={testi} />
+      <Testimoni />
       <TanyaJawab />
       <Masukan />
     </React.Fragment>

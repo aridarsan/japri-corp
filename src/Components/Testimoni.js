@@ -7,51 +7,6 @@ import AddIcon from '@material-ui/icons/Add';
 import { useHistory } from 'react-router-dom';
 import ContextApi from '../Context/ContextApi';
 
-// const testi = [
-//   {
-//     src: kotak,
-//     nama: 'Dimas Suseno',
-//     produk: 'Print Skripsi',
-//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-//     nilai: 5,
-//   },
-//   {
-//     src: kotak,
-//     nama: 'Fuji Ardinto',
-//     produk: 'Pesan Jaket',
-//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-//     nilai: 4,
-//   },
-//   {
-//     src: kotak,
-//     nama: 'Sinta Permata',
-//     produk: 'Pesan PDH',
-//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-//     nilai: 5,
-//   },
-//   {
-//     src: kotak,
-//     nama: 'Soni Kuncoro',
-//     produk: 'Order Merchandise',
-//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-//     nilai: 5,
-//   },
-//   {
-//     src: kotak,
-//     nama: 'Gonardi',
-//     produk: 'Order Booklet',
-//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-//     nilai: 4,
-//   },
-//   {
-//     src: kotak,
-//     nama: 'Badru Zaman',
-//     produk: 'Order Bucket',
-//     kata: 'Proses print cepet, tanpa ribet, tanpa antri dan yang paling penting harganya sangat murah, jadi saya bisa hemat.',
-//     nilai: 5,
-//   },
-// ];
-
 const layout = [
   { breakpoint: 1000, cols: 2, autoplay: 2000 },
   { breakpoint: 600, cols: 2, rows: 1, gap: 5, autoplay: 2000, loop: true },
@@ -75,7 +30,7 @@ const MyDot = ({ isActive }) => (
 
 const Testimoni = (props) => {
 
-  const { getTesti } = useContext(ContextApi);
+  const { getTesti, testi } = useContext(ContextApi);
 
   useEffect(() => {
     getTesti();
@@ -133,13 +88,14 @@ const Testimoni = (props) => {
               showDots
               loop
             >
-              {props.testi !== [] ? props.testi.data.map((card, index) => (
+              {testi.length !== 0 ? testi.data.map((card, index) => (
                 <Carousel.Item key={index}>
                   <Card
                     style={{
                       borderRadius: 0,
                       border: '2px solid #0895CA',
                       margin: 'auto',
+                      minHeight: "15rem"
                     }}
                   >
                     <CardContent>

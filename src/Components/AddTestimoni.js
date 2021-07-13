@@ -53,39 +53,6 @@ const AddTestimoni = (props) => {
     }
   }
 
-  // async function postTestimoni(data){
-  //   let res = await axios.post("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni", data);
-  //   console.log(res)
-  //   Swal.fire({
-  //     title: 'Terima kasih',
-  //     text: 'Testimoni kamu sudah kami terima',
-  //     icon: 'success',
-  //     confirmButtonText: 'Ok, Sama-sama',
-  //   });
-  //   setIsSubmitting(false)
-  // }
-
-
-  // const handleAdd= (e) => {
-  //   e.preventDefault();
-  //   if(validation() !== false){
-  //   console.log(nama, produk, nilai, pesan)
-  //     const data = {
-  //       nama: nama,
-  //       produk: produk,
-  //       nilai: nilai,
-  //       pesan: pesan
-  //     }
-  //     postTestimoni(data)
-  //   } else {
-  //       Swal.fire({
-  //         title: 'Maaf',
-  //         text: 'tidak boleh ada formulir yang kosong',
-  //         icon: 'warning',
-  //         confirmButtonText: 'Ok, coba lagi',
-  //       });
-  //     }
-  // }
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -106,7 +73,7 @@ const AddTestimoni = (props) => {
             <form noValidate autoComplete='off'>
               <TextField
                 id='nama'
-                label='nama'
+                label='Nama'
                 variant='filled'
                 color='primary'
                 className='inputan'
@@ -115,7 +82,7 @@ const AddTestimoni = (props) => {
               <br />
               <TextField
                 id='produk'
-                label='produk'
+                label='Produk'
                 variant='filled'
                 color='primary'
                 className='inputan'
@@ -123,7 +90,7 @@ const AddTestimoni = (props) => {
               />
               <br />
               <Box component='fieldset' mb={3} borderColor='transparent'>
-                <Typography component='legend'>Nilai</Typography>
+                <Typography component='legend'>Penilaian</Typography>
                 <Rating
                   name="simple-controlled"
                   value={nilai}
@@ -135,7 +102,7 @@ const AddTestimoni = (props) => {
               </Box>
               <TextField
                 id='pesan'
-                label='pesan'
+                label='Pesan'
                 variant='filled'
                 color='primary'
                 multiline

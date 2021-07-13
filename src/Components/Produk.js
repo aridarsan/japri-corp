@@ -48,7 +48,7 @@ const produk = [
   {
     src: wisuda,
     title: 'Japri Wisuda',
-    description: 'Japri menyediakan hadiah untuk mengenang moment  wisuda',
+    description: 'Japri menyediakan hadiah untuk mengenang moment-moment wisuda',
     item: ['Bucket Snack', 'Bucket Bunga', 'X Banner Wisuda', 'Selempang dll.'],
   },
   {
@@ -61,7 +61,7 @@ const produk = [
   {
     src: service,
     title: 'Japri Service',
-    description: 'Japri siap melayani service dangan aman dan harga terjangkau',
+    description: 'Japri siap melayani service dangan aman, terjamin dan harga terjangkau',
     item: [
       'Service Hardware',
       'Service Software',
@@ -115,7 +115,7 @@ const Produk = () => {
             <Grid item xs={6} sm={6} md={4} lg={4} key={index}>
               <Card style={{ borderRadius: 0, border: '2px solid #0895CA' }}>
                 <CardContent>
-                  <Grid container mt={2} spacing={2} justify='center'>
+                  <Grid container mt={2} spacing={2} justify='center' alignItems="center">
                     <Grid item xs={12} sm={3} md={3}>
                       <img
                         style={{
