@@ -16,14 +16,7 @@ const Pemberdayaan = () => {
         <Container maxWidth='lg'>
           <Grid container>
             <Grid item xs={12}>
-              <h3
-                style={{
-                  margin: '2rem 0',
-                  fontWeight: '700',
-                  fontFamily: 'Montserrat',
-                  color: '#0895CA',
-                  textAlign: 'center',
-                }}
+              <h3 className="heading3"
               >
                 <span
                   className='borderBottom'
@@ -33,13 +26,7 @@ const Pemberdayaan = () => {
                 </span>
               </h3>
 
-              <p
-                style={{
-                  fontFamily: 'Montserrat',
-                  color: '#4f4f4f',
-                  textAlign: 'center',
-                  marginBottom: '1rem',
-                }}
+              <p className="pjudul"
               >
                 Lahirnya Japri Corporation karena dilatar belakangi keinginan
                 untuk memberdayakan mahasiswa

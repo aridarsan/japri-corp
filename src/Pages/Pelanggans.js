@@ -48,7 +48,7 @@ const customer = [
   { image: fkmtsi, nama: 'FKMTSI' },
   { image: popmasepi, nama: 'POPMASEPI' },
   { image: smartptsl, nama: 'SMART PTSL' },
-  { image: bi, nama: 'GEN BI' },
+  { image: bi, nama: 'GENBI' },
   { image: kipk, nama: 'KIP K' },
 ];
 

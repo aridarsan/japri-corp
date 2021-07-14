@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Grid, Container, TextField, Button, Typography, Box } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 import testimoni from '../Images/testimoni.svg';
-// import axios from "axios";
 import Swal from 'sweetalert2';
 import ContextApi from '../Context/ContextApi';
 
@@ -13,19 +12,21 @@ const AddTestimoni = (props) => {
   const [produk, setProduk] = React.useState('')
   const [isSubmitting, setIsSubmitting] = React.useState(false)
 
-     const validation = () => {
+  const validation = () => {
     if (nama === "") {
       return false;
     } else if (produk === ""){
       return false;
     } else if (pesan === ""){
-      return false
+      return false;
     } else if (nilai === ""){
-      return false
+      return false;
     } else{
       setIsSubmitting(true)
     }
   }
+
+  const form = document.forms['submitTesti'];
 
   const { getTesti, setTesti, createTesti } = useContext(ContextApi)
 
@@ -43,6 +44,7 @@ const AddTestimoni = (props) => {
       createTesti(data)
       setIsSubmitting(false)
       getTesti()
+      form.reset()
     }else {
       Swal.fire({
         title: 'Maaf',
@@ -69,8 +71,13 @@ const AddTestimoni = (props) => {
         </Grid>
 
         <Grid container spacing={4}>
+
           <Grid item xs={12} md={6} lg={6}>
-            <form noValidate autoComplete='off'>
+            <img src={testimoni} alt='masukan' width='100%' />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={6}>
+            <form noValidate name='submitTesti' autoComplete='off'>
               <TextField
                 id='nama'
                 label='Nama'
@@ -114,13 +121,8 @@ const AddTestimoni = (props) => {
               <Button
                 variant='contained'
                 size='large'
+                className="btn-submit"
                 style={{
-                  backgroundColor: '#0895CA',
-                  fontWeight: '600',
-                  color: '#ffffff',
-                  borderRadius: '0',
-                  fontFamily: 'Montserrat',
-                  marginTop: '2rem',
                   cursor: isSubmitting ? "not-allowed" : ""
                 }}
                 onClick={onCreateTesti}
@@ -129,10 +131,6 @@ const AddTestimoni = (props) => {
                 {isSubmitting ? "loading..." : "Kirim Pesan"}
               </Button>
             </form>
-          </Grid>
-
-          <Grid item xs={12} md={6} lg={6}>
-            <img src={testimoni} alt='masukan' width='100%' />
           </Grid>
         </Grid>
       </Container>

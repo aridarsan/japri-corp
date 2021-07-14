@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
+
 * {
   --primary: #0895ca;
   --secondary: #f7da64;
@@ -54,7 +55,7 @@ a{
   font-family: Montserrat;
   color: #4f4f4f;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .borderBottom{
@@ -93,7 +94,7 @@ a{
   filter: grayscale(0%);
 }
 
-.tentang{;
+.tentang{
   border-radius: 0 !important;
 }
 
@@ -102,6 +103,15 @@ a{
 }
 .tentang ~ p{
   opacity: 1 !important;
+}
+
+.btn-submit{
+  background-color: #0895CA !important;
+  font-weight: 600 !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+  font-family: 'Montserrat' !important;
+  margin-top: '2rem' !important;
 }
 
 

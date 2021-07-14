@@ -61,20 +61,6 @@ const pelanggan = [
 ];
 
 const Home = () => {
-  // const [isLoading, setIsLoading] = React.useState(true)
-  // const [testi, setTesti] = React.useState('')
-
-  // async function getTestimoni(){
-  //   let res = await axios.get("https://60e46a225bcbca001749e981.mockapi.io/japri/v1/testimoni");
-  //   setTesti(res.data)
-  //   setIsLoading(false)
-  // }
-
-  // const { getTesti, testi} = useContext(ContextApi);
-  // useEffect(() =>{
-  //     getTesti()
-  //   // eslint-disable-next-line 
-  // }, [])
 
   return (
     <React.Fragment>

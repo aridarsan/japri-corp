@@ -65,14 +65,7 @@ const Masukan = () => {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
-            <h3
-              style={{
-                margin: '2rem 0',
-                fontWeight: '700',
-                fontFamily: 'Montserrat',
-                color: '#0895CA',
-                textAlign: 'center',
-              }}
+            <h3 className="heading3"
             >
               <span
                 className='borderBottom'
@@ -82,13 +75,7 @@ const Masukan = () => {
               </span>
             </h3>
 
-            <p
-              style={{
-                fontFamily: 'Montserrat',
-                color: '#4f4f4f',
-                textAlign: 'center',
-                marginBottom: '3rem',
-              }}
+            <p className="pjudul"
             >
               Bantu kami untuk memberikan pengalaman transaksi terbaik pada
               konsumen
@@ -146,13 +133,8 @@ const Masukan = () => {
               <Button
                 variant='contained'
                 size='large'
+                className="btn-submit"
                 style={{
-                  backgroundColor: '#0895CA',
-                  fontWeight: '600',
-                  color: '#ffffff',
-                  borderRadius: '0',
-                  fontFamily: 'Montserrat',
-                  marginTop: '2rem',
                   cursor: isSubmitting ? "not-allowed" : ""
                 }}
                 type='submit'

@@ -27,15 +27,7 @@ const CaraPesan = () => {
       <Container maxWidth='lg' style={{ marginTop: '5rem' }}>
         <Grid container>
           <Grid item xs={12}>
-            <h3
-              style={{
-                margin: '2rem 0',
-                fontWeight: '700',
-                fontFamily: 'Montserrat',
-                color: '#0895CA',
-                textAlign: 'center',
-              }}
-            >
+            <h3 className="heading3">
               <span
                 className='borderBottom'
                 style={{ borderBottom: '.25rem solid #0895CA' }}
@@ -44,14 +36,7 @@ const CaraPesan = () => {
               </span>
             </h3>
 
-            <p
-              style={{
-                fontFamily: 'Montserrat',
-                color: '#4f4f4f',
-                textAlign: 'center',
-                marginBottom: '3rem',
-              }}
-            >
+            <p className="pjudul">
               Berikut alur transaksi yang dapat dilakukan untuk memesan atau
               bertransaksi di Japri
             </p>

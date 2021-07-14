@@ -9,6 +9,7 @@ import {
 // eslint-disable-next-line
 export default (state, { type, payload }) => {
   switch (type) {
+    
     // Get all testimoni
     case GET_TESTIMONI:
       return {
@@ -17,7 +18,7 @@ export default (state, { type, payload }) => {
         testi: payload,
       };
 
-    // set testimoni
+    // Set testimoni
     case SET_TESTIMONI:
       return {
         ...state,

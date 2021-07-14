@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Card, CardContent, Container, Paper } from '@material-ui/core';
-// import japri from '../Images/direksi.png';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -17,7 +16,7 @@ const sejarah = [
   },
     {
     fase: "Fase 2",
-    text: "Pada awalnya Japri Corporation hanya memiliki satu macam produk, namun lambat laun melihat peluang dilapangan, Japri Corp pun mulai melakukan disversifikasi produk menjadi 6 produk, yaitu : Japri Print, Japri Book, Japri Konveksi."
+    text: "Pada awalnya Japri Corporation hanya memiliki satu macam produk, namun lambat laun melihat peluang dilapangan, Japri Corp pun mulai melakukan disversifikasi produk menjadi 6 produk."
   },
     {
     fase: "Fase 3",
@@ -33,21 +32,14 @@ const sejarah = [
   },
 ]
 
-const Japrie = () => {
+const Japri = () => {
   const classes = useStyles();
   return (
     <React.Fragment>
       <Container maxWidth='lg' style={{ marginTop: '5rem' }}>
         <Grid container>
           <Grid item xs={12}>
-            <h3
-              style={{
-                margin: '2rem 0',
-                fontWeight: '700',
-                fontFamily: 'Montserrat',
-                color: '#0895CA',
-                textAlign: 'center',
-              }}
+            <h3 className="heading3"
             >
               <span
                 className='borderBottom'
@@ -57,13 +49,7 @@ const Japrie = () => {
               </span>
             </h3>
 
-            <p
-              style={{
-                fontFamily: 'Montserrat',
-                color: '#4f4f4f',
-                textAlign: 'center',
-                marginBottom: '3rem',
-              }}
+            <p className="pjudul"
             >
               Latar beridirinya sebuah start up yang bernama Jasa Prima
               Corporation
@@ -73,11 +59,9 @@ const Japrie = () => {
 
         <Grid container spacing={4}>
           <Grid item xs={12} md={12} lg={12}>
-
             <Card className="tentang" style={{ backgroundColor: '#F7DA64' }}>
               <CardContent>
                 <h4>Sekilas Japri</h4>
-
                 <p>
                   Era disruptif berkembang begitru dinamis ditengah-tengah
                   masyarakat. Teknologi telah menghendaki hubungan sosial yang
@@ -111,7 +95,7 @@ const Japrie = () => {
           </Grid>
           <Grid container spacing={2} justify="center">
           {sejarah.map((item, index) => (
-            <Grid item xs={12} md={6} lg={6}>
+            <Grid item xs={12} md={6} lg={6} key={index}>
               <Paper elevation={1} className={classes.paper} style={{minHeight: "10rem", border: "2px solid #0895CA"}}>
                 <h5>{item.fase}</h5>
                 <small>
@@ -125,4 +109,4 @@ const Japrie = () => {
     </React.Fragment>
   );
 };
-export default Japrie;
+export default Japri;

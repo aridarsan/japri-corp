@@ -34,7 +34,7 @@ const ContextState = ({ children }) => {
     try {
       const testi = await axios.get(url);
       dispatch({ type: GET_TESTIMONI, payload: testi });
-      console.log(testi);
+      // console.log(testi);
     } catch (err) {
       console.error("ini error massage nya", err.message);
     }
@@ -50,14 +50,14 @@ const ContextState = ({ children }) => {
   const createTesti = async (data) => {
     try {
       const testi = axios.post(url, data);
-      dispatch({ type: CLEAR_TESTIMONI });
       dispatch({ type: CREATE_TESTIMONI, payload: testi });
       Swal.fire({
-      title: 'Terima kasih',
-      text: 'Testimoni kamu sudah kami terima',
-      icon: 'success',
-      confirmButtonText: 'Ok, Sama-sama',
-    });
+        title: 'Terima kasih',
+        text: 'Testimoni kamu sudah kami terima',
+        icon: 'success',
+        confirmButtonText: 'Ok, Sama-sama',
+      });
+      dispatch({ type: CLEAR_TESTIMONI });
     } catch (err) {
       console.error(err.message);
     }
