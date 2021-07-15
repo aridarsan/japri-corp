@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container, TextField, Button } from '@material-ui/core';
-import masukan from '../Images/masukan.svg';
+import masukan from '../Images/ilustrasi/masukan.svg';
 import Swal from 'sweetalert2';
 
 const Masukan = () => {

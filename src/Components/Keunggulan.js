@@ -1,11 +1,11 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
-import garansi from '../Images/garansi.svg';
-import kualitas from '../Images/kualitas.svg';
-import promo from '../Images/promo.svg';
-import respon from '../Images/respon.svg';
-import harga from '../Images/harga.svg';
-import desain from '../Images/desain.svg';
+import garansi from '../Images/keunggulan/garansi.svg';
+import kualitas from '../Images/keunggulan/kualitas.svg';
+import promo from '../Images/keunggulan/promo.svg';
+import respon from '../Images/keunggulan/respon.svg';
+import harga from '../Images/keunggulan/harga.svg';
+import desain from '../Images/keunggulan/desain.svg';
 
 const unggul = [
   { img: garansi, label: 'Garansi Produksi' },

@@ -6,7 +6,9 @@ import KeyboardArrowLeft from '@material-ui/icons/KeyboardArrowLeft';
 import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import Hero1 from '../Images/Hero1.png';
+import Hero1 from '../Images/hero/Hero1.png';
+import Hero2 from '../Images/hero/Hero2.png';
+import Hero3 from '../Images/hero/Hero3.png';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -15,10 +17,10 @@ const tutorialSteps = [
     imgPath: Hero1,
   },
   {
-    imgPath: Hero1,
+    imgPath: Hero2,
   },
   {
-    imgPath: Hero1,
+    imgPath: Hero3,
   },
 ];
 

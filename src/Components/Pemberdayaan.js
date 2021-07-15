@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 import { Done } from '@material-ui/icons';
-import pemberdayaan from '../Images/pemberdayaan.svg';
+import pemberdayaan from '../Images/ilustrasi/pemberdayaan.svg';
 
 const Pemberdayaan = () => {
   return (

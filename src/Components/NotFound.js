@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Container, Button } from '@material-ui/core';
-import NotFounds from '../Images/404.svg';
+import NotFounds from '../Images/ilustrasi/404.svg';
 import { useLocation, useHistory } from 'react-router-dom';
 
 const NotFound = () => {

@@ -1,27 +1,14 @@
 import React from 'react';
 import { Grid, Card, CardContent, Container, Button } from '@material-ui/core';
-// import { makeStyles } from '@material-ui/core/styles';
 import DoneIcon from '@material-ui/icons/Done';
-import print from '../Images/print.svg';
-import konveksi from '../Images/konveksi.svg';
-import percetakan from '../Images/percetakan.svg';
-import wisuda from '../Images/wisuda.svg';
-import service from '../Images/service.svg';
-import referensi from '../Images/referensi.svg';
+import print from '../Images/produk/print.svg';
+import konveksi from '../Images/produk/konveksi.svg';
+import percetakan from '../Images/produk/percetakan.svg';
+import wisuda from '../Images/produk/wisuda.svg';
+import service from '../Images/produk/service.svg';
+import referensi from '../Images/produk/referensi.svg';
 import { Link } from 'react-router-dom';
-// import Carousel from 'react-grid-carousel';
 
-// const useStyles = makeStyles({
-//   card: {
-//     display: 'flex',
-//     marginBottom: '0.5rem',
-//     // flexWrap : "nowrap",
-//     // overflowY: "auto",
-//   },
-//   cardMedia: {
-//     width: 160,
-//   },
-// });
 
 const produk = [
   {

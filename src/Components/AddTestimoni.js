@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Grid, Container, TextField, Button, Typography, Box } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
-import testimoni from '../Images/testimoni.svg';
+import testimoni from '../Images/ilustrasi/testimoni.svg';
 import Swal from 'sweetalert2';
 import ContextApi from '../Context/ContextApi';
 
