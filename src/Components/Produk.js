@@ -48,7 +48,7 @@ const produk = [
   {
     src: service,
     title: 'Japri Service',
-    description: 'Japri siap melayani service dangan aman, terjamin dan harga terjangkau',
+    description: 'Japri siap melayani service laptop dangan aman, terjamin dan harga terjangkau',
     item: [
       'Service Hardware',
       'Service Software',
@@ -69,7 +69,6 @@ const Produk = () => {
             >
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Produk Japri
               </span>

@@ -30,7 +30,6 @@ const CaraPesan = () => {
             <h3 className="heading3">
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Tata Cara Pesan
               </span>

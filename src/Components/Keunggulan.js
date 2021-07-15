@@ -26,7 +26,6 @@ const Keunggulan = () => {
             >
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Keunggulan
               </span>

@@ -116,7 +116,6 @@ export default function TanyaJawab() {
             >
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Tanya Jawab
               </span>

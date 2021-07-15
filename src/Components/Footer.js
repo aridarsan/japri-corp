@@ -70,7 +70,7 @@ const Footer = () => {
             </Grid>
 
             <Grid item xs={12} md={6} lg={4}>
-              <h4 style={{ color: '#ffff' }}>Semua Produk</h4>
+              <h5 style={{ color: '#ffff' }}>Semua Produk</h5>
               <Grid container spacing={2}>
                 {produk.map((item, index) => (
                   <Grid item xs={3} md={3} lg={3} key={index}>

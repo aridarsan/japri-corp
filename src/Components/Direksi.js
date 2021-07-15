@@ -78,7 +78,6 @@ const Direksi = () => {
             >
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Tim Japri
               </span>

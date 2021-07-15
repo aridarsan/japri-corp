@@ -33,7 +33,6 @@ const GaleriPelanggan = (props) => {
             >
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Galeri Pelanggan
               </span>

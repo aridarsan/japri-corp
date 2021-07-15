@@ -38,7 +38,6 @@ const Galeri = () => {
             >
               <span
                 className='borderBottom'
-                style={{ borderBottom: '.25rem solid #0895CA' }}
               >
                 Galeri
               </span>
