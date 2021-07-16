@@ -81,7 +81,14 @@ a{
 
 .footer-div:hover{
   opacity: .8;
-  color:  var(--secondary) ;
+  color:  var(--secondary);
+  border:  2px solid var(--secondary);
+  transition: ease 1s;
+}
+
+.footer-div p{
+  margin: 0;
+  padding: .5rem;
 }
 
 .footer-img{
@@ -113,6 +120,22 @@ a{
   font-family: 'Montserrat' !important;
   margin-top: '2rem' !important;
 }
+
+.btn-submit:hover{
+  background-color: var(--primary) !important;
+  color: var(--secondary) !important;
+}
+
+.card-produk{
+  border-radius: 0 !important; 
+  border: 2px solid #0895CA;
+  box-shadow: none;
+}
+
+.card-produk:hover{
+  box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+}
+
 
 
 /*Mobile*/
@@ -230,7 +253,7 @@ a{
 }
 
 
-/*Computer*/
+/*Desktop*/
 @media (min-width: 961px) {
   html {
     font-size: 100%;

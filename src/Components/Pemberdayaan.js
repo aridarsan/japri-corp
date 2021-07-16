@@ -9,7 +9,7 @@ const Pemberdayaan = () => {
       <div
         style={{
           backgroundColor: '#F7DA64',
-          margin: '4rem 0',
+          marginTop: '4rem',
           padding: '2rem 0',
         }}
       >

@@ -15,7 +15,7 @@ const produk = [
     src: print,
     title: 'Japri Print',
     description:
-      'Japri menyediakan kemudahan print dokumen dengan cepat tanpa antri',
+      'Japri menyediakan kemudahan print dokumen dengan cepat dan tanpa antri',
     item: ['Print Dokumen', 'Sertifikat', 'Hard Cover', 'Soft Cover dll.'],
   },
   {
@@ -59,7 +59,6 @@ const produk = [
 ];
 
 const Produk = () => {
-  // const classes = useStyles();
   return (
     <React.Fragment>
       <Container maxWidth='lg'>
@@ -82,11 +81,9 @@ const Produk = () => {
         </Grid>
 
         <Grid container spacing={2}>
-          {/* <Carousel cols={3} rows={1} gap={10} loop> */}
           {produk.map((card, index) => (
-            // <Carousel.Item key={index}>
             <Grid item xs={6} sm={6} md={4} lg={4} key={index}>
-              <Card style={{ borderRadius: 0, border: '2px solid #0895CA' }}>
+              <Card className="card-produk">
                 <CardContent>
                   <Grid container mt={2} spacing={2} justify='center' alignItems="center">
                     <Grid item xs={12} sm={3} md={3}>
@@ -146,7 +143,7 @@ const Produk = () => {
                   <Grid container spacing={4}>
                     <Grid item xs={12}>
                       <a
-                        href='https://wa.me/628992021306'
+                        href='https://wa.me/+628992021306?text=Hai%20kak%2C%20saya%20mau%20pesan%0AProduk%20%3A%0AJumlah%20%3A%0A'
                         style={{ textDecoration: 'none' }}
                         target="_blank" rel="noreferrer"
                       >
@@ -171,9 +168,7 @@ const Produk = () => {
                 </CardContent>
               </Card>
             </Grid>
-            // </Carousel.Item>
           ))}
-          {/* </Carousel> */}
         </Grid>
       </Container>
     </React.Fragment>
