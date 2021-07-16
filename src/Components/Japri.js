@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 const sejarah = [
   {
     fase: "Fase 1",
-    text: "Japri Corporation didirikan pada tahun 14 Maret 2016 oleh beberapa orang mahasiswa bidikmisi yang peka melihat peluang bisnis bidang jasa di Unsil."
+    text: "Japri Corporation didirikan pada tanggal 14 Maret 2016 oleh beberapa orang mahasiswa bidikmisi yang peka melihat peluang bisnis bidang jasa di Unsil."
   },
     {
     fase: "Fase 2",

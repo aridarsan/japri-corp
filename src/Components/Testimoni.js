@@ -77,7 +77,6 @@ const Testimoni = (props) => {
               {testi.length !== 0 ? testi.data.map((card, index) => (
                 <Carousel.Item key={index}>
                   <Card
-                    className="shadow"
                     style={{
                       borderRadius: 0,
                       border: '2px solid #0895CA',

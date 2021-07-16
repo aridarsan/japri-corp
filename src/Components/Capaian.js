@@ -3,10 +3,10 @@ import { Grid, Container } from '@material-ui/core';
 
 const capaian = [
   { jumlah: '200+', label: 'Pelanggan Mahasiswa' },
-  { jumlah: '200+', label: 'Pelanggan Organisasi' },
+  { jumlah: '46+', label: 'Pelanggan Organisasi' },
   { jumlah: '200+', label: 'Buku Dipesan' },
   { jumlah: '200+', label: 'Transaksi Perminggu' },
-  { jumlah: '200+', label: 'PDH Dibuat Pertahun' },
+  { jumlah: '1771+', label: 'PDH Dibuat Pertahun' },
   { jumlah: '200+', label: 'Skrips Dicetak' },
 ];
 

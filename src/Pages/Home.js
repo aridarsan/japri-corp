@@ -12,7 +12,7 @@ import Testimoni from '../Components/Testimoni';
 // import ContextApi from '../Context/ContextApi';
 
 //import foto
-import blmus from '../Images/foto-testi/1.png';
+import blmft from '../Images/foto-testi/1.png';
 import chefhimagi from '../Images/foto-testi/2.png';
 import skripsiprabayar from '../Images/foto-testi/3.png';
 import topihimagri from '../Images/foto-testi/4.png';
@@ -50,10 +50,10 @@ const customer = [
 ];
 
 const pelanggan = [
-  { img: blmus, name: 'PDH BLM US' },
+  { img: blmft, name: 'PDH BLM FT' },
   { img: chefhimagi, name: 'Baju Chef Himagi' },
   { img: skripsiprabayar, name: 'Skripsi Prabayar' },
-  { img: topihimagri, name: 'Topi Himagri' },
+  { img: topihimagri, name: 'Bucket Hat Himagri' },
   { img: pdhbemfeb, name: 'PDH BEM FEB' },
   { img: kaosunigal, name: 'T-shirt Unigal' },
   { img: printpasca2, name: 'Print Pascabayar' },

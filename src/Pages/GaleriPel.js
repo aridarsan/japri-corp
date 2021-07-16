@@ -1,7 +1,7 @@
 import React from 'react';
 import GaleriPelanggan from '../Components/GaleriPelanggan';
 
-import blmus from '../Images/foto-testi/1.png';
+import blmft from '../Images/foto-testi/1.png';
 import chefhimagi from '../Images/foto-testi/2.png';
 import skripsiprabayar from '../Images/foto-testi/3.png';
 import topihimagri from '../Images/foto-testi/4.png';
@@ -19,10 +19,10 @@ import upi from '../Images/foto-testi/15.png';
 import printpasca from '../Images/foto-testi/16.png';
 
 const pelanggan = [
-  { img: blmus, name: 'PDH BLM US' },
+  { img: blmft, name: 'PDH BLM FT' },
   { img: chefhimagi, name: 'Baju Chef Himagi' },
   { img: skripsiprabayar, name: 'Skripsi Prabayar' },
-  { img: topihimagri, name: 'Topi Himagri' },
+  { img: topihimagri, name: 'Bucket Hat Himagri' },
   { img: pdhbemfeb, name: 'PDH BEM FEB' },
   { img: kaosunigal, name: 'T-Shirt Unigal' },
   { img: printpasca2, name: 'Print Pascabayar' },
