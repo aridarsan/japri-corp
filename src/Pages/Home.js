@@ -22,30 +22,30 @@ import printpasca2 from '../Images/foto-testi/7.png';
 import hardcover from '../Images/foto-testi/8.png';
 
 import blmunsil from '../Images/pelanggan/blm-unsil.png';
-import bemunsil from '../Images/pelanggan/bem-unsil.png';
+import bemfeb from '../Images/pelanggan/bem-feb.png';
 import bemfai from '../Images/pelanggan/bem-fai.png';
 import blmfai from '../Images/pelanggan/blm-fai.png';
 import blmft from '../Images/pelanggan/blm-ft.png';
-import blmguys from '../Images/pelanggan/blm-guys.png';
+import himapbio from '../Images/pelanggan/himapbio.png';
 import demastai from '../Images/pelanggan/dema-stai.png';
-import femfaisi from '../Images/pelanggan/femfaisi.png';
+import bemfisip from '../Images/pelanggan/bem-fisip.png';
 import himagri from '../Images/pelanggan/himagri.png';
-import fpips from '../Images/pelanggan/fpips.png';
 import himageo from '../Images/pelanggan/himageo.png';
 import edsa from '../Images/pelanggan/edsa.png';
+import bemfkip from '../Images/pelanggan/bem-fkip.png';
 
 const customer = [
   { image: blmunsil, nama: 'BLM UNSIL' },
-  { image: bemunsil, nama: 'BEM UNSIL' },
+  { image: bemfeb, nama: 'BEM FEB' },
   { image: blmfai, nama: 'BLM FAI' },
   { image: bemfai, nama: 'BEM FAI' },
   { image: blmft, nama: 'BLM FT' },
-  { image: blmguys, nama: 'BLM' },
+  { image: himapbio, nama: 'HIMAPBIO' },
   { image: demastai, nama: 'DEMA STAI' },
-  { image: femfaisi, nama: 'FEMFAISI' },
+  { image: bemfisip, nama: 'BEM FISIP' },
   { image: edsa, nama: 'EDSA' },
   { image: himagri, nama: 'HIMAGRI' },
-  { image: fpips, nama: 'Kopma BS UPI' },
+  { image: bemfkip, nama: 'BEM FKIP' },
   { image: himageo, nama: 'HIMAGEO' },
 ];
 

@@ -2,12 +2,12 @@ import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 
 const capaian = [
-  { jumlah: '200+', label: 'Pelanggan Mahasiswa' },
-  { jumlah: '46+', label: 'Pelanggan Organisasi' },
-  { jumlah: '200+', label: 'Buku Dipesan' },
-  { jumlah: '200+', label: 'Transaksi Perminggu' },
-  { jumlah: '1771+', label: 'PDH Dibuat Pertahun' },
-  { jumlah: '200+', label: 'Skrips Dicetak' },
+  { jumlah: '5.827+', label: 'Pelanggan Mahasiswa', satuan: "orang" },
+  { jumlah: '48+', label: 'Pelanggan Organisasi', satuan: "organisasi" },
+  { jumlah: '1.789+', label: 'Buku Dipesan', satuan: "buah" },
+  { jumlah: '865+', label: 'Selempang Dipesan', satuan: "buah" },
+  { jumlah: '1.825+', label: 'PDH Dibuat', satuan: "psc" },
+  { jumlah: '1.786+', label: 'Skrips Dicetak', satuan: "skripsi" },
 ];
 
 const Capaian = () => {

@@ -31,7 +31,7 @@ const Pelanggan = (props) => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2} mt={2}>
+        <Grid container spacing={2} mt={2} justify="center">
           {props.customer.map((item, index) => (
             <Grid item xs={2} md={2} lg={1} m='auto' key={index}>
               <img src={item.image} alt={item.nama} width='100%' />
@@ -60,6 +60,7 @@ const Pelanggan = (props) => {
               color: '#ffffff',
               borderRadius: '0',
               fontFamily: 'Montserrat',
+              marginTop: "1rem",
               display: props.display,
             }}
             onClick={handleClick}
