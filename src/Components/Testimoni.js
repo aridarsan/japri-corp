@@ -81,16 +81,17 @@ const Testimoni = (props) => {
                       borderRadius: 0,
                       border: '2px solid #0895CA',
                       margin: 'auto',
-                      minHeight: "15rem"
+                      height: "21rem"
                     }}
                   >
                     <CardContent>
-                      <Grid container spacing={2}>
+                      <Grid container spacing={2} justifycontent="center">
                         <Grid item xs={3} sm={2} md={3} lg={3}>
                           <img
                             style={{
                               width: '100%',
                               margin: 'auto',
+                              position: "relative"
                             }}
                             src={card.avatar}
                             alt='icon'

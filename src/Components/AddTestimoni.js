@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { Grid, Container, TextField, Button, Typography, Box } from '@material-ui/core';
+import { Grid, Container, TextField, Button, Typography, Box, IconButton, InputAdornment } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 import testimoni from '../Images/ilustrasi/testimoni.svg';
 import Swal from 'sweetalert2';
 import ContextApi from '../Context/ContextApi';
+import CloseIcon from '@material-ui/icons/Close';
 
 const AddTestimoni = (props) => {
   const [nama, setNama] = React.useState('')
@@ -79,12 +80,26 @@ const AddTestimoni = (props) => {
           <Grid item xs={12} md={6} lg={6}>
             <form noValidate name='submitTesti' autoComplete='off'>
               <TextField
-                id='nama'
+                id='produk'
                 label='Nama'
                 variant='filled'
                 color='primary'
+                value={nama}
                 className='inputan'
                 onChange={(e)=> setNama(e.target.value)}
+                helperText={nama.length + "/20 karakter"}
+                InputProps={{
+                  readOnly: nama.length >= 20 ? true : false ,
+                  endAdornment: 
+                  <InputAdornment position="end">                      
+                    <IconButton
+                          aria-label="toggle-nama"
+                          onClick={() => setNama("")}
+                        >
+                          <CloseIcon />
+                    </IconButton>
+                  </InputAdornment>,
+                }}
               />
               <br />
               <TextField
@@ -92,8 +107,22 @@ const AddTestimoni = (props) => {
                 label='Produk'
                 variant='filled'
                 color='primary'
+                value={produk}
                 className='inputan'
                 onChange={(e)=> setProduk(e.target.value)}
+                helperText={produk.length + "/25 karakter"}
+                InputProps={{
+                  readOnly: produk.length >= 25 ? true : false ,
+                  endAdornment: 
+                  <InputAdornment position="end">                      
+                    <IconButton
+                          aria-label="toggle-produk"
+                          onClick={() => setProduk("")}
+                        >
+                          <CloseIcon />
+                    </IconButton>
+                  </InputAdornment>,
+                }}
               />
               <br />
               <Box component='fieldset' mb={3} borderColor='transparent'>
@@ -112,12 +141,27 @@ const AddTestimoni = (props) => {
                 label='Pesan'
                 variant='filled'
                 color='primary'
+                value={pesan}
                 multiline
                 rows={5}
                 className='inputan'
                 onChange={(e)=> setPesan(e.target.value)}
+                helperText={pesan.length + "/250 karakter"}
+                InputProps={{
+                  readOnly: pesan.length >= 250 ?  true : false ,
+                  endAdornment: 
+                  <InputAdornment position="end">                      
+                    <IconButton
+                          aria-label="toggle-nama"
+                          onClick={() => setPesan("")}
+                        >
+                          <CloseIcon />
+                    </IconButton>
+                  </InputAdornment>,
+                }}
               />
               <br />
+
               <Button
                 variant='contained'
                 size='large'

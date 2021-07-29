@@ -39,7 +39,7 @@ a{
 
 .inputan{
   width: 100% !important; 
-  border-radius: 0 !important; 
+/*  border-radius: 0 !important;*/ 
   margin-bottom: 2rem !important;
 }
 

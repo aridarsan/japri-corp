@@ -73,7 +73,7 @@ const tanyajawab = [
     id: 'panel8bh-header',
     tanya: 'Kenapa sih aku harus order di Japri ? ',
     jawab:
-      '1. Fast Respon dalam melayani 2. Customer Kualitas produk terbaik 3. Banyak berbagai promosi produk Harga produk sangat bersahabat dengan customer 4.Bertanggung jawab apabila terjadi kesalahan dari pihak Japri Kecepatan dalam proses produksi dan Menyediakan jasa design untuk memudahkan konsumen',
+      '1. Fast Respon dalam melayani 2. Customer Kualitas produk terbaik 3. Banyak berbagai promosi produk harga produk sangat bersahabat dengan customer 4. Bertanggung jawab apabila terjadi kesalahan dari pihak Japri Kecepatan dalam proses produksi dan menyediakan jasa design untuk memudahkan konsumen',
   },
   {
     panel: 'panel9',

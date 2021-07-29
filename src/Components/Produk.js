@@ -120,28 +120,6 @@ const Produk = () => {
 
                   <Grid container spacing={4}>
                     <Grid item xs={12}>
-                      <Link to='cara-pesan' style={{ textDecoration: 'none' }}>
-                        <Button
-                          m='auto'
-                          variant='outlined'
-                          style={{
-                            width: '100%',
-                            borderRadius: '0',
-                            border: '2px solid #0895CA',
-                            fontWeight: '600',
-                            marginTop: '1rem',
-                            color: '#0895CA',
-                            fontFamily: 'Montserrat',
-                          }}
-                        >
-                          Cara pesan
-                        </Button>
-                      </Link>
-                    </Grid>
-                  </Grid>
-
-                  <Grid container spacing={4}>
-                    <Grid item xs={12}>
                       <a
                         href='https://wa.me/+628992021306?text=Hai%20kak%2C%20saya%20mau%20pesan%0AProduk%20%3A%0AJumlah%20%3A%0A'
                         style={{ textDecoration: 'none' }}
@@ -157,6 +135,7 @@ const Produk = () => {
                             color: '#ffffff',
                             borderRadius: '0',
                             fontFamily: 'Montserrat',
+                            marginTop: '1rem',
                           }}
                           size='medium'
                         >
@@ -165,6 +144,28 @@ const Produk = () => {
                       </a>
                     </Grid>
                   </Grid>
+
+                  <Grid container spacing={4}>
+                    <Grid item xs={12}>
+                      <Link to='cara-pesan' style={{ textDecoration: 'none' }}>
+                        <Button
+                          m='auto'
+                          variant='outlined'
+                          style={{
+                            width: '100%',
+                            borderRadius: '0',
+                            border: '2px solid #0895CA',
+                            fontWeight: '600',
+                            color: '#0895CA',
+                            fontFamily: 'Montserrat',
+                          }}
+                        >
+                          Cara pesan
+                        </Button>
+                      </Link>
+                    </Grid>
+                  </Grid>
+
                 </CardContent>
               </Card>
             </Grid>
