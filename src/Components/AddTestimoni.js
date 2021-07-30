@@ -1,5 +1,5 @@
 import React, { useContext, useRef } from 'react';
-import { Grid, Container, TextField, Button, Typography, Box, IconButton, InputAdornment, Hidden, CircularProgress } from '@material-ui/core';
+import { Grid, Container, TextField, Button, Typography, Box, IconButton, InputAdornment, Hidden } from '@material-ui/core';
 import Rating from '@material-ui/lab/Rating';
 import testimoni from '../Images/ilustrasi/testimoni.svg';
 import Swal from 'sweetalert2';
@@ -191,7 +191,7 @@ const AddTestimoni = (props) => {
                     size="large"
                     style={{margin: "1rem 0", padding: "0.7rem"}}
                     >
-                    <CircularProgress size="small" color="secondary" />
+                    tunggu...
                   </Button>
                 }
               </Grid>
