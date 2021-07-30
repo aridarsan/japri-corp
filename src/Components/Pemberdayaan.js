@@ -49,15 +49,15 @@ const Pemberdayaan = () => {
                 dengan melaksanakan beberapa tugas yang diberikan seperti:
               </p>
               <p>
-                <Done style={{ color: '#0895CA' }} /> Membagikan poster atau
+                <Done style={{ color: '#0895CA' }} /> &nbsp; Membagikan poster atau
                 pamflet promosi ke berbagai grup
               </p>
               <p>
-                <Done style={{ color: '#0895CA' }} /> Mengajak mahasiswa untuk
+                <Done style={{ color: '#0895CA' }} /> &nbsp; Mengajak mahasiswa untuk
                 membeli paket print skripsi
               </p>
               <p>
-                <Done style={{ color: '#0895CA' }} /> Mengajak mahasiswa untuk
+                <Done style={{ color: '#0895CA' }} /> &nbsp; Mengajak mahasiswa untuk
                 membeli produk Japri Wisuda
               </p>
               <br />

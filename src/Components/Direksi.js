@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Card, CardContent, Container } from '@material-ui/core';
+import { Grid, Card, CardContent, Container, IconButton } from '@material-ui/core';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -64,7 +64,7 @@ const tim = [
     whatsapp: 'https://wa.me/6281222288153',
     instagram: 'https://www.instagram.com/ari_darsan/',
     email: 'mailto:aridarsan09@gmail.com',
-    web: 'https://aridarsan.me',
+    web: 'https://aridarsan.xyz',
   },
 ];
 
@@ -135,7 +135,7 @@ const Direksi = () => {
               </Card>
               <div
                 style={{
-                  padding: '1rem',
+                  padding: '.5rem',
                   backgroundColor: '#0895CA',
                   color: '#ffff',
                 }}
@@ -149,24 +149,28 @@ const Direksi = () => {
                 >
                   <a href={item.whatsapp} target="_blank" rel="noreferrer">
                     {' '}
-                    <WhatsAppIcon className='icon-direksi' />{' '}
+                    <IconButton className="icon-btn"> <WhatsAppIcon className='icon-direksi' /></IconButton>{' '}
                   </a>
                   <a href={item.instagram} target="_blank" rel="noreferrer">
                     {' '}
-                    <InstagramIcon className='icon-direksi' />{' '}
+                    <IconButton className="icon-btn"> <InstagramIcon className='icon-direksi' /></IconButton>{' '}
                   </a>
                   <a href={item.email} target="_blank" rel="noreferrer">
                     {' '}
-                    <MailOutlineIcon className='icon-direksi' />{' '}
+                    <IconButton className="icon-btn"> <MailOutlineIcon className='icon-direksi' /></IconButton>{' '}
                   </a>
                   <a href={item.web} target="_blank" rel="noreferrer">
                     {' '}
-                    <LanguageIcon
+                  <IconButton 
+                  className="icon-btn"                      
+                    style={{
+                        display: item.web !== '' ? '' : 'none',
+                      }}> <LanguageIcon
                       className='icon-direksi'
                       style={{
                         display: item.web !== '' ? '' : 'none',
                       }}
-                    />{' '}
+                    /></IconButton>{' '}
                   </a>
                 </h5>
               </div>

@@ -28,7 +28,7 @@ const sejarah = [
   },
     {
     fase: "Fase 5",
-    text: "Japri Corp turut membantu mengharumkan kampus yang menjadi tonggak sejarah berdirinya plaform satrtup berbasis pemberdayaan mahasiswa yakni kampus Universitas Siliwangi pada tingkat Nasional. Terbukti dengan 5 kali juara diberbagai lomba Business Plan. Dan menjadi salah satu bisnis penyumbang piala terbanyak bagi unsil."
+    text: "Japri Corp turut membantu mengharumkan kampus yang menjadi tonggak sejarah berdirinya plaform satrtup berbasis pemberdayaan mahasiswa yakni kampus Universitas Siliwangi pada tingkat Nasional. Terbukti dengan 5 kali juara diberbagai lomba Business Plan. Dan menjadi salah satu bisnis penyumbang piala terbanyak bagi UNSIL."
   },
 ]
 
@@ -50,7 +50,7 @@ const Japri = () => {
 
             <p className="pjudul"
             >
-              Latar beridirinya sebuah start up yang bernama Jasa Prima
+              Latar berdirinya sebuah start up yang bernama Jasa Prima
               Corporation
             </p>
           </Grid>
@@ -73,8 +73,8 @@ const Japri = () => {
                   Japri Selaku startup platform multifungsi, ingin menjadi
                   solusi bagi mahasiswa dalam pemenuhan kebutuhannya. Aktifitas
                   tersebut teroptimasi dengan tersedianya Kru-kru japri di
-                  setiap ceruk pasar kampus. Dengannya, Japri mengusung ide
-                  'Pemberdayaan Manusia'. Pemberdayaan secara ekonomi yang
+                  setiap ceruk pasar kampus. Dengannya, Japri mengusung ide 
+                  <span style={{fontWeight: "600", color: "#0895CA"}}> 'Pemberdayaan Manusia'</span>. Pemberdayaan secara ekonomi yang
                   diharapkan mampu memberikan akses pembelajaran kewirausahaan
                   secara kualitatif, dan mendapatkan extra money secara
                   kuantitatif. Dengan demikian, platform Japri ini mampu

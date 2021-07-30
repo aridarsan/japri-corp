@@ -25,10 +25,9 @@ a{
 .icon-direksi {
   color: #ffff;
   text-decoration: none;
-  margin: 0.5rem 1rem;
 }
 
-.icon-direksi:hover {
+.icon-btn:hover .icon-direksi{
   color: var(--secondary);
   text-decoration: none;
 }
@@ -40,7 +39,7 @@ a{
 .inputan{
   width: 100% !important; 
 /*  border-radius: 0 !important;*/ 
-  margin-bottom: 2rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .heading3{
@@ -126,6 +125,14 @@ a{
   color: var(--secondary) !important;
 }
 
+.btn-second{
+  border-radius: 0 !important;
+  border: 2px solid #0895CA !important;
+  font-weight: 600 !important;
+  color: #0895CA !important;
+  font-family: 'Montserrat'!important;
+}
+
 .card-produk{
   border-radius: 0 !important; 
   border: 2px solid #0895CA;
@@ -135,7 +142,6 @@ a{
 .card-produk:hover{
   box-shadow: 0 0 30px rgb(0 0 0 / 10%);
 }
-
 
 
 /*Mobile*/
@@ -200,6 +206,10 @@ a{
     width: 50% !important;
     margin: 0 20% !important;
   }
+
+  .img-profil{
+    margin-left: .8rem;
+  }
 }
 
 
@@ -249,6 +259,10 @@ a{
   small,
   .text_small {
     font-size: 0.8rem;
+  }
+
+  .img-profil{
+    margin-left: 20% !important;
   }
 }
 
@@ -300,5 +314,9 @@ a{
   small,
   .text_small {
     font-size: 0.8rem;
+  }
+
+  .img-profil{
+    margin-left: 1.25rem !important;
   }
 }

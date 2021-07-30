@@ -50,7 +50,7 @@ const Prestasi = () => {
 
             <p className="pjudul"
             >
-              Japri telah banyak menjuarai beberapa kompetisi di kalangan
+              Japri telah menjuarai beberapa kompetisi di kalangan
               mahasiswa
             </p>
           </Grid>

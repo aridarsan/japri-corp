@@ -113,7 +113,7 @@ const Produk = () => {
                       }}
                       key={index}
                     >
-                      <DoneIcon style={{ color: '#0895CA' }} />
+                      <DoneIcon style={{ color: '#0895CA' }} /> &nbsp;
                       {items}
                     </p>
                   ))}
@@ -126,17 +126,10 @@ const Produk = () => {
                         target="_blank" rel="noreferrer"
                       >
                         <Button
-                          m='auto'
                           variant='contained'
-                          style={{
-                            width: '100%',
-                            backgroundColor: '#0895CA',
-                            fontWeight: '600',
-                            color: '#ffffff',
-                            borderRadius: '0',
-                            fontFamily: 'Montserrat',
-                            marginTop: '1rem',
-                          }}
+                          className="btn-submit"
+                          style={{marginTop: "1rem"}}
+                          fullWidth
                           size='medium'
                         >
                           Pesan sekarang
@@ -151,14 +144,8 @@ const Produk = () => {
                         <Button
                           m='auto'
                           variant='outlined'
-                          style={{
-                            width: '100%',
-                            borderRadius: '0',
-                            border: '2px solid #0895CA',
-                            fontWeight: '600',
-                            color: '#0895CA',
-                            fontFamily: 'Montserrat',
-                          }}
+                          fullWidth
+                          className="btn-second"
                         >
                           Cara pesan
                         </Button>

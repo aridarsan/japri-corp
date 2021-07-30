@@ -89,7 +89,10 @@ const Testimoni = (props) => {
                         <Grid item xs={3} sm={2} md={3} lg={3}>
                           <img
                             style={{
-                              width: '100%',
+                              width: '5rem',
+                              height: "5rem",
+                              objectFit: "cover",
+                              borderRadius: "50%",
                               margin: 'auto',
                               position: "relative"
                             }}
