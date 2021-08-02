@@ -163,7 +163,7 @@ const AddTestimoni = (props) => {
             <Grid container spacing={2} justify="center">
               <Grid item lg={9} md={9} xs={9}>
                 <input
-                  id='produk'
+                  id='profil'
                   type="file"
                   ref={inputFile}
                   className="inputan"
@@ -201,7 +201,7 @@ const AddTestimoni = (props) => {
               <Grid container spacing={2}>
                 <Grid item lg={6}  md={6} xs={12}>
                   <TextField
-                    id='produk'
+                    id='nama'
                     label='Nama'
                     variant='filled'
                     color='primary'
