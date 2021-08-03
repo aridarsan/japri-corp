@@ -34,6 +34,8 @@ display: block;
 
 const Burgermenu = (props) => {
   return(
+
+    //Burger menu on mobile
     <Wrapper onClick={props.handleNavbar}>
       <div className={props.navbarState ? "open" : ""}>
         <span></span>

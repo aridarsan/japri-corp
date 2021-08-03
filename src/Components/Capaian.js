@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Container } from '@material-ui/core';
 
+//API Data
 const capaian = [
   { jumlah: '5.827+', label: 'Pelanggan Mahasiswa', satuan: "orang" },
   { jumlah: '48+', label: 'Pelanggan Organisasi', satuan: "organisasi" },

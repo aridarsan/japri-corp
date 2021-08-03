@@ -16,7 +16,7 @@ const AddTestimoni = (props) => {
   const [pesan, setPesan] = React.useState('')
   const [produk, setProduk] = React.useState('')
   const [profil, setProfil] = React.useState(pic)
-  const [gambar, setGambar] = React.useState([null]);
+  const [gambar, setGambar] = React.useState(null);
   const [upload, setUpload] = React.useState(false)
   const [isSubmitting, setIsSubmitting] = React.useState(false)
   const inputFile = useRef(null);
@@ -24,6 +24,7 @@ const AddTestimoni = (props) => {
     inputFile.current.click();
   };
 
+  //Validation
   const validation = () => {
     if (nama === "") {
       return false;
@@ -40,8 +41,10 @@ const AddTestimoni = (props) => {
 
   const form = document.forms['submitTesti'];
 
+  //Define context
   const { getTesti, setTesti, createTesti } = useContext(ContextApi)
 
+  //Create new Testimoni
   const onCreateTesti = (e) => {
     e.preventDefault()
 
@@ -68,6 +71,7 @@ const AddTestimoni = (props) => {
     }
   }
 
+  //url imgbb / image hosting
   const url = "https://api.imgbb.com/1/upload?expiration=0&key=e94ee26fef2703f75e715fe65578a0d2";
 
   const handleSubmit = (e) => {
@@ -87,7 +91,7 @@ const AddTestimoni = (props) => {
       }
     };
 
-    // Do your axios
+    // Upload image to hosting
     axios
       .post(url, formdata, config)
       .then((res) => {
@@ -112,6 +116,35 @@ const AddTestimoni = (props) => {
       });
       });
   };
+
+  // const handleUpload = async (e) => {
+  //   e.preventDefault();
+  //   setUpload(true)
+  //   if(gambar !== null){
+  //     let formdata = new FormData();
+  //     formdata.append("image", gambar);
+
+  //     console.log(gambar);
+
+  //     const config = {
+  //       headers: {
+  //         "Content-type": "multipart/form-data"
+  //       }
+  //     };
+  //     await uploadImage(url, formdata, config)  
+  //     setUpload(false)
+  //     setProfil(image.data.data.image.url);
+  //     console.log(image)
+  //   }else{
+  //       setUpload(false)
+  //       Swal.fire({
+  //       title: 'Maaf',
+  //       text: 'anda belum memilih gambar',
+  //       icon: 'warning',
+  //       confirmButtonText: 'Ok, coba lagi',
+  //     });
+  //   }
+  // }
 
   return (
     <React.Fragment>
@@ -185,7 +218,7 @@ const AddTestimoni = (props) => {
                     : 
                   <Button  
                     variant="contained" 
-                    disabled="true"
+                    disabled={true}
                     className="btn-second"
                     fullWidth 
                     size="large"

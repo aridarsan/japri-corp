@@ -13,6 +13,7 @@ import {
   CLEAR_TESTIMONI,
   CREATE_TESTIMONI,
   DELETE_TESTIMONI,
+  UPLOAD_IMAGE,
 } from './ContextTypes';
 
 const ContextState = ({ children }) => {
@@ -23,6 +24,7 @@ const ContextState = ({ children }) => {
     testi: [],
     data: '',
     loading: true,
+    image: ''
   };
 
   // Dispatch the reducer
@@ -76,8 +78,25 @@ const ContextState = ({ children }) => {
     }
   };
 
+  //Upload Image
+  const uploadImage = async (imgUrl, data, config) =>{
+    try{
+      const image = await axios.post(imgUrl, data, config);
+      dispatch({type: UPLOAD_IMAGE, payload: image});
+      console.log(image);
+      Swal.fire({
+        title: 'Sukses',
+        text: 'Foto sudah di upload',
+        icon: 'success',
+        confirmButtonText: 'Oke, lanjut',
+      });
+    }catch(err){
+      console.log(err.message);
+    }
+  }
+
   // Destruct the states
-  const { testi, data, loading } = state;
+  const { testi, data, loading, image } = state;
 
   // Here's where we gonna use this state and funcitons to dealing with the context
   // The context will wrapping our entire application with this component and accept children in it
@@ -93,6 +112,8 @@ const ContextState = ({ children }) => {
         setTesti,
         createTesti,
         deleteTesti,
+        uploadImage,
+        image,
       }}
     >
       {children}

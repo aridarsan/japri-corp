@@ -27,7 +27,7 @@ const Footer = () => {
       >
         <Container maxWidth='lg'>
           <Grid container spacing={4}>
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={4} lg={3}>
               <img src={japri} alt='japri logo' width='30%' />
               <h5 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h5>
               <a href="https://goo.gl/maps/SAm6i6vMKKK5Au9y8" target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}} alt="maps">
@@ -40,7 +40,7 @@ const Footer = () => {
               </a>
             </Grid>
 
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={4} lg={3}>
               <h5 style={{ color: '#ffff' }}>Media Sosial</h5>
 
               <a href='https://wa.me/628992021306' target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}}>
@@ -69,11 +69,11 @@ const Footer = () => {
             </a>
             </Grid>
 
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={4} lg={6}>
               <h5 style={{ color: '#ffff' }}>Semua Produk</h5>
               <Grid container spacing={2}>
                 {produk.map((item, index) => (
-                  <Grid item xs={3} md={3} lg={3} key={index}>
+                  <Grid item xs={2} md={4} lg={2} key={index}>
                     <a href='#produk'>
                       <img src={item} alt='produk' width='100%' className="footer-img" />
                     </a>

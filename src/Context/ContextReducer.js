@@ -4,6 +4,7 @@ import {
   CLEAR_TESTIMONI,
   CREATE_TESTIMONI,
   DELETE_TESTIMONI,
+  UPLOAD_IMAGE
 } from './ContextTypes';
 
 // eslint-disable-next-line
@@ -45,6 +46,14 @@ export default (state, { type, payload }) => {
         ...state,
         testi: state.testi.filter((test) => test.id !== payload),
       };
+
+    //Upload Image
+    case UPLOAD_IMAGE:
+      return {
+        ...state,
+        image: payload,
+      };
+
     default:
       return state;
   }

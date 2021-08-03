@@ -5,6 +5,7 @@ import {Link} from "react-router-dom"
 
 const Brand = () => {
   return (
+      //Japri Logo
     <Link to='/'>
       {' '}
       <Image src={logo} alt='japri logo' />

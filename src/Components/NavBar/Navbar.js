@@ -11,14 +11,14 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const NavBar = styled(animated.div)`
-position: fixed;
-width: 100%;
-top: 0;
-left: 0;
-background: #0895CA;
-z-index: 100;
-font-size: 1rem;
-box-shadow: 0 0 40px rgb(0 0 0 / 10%);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #0895CA;
+  z-index: 100;
+  font-size: 1rem;
+  box-shadow: 0 0 40px rgb(0 0 0 / 10%);
 `;
 
 const FlexContainer = styled.div`
