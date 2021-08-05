@@ -79,6 +79,7 @@ const AddTestimoni = (props) => {
     setUpload(true)
     console.log("submit.....");
 
+  if(gambar !== null){
     let formdata = new FormData();
     // formdata.append("nama", nama);
     formdata.append("image", gambar);
@@ -115,6 +116,15 @@ const AddTestimoni = (props) => {
         confirmButtonText: 'Ok, coba lagi',
       });
       });
+    }else{
+            setUpload(false)
+            Swal.fire({
+            title: 'Maaf',
+            text: 'anda belum memilih gambar',
+            icon: 'warning',
+            confirmButtonText: 'Ok, coba lagi',
+          });
+        }
   };
 
   // const handleUpload = async (e) => {
