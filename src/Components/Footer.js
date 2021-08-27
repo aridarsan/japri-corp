@@ -11,6 +11,7 @@ import konveksi from '../Images/footer/konveksi.svg';
 import wisuda from '../Images/footer/wisuda.svg';
 import referensi from '../Images/footer/referensi.svg';
 import service from '../Images/footer/service.svg';
+import { Link } from 'react-router-dom';
 
 const produk = [print, percetakan, konveksi, wisuda, referensi, service];
 
@@ -69,11 +70,23 @@ const Footer = () => {
             </a>
             </Grid>
 
-            <Grid item xs={12} md={4} lg={6}>
+            <Grid item xs={12} md={4} lg={3}>
+              <h5 style={{ color: '#ffff' }}>Karier</h5>
+
+             <Link to='karier' style={{ textDecoration: 'none' }}>
+                <div className="footer-div">
+                  <p style={{ color: '#ffff' }}>
+                    Open Recruitment Manager
+                  </p>
+                </div>
+              </Link>
+            </Grid>
+
+            <Grid item xs={12} md={4} lg={3}>
               <h5 style={{ color: '#ffff' }}>Semua Produk</h5>
               <Grid container spacing={2}>
                 {produk.map((item, index) => (
-                  <Grid item xs={2} md={4} lg={2} key={index}>
+                  <Grid item xs={2} md={4} lg={4} key={index}>
                     <a href='#produk'>
                       <img src={item} alt='produk' width='100%' className="footer-img" />
                     </a>

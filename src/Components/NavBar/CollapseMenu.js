@@ -118,6 +118,20 @@ const CollapseMenu = (props) => {
             </NavLink>
           </li>
           <Hr />
+
+          <li>
+            <NavLink
+              to='/karier'
+              activeClassName='active'
+              onClick={props.handleNavbar}
+            >
+              <div>
+                <p>Karier</p>
+              </div>
+            </NavLink>
+          </li>
+          <Hr />
+
           <li>
             <a
               href='https://wa.me/628992021306'

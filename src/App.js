@@ -9,6 +9,7 @@ import Pelanggans from "./Pages/Pelanggans"
 import GaleriPel from "./Pages/GaleriPel"
 import TestiContextApi from "./Pages/TestiContextApi"
 import Footer from "./Components/Footer"
+import Karier from "./Components/Karier"
 import CaraPesan from "./Components/CaraPesan"
 import NotFound from "./Components/NotFound"
 import ScrollToTop from "./Components/ScrollToTop"
@@ -48,6 +49,10 @@ function App() {
 
           <Route path='/galeri-pelanggan'>
             <GaleriPel/>
+          </Route>
+
+          <Route path='/karier'>
+            <Karier/>
           </Route>
 
           <Route path="*">
