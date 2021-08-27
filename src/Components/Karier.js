@@ -3,14 +3,15 @@ import { Grid, Container, Button, Accordion, AccordionDetails, AccordionSummary,
 import oprec from "../Images/oprec.png";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
-const tanyajawab = [
+const Detail = [
   {
     panel: 'panel1',
     aria: 'panel1bh-content',
     id: 'panel1bh-header',
     tanya: 'Financial Manager',
     jawab:["Paham dan mengerti dasar akuntansi",
-    "Paham tentang laporan keuangan","Menguasai Microsoft office (word, excel, power point)", 
+    "Paham tentang laporan keuangan",
+    "Menguasai Microsoft office (word, excel, power point)", 
     "Siap bekerja dalam tekanan",
     "Siap bertanggung jawab dan berkomitmen"
     ]
@@ -20,12 +21,14 @@ const tanyajawab = [
     aria: 'panel2bh-content',
     id: 'panel2bh-header',
     tanya: 'Marketing Manager',
-    jawab:[
-    	"Siap berkomitmen aktif diJapri",
-    	"Jujur dan bertanggung jawab",
-    	"Menguasai Microsoft office (word, excel, power point)",
-    	"Mampu mengelola persediaan barang",
-    	"Siap bekerja everytime dan dibawah tekanan"
+    jawab:
+    [
+      "Memahami dasar-dasar marketing",
+      "Komunikasi level up",
+      "Berani mengambil resiko",
+      "Tidak pemalu",
+      "Siap berkomitmen aktif di Japri",
+      "Memiliki tekad yang kuat"
     ]
   },
   {
@@ -36,12 +39,11 @@ const tanyajawab = [
       'Operational Manager',
     jawab:
       [
-    	"Memahami dasar-dasar marketing",
-    	"Komunikasi level up",
-    	"Berani mengambil resiko",
-    	" Tidak pemalu",
-    	"Siap berkomitmen aktif di Japri",
-    	"Memiliki tekad yang kuat"
+      "Siap berkomitmen aktif diJapri",
+      "Jujur dan bertanggung jawab",
+      "Menguasai Microsoft office (word, excel, power point)",
+      "Mampu mengelola persediaan barang",
+      "Siap bekerja everytime dan dibawah tekanan"
     ]
   },
   {
@@ -123,7 +125,7 @@ const Karier = () => {
         		<h5> Syarat Khusus</h5>
 
         		<Grid item xs={12}>
-            {tanyajawab.map((item, index) => (
+            {Detail.map((item, index) => (
               <Accordion
                 expanded={expanded === item.panel}
                 onChange={handleChange(item.panel)}
