@@ -9,16 +9,12 @@ import { autoPlay } from 'react-swipeable-views-utils';
 import Hero1 from '../Images/hero/Hero1.png';
 import Hero2 from '../Images/hero/Hero2.png';
 import Hero3 from '../Images/hero/Hero3.png';
-import Hero4 from '../Images/hero/Hero4.png';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const tutorialSteps = [
   {
     imgPath: Hero1,
-  },
-  {
-    imgPath: Hero4,
   },
   {
     imgPath: Hero2,

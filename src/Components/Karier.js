@@ -39,7 +39,7 @@ const Detail = [
       'Operational Manager',
     jawab:
       [
-      "Siap berkomitmen aktif diJapri",
+      "Siap berkomitmen aktif di Japri",
       "Jujur dan bertanggung jawab",
       "Menguasai Microsoft office (word, excel, power point)",
       "Mampu mengelola persediaan barang",
@@ -158,11 +158,7 @@ const Karier = () => {
         			<li> Berjiwa wirausaha dan mau belajar berwirausaha </li>
         		</ol>
         		<p>
-        			Apa sih yang akan kamu dapatkan ketika terpilih menjadi manager di Japri Corp? 
-        		</p>
-
-        		<p>
-        			 Tentu kamu nanti akan mendapatkan
+        			Apa sih yang akan kamu dapatkan ketika terpilih menjadi manager di Japri Corp? Tentu kamu nanti akan mendapatkan
         		</p>
 
         		<ol>
