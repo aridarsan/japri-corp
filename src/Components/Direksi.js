@@ -136,7 +136,7 @@ const Direksi = () => {
               <div
                 style={{
                   padding: '.5rem',
-                  backgroundColor: '#0895CA',
+                  backgroundColor: '#0094F4',
                   color: '#ffff',
                 }}
               >

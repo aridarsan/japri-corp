@@ -20,7 +20,7 @@ const MyDot = ({ isActive }) => (
       height: isActive ? '.5rem' : '.5rem',
       width: isActive ? '2rem' : '.5rem',
       borderRadius: '10px',
-      background: isActive ? '#0895CA' : '#4f4f4f',
+      background: isActive ? '#0094F4' : '#4f4f4f',
       marginTop: '2rem',
       overflow: 'visible',
     }}
@@ -79,7 +79,7 @@ const Testimoni = (props) => {
                   <Card
                     style={{
                       borderRadius: 0,
-                      border: '2px solid #0895CA',
+                      border: '2px solid #0094F4',
                       margin: 'auto',
                       height: "21rem"
                     }}
@@ -136,7 +136,7 @@ const Testimoni = (props) => {
             m='auto'
             variant='contained'
             style={{
-              backgroundColor: '#0895CA',
+              backgroundColor: '#0094F4',
               fontWeight: '600',
               color: '#ffffff',
               borderRadius: '0',

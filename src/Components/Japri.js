@@ -74,7 +74,7 @@ const Japri = () => {
                   solusi bagi mahasiswa dalam pemenuhan kebutuhannya. Aktifitas
                   tersebut teroptimasi dengan tersedianya Kru-kru japri di
                   setiap ceruk pasar kampus. Dengannya, Japri mengusung ide 
-                  <span style={{fontWeight: "600", color: "#0895CA"}}> 'Pemberdayaan Manusia'</span>. Pemberdayaan secara ekonomi yang
+                  <span style={{fontWeight: "600", color: "#0094F4"}}> 'Pemberdayaan Manusia'</span>. Pemberdayaan secara ekonomi yang
                   diharapkan mampu memberikan akses pembelajaran kewirausahaan
                   secara kualitatif, dan mendapatkan extra money secara
                   kuantitatif. Dengan demikian, platform Japri ini mampu
@@ -95,7 +95,7 @@ const Japri = () => {
           <Grid container spacing={2} justify="center">
           {sejarah.map((item, index) => (
             <Grid item xs={12} md={6} lg={6} key={index}>
-              <Paper elevation={1} className={classes.paper} style={{minHeight: "10rem", border: "2px solid #0895CA"}}>
+              <Paper elevation={1} className={classes.paper} style={{minHeight: "10rem", border: "2px solid #0094F4"}}>
                 <h5>{item.fase}</h5>
                 <small>
                   {item.text}

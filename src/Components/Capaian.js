@@ -33,7 +33,7 @@ const Capaian = () => {
         </Grid>
       </Container>
 
-      <div style={{ backgroundColor: '#0895CA', marginBottom: '2rem' }}>
+      <div style={{ backgroundColor: '#0094F4', marginBottom: '2rem' }}>
         <Container maxWidth='lg'>
           <Grid container spacing={4} mt={2}>
             {capaian.map((item, index) => (

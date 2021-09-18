@@ -6,7 +6,8 @@ html {
 }
 
 * {
-  --primary: #0895ca;
+/*  --primary: #0094F4;*/
+--primary: #0094F4;
   --secondary: #f7da64;
 }
 
@@ -46,7 +47,7 @@ a{
   margin: 3rem 0 2rem 0 !important;
   font-weight: 700 !important;
   font-family: Montserrat !important;
-  color: #0895CA !important;
+  color: #0094F4 !important;
   text-align: center !important;
 }
 
@@ -58,7 +59,7 @@ a{
 }
 
 .borderBottom{
-  border-bottom: .25rem solid #0895CA;
+  border-bottom: .25rem solid #0094F4;
 }
 
 .overlay {
@@ -112,7 +113,7 @@ a{
 }
 
 .btn-submit{
-  background-color: #0895CA !important;
+  background-color: #0094F4 !important;
   font-weight: 600 !important;
   color: #ffffff !important;
   border-radius: 0 !important;
@@ -127,15 +128,15 @@ a{
 
 .btn-second{
   border-radius: 0 !important;
-  border: 2px solid #0895CA !important;
+  border: 2px solid #0094F4 !important;
   font-weight: 600 !important;
-  color: #0895CA !important;
+  color: #0094F4 !important;
   font-family: 'Montserrat'!important;
 }
 
 .card-produk{
   border-radius: 0 !important; 
-  border: 2px solid #0895CA;
+  border: 2px solid #0094F4;
   box-shadow: none;
 }
 

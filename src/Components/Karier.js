@@ -129,11 +129,11 @@ const Karier = () => {
               <Accordion
                 expanded={expanded === item.panel}
                 onChange={handleChange(item.panel)}
-                style={{ borderRadius: '0px', border: '2px solid #0895CA' }}
+                style={{ borderRadius: '0px', border: '2px solid #0094F4' }}
                 key={index}
               >
                 <AccordionSummary
-                  expandIcon={<ExpandMoreIcon style={{ color: '#0895CA' }} />}
+                  expandIcon={<ExpandMoreIcon style={{ color: '#0094F4' }} />}
                   aria-controls={item.aria}
                   id={item.id}
                 >

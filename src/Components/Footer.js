@@ -20,7 +20,7 @@ const Footer = () => {
     <React.Fragment>
       <div
         style={{
-          backgroundColor: '#0895CA',
+          backgroundColor: '#0094F4',
           marginTop: '4rem',
           padding: '2rem 0',
           color: '#ffff',

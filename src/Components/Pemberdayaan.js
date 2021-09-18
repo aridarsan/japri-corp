@@ -37,7 +37,7 @@ const Pemberdayaan = () => {
             <Grid item xs={12} md={6} lg={6}>
               <h3
                 style={{
-                  borderLeft: '0.25rem  solid #0895CA',
+                  borderLeft: '0.25rem  solid #0094F4',
                   paddingLeft: '1rem',
                 }}
               >
@@ -49,21 +49,21 @@ const Pemberdayaan = () => {
                 dengan melaksanakan beberapa tugas yang diberikan seperti:
               </p>
               <p>
-                <Done style={{ color: '#0895CA' }} /> &nbsp; Membagikan poster atau
+                <Done style={{ color: '#0094F4' }} /> &nbsp; Membagikan poster atau
                 pamflet promosi ke berbagai grup
               </p>
               <p>
-                <Done style={{ color: '#0895CA' }} /> &nbsp; Mengajak mahasiswa untuk
+                <Done style={{ color: '#0094F4' }} /> &nbsp; Mengajak mahasiswa untuk
                 membeli paket print skripsi
               </p>
               <p>
-                <Done style={{ color: '#0895CA' }} /> &nbsp; Mengajak mahasiswa untuk
+                <Done style={{ color: '#0094F4' }} /> &nbsp; Mengajak mahasiswa untuk
                 membeli produk Japri Wisuda
               </p>
               <br />
               <h3
                 style={{
-                  borderLeft: '0.25rem solid #0895CA',
+                  borderLeft: '0.25rem solid #0094F4',
                   paddingLeft: '1rem',
                 }}
               >

@@ -9,7 +9,8 @@ import Pelanggans from "./Pages/Pelanggans"
 import GaleriPel from "./Pages/GaleriPel"
 import TestiContextApi from "./Pages/TestiContextApi"
 import Footer from "./Components/Footer"
-import Karier from "./Components/Karier"
+// import Karier from "./Components/Karier"
+import ComingSoon from "./Components/ComingSoon"
 import CaraPesan from "./Components/CaraPesan"
 import NotFound from "./Components/NotFound"
 import ScrollToTop from "./Components/ScrollToTop"
@@ -52,7 +53,7 @@ function App() {
           </Route>
 
           <Route path='/karier'>
-            <Karier/>
+            <ComingSoon/>
           </Route>
 
           <Route path="*">

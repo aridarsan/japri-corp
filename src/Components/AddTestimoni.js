@@ -210,7 +210,7 @@ const AddTestimoni = (props) => {
                   type="file"
                   ref={inputFile}
                   className="inputan"
-                  style={{marginTop: "1rem", border: "2px solid #0895ca", padding: ".25rem"}}
+                  style={{marginTop: "1rem", border: "2px solid #0094F4", padding: ".25rem"}}
                   onChange={(e) => setGambar(e.target.files[0])}
                 />
               </Grid>

@@ -113,7 +113,7 @@ const Produk = () => {
                       }}
                       key={index}
                     >
-                      <DoneIcon style={{ color: '#0895CA' }} /> &nbsp;
+                      <DoneIcon style={{ color: '#0094F4' }} /> &nbsp;
                       {items}
                     </p>
                   ))}

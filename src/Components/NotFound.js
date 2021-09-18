@@ -19,7 +19,7 @@ const NotFound = () => {
           <Button
             variant='contained'
             style={{
-              backgroundColor: '#0895CA',
+              backgroundColor: '#0094F4',
               fontWeight: '600',
               color: '#ffffff',
               borderRadius: '0',

@@ -7,7 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const CollapseWrapper = styled(animated.div)`
-  background: #0895ca;
+  background: #0094F4;
   position: fixed;
   top: 4.5rem;
   left: 0;
