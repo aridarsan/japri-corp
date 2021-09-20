@@ -58,7 +58,7 @@ const Japri = () => {
 
         <Grid container spacing={4}>
           <Grid item xs={12} md={12} lg={12}>
-            <Card className="tentang" style={{ backgroundColor: '#F7DA64' }}>
+            <Card className="tentang" style={{ backgroundColor: '#F9B200' }}>
               <CardContent>
                 <h4>Sekilas Japri</h4>
                 <p>

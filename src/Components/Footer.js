@@ -98,7 +98,7 @@ const Footer = () => {
         </Container>
       </div>
 
-      <div style={{ backgroundColor: '#F7DA64' }}>
+      <div style={{ backgroundColor: '#F9B200' }}>
         <Container maxWidth='lg'>
           <p style={{ textAlign: 'center', padding: '1rem 0', margin: '0' }}>
             Copyright <CopyrightOutlined /> 2021. All right reserved. Powered by

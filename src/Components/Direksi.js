@@ -97,7 +97,7 @@ const Direksi = () => {
                 style={{
                   padding: '2rem',
                   paddingBottom: '0',
-                  backgroundColor: '#F7DA64',
+                  backgroundColor: '#F9B200',
                   borderRadius: '0',
                 }}
               >

@@ -41,7 +41,7 @@ const Capaian = () => {
                 <h2
                   style={{
                     textAlign: 'center',
-                    color: '#F7DA64',
+                    color: '#F9B200',
                     fontWeight: '700',
                   }}
                 >

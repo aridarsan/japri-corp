@@ -8,7 +8,7 @@ const Pemberdayaan = () => {
     <React.Fragment>
       <div
         style={{
-          backgroundColor: '#F7DA64',
+          backgroundColor: '#F9B200',
           marginTop: '4rem',
           padding: '2rem 0',
         }}

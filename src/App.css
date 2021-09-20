@@ -8,7 +8,9 @@ html {
 * {
 /*  --primary: #0094F4;*/
 --primary: #0094F4;
-  --secondary: #f7da64;
+/*  --secondary: #f7da64;*/
+  --secondary: #F9B200;
+
 }
 
 h5 a:hover{
