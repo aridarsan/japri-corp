@@ -31,11 +31,17 @@ const Footer = () => {
             <Grid item xs={12} md={4} lg={3}>
               <img src={japri} alt='japri logo' width='30%' />
               <h5 style={{ color: '#ffff', marginTop: '1rem' }}>Alamat</h5>
-              <a href="https://goo.gl/maps/SAm6i6vMKKK5Au9y8" target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}} alt="maps">
-                <div className="footer-div">
+              <a
+                href='https://goo.gl/maps/SAm6i6vMKKK5Au9y8'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#ffff', textDecoration: 'none' }}
+                alt='maps'
+              >
+                <div className='footer-div'>
                   <p>
-                    <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan, Kecamatan
-                    Tawang Kota Tasikmalaya
+                    <LocationOnOutlined /> Gg. Macan II, Kel Kahuripan,
+                    Kecamatan Tawang Kota Tasikmalaya
                   </p>
                 </div>
               </a>
@@ -44,39 +50,51 @@ const Footer = () => {
             <Grid item xs={12} md={4} lg={3}>
               <h5 style={{ color: '#ffff' }}>Media Sosial</h5>
 
-              <a href='https://wa.me/628992021306' target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}}>
-                <div className="footer-div">
+              <a
+                href='https://wa.me/628992021306'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#ffff', textDecoration: 'none' }}
+              >
+                <div className='footer-div'>
                   <p>
                     <WhatsAppIcon /> 08992021306
                   </p>
                 </div>
               </a>
-            <a
-              href='https://www.instagram.com/japricorp/' target="_blank" rel="noreferrer" style={{color: "#ffff", textDecoration: "none"}}>
-              <div className="footer-div">
-                <p>
-                  <InstagramIcon /> japricorp
-                </p>
-              </div>
-            </a>
-            <a
-              href='mailto:japri.corporation@gmail.com'  target="_blank" rel="noreferrer"style={{color: "#ffff", textDecoration: "none"}}
-            >
-              <div className="footer-div">
-                <p>
-                  <MailOutlineIcon /> japri.corporation@gmail.com
-                </p>
-              </div>
-            </a>
+              <a
+                href='https://www.instagram.com/japricorp/'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#ffff', textDecoration: 'none' }}
+              >
+                <div className='footer-div'>
+                  <p>
+                    <InstagramIcon /> japricorp
+                  </p>
+                </div>
+              </a>
+              <a
+                href='mailto:japri.corporation@gmail.com'
+                target='_blank'
+                rel='noreferrer'
+                style={{ color: '#ffff', textDecoration: 'none' }}
+              >
+                <div className='footer-div'>
+                  <p>
+                    <MailOutlineIcon /> japri.corporation@gmail.com
+                  </p>
+                </div>
+              </a>
             </Grid>
 
             <Grid item xs={12} md={4} lg={3}>
-              <h5 style={{ color: '#ffff' }}>Karier</h5>
+              <h5 style={{ color: '#ffff' }}>Karir</h5>
 
-             <Link to='karier' style={{ textDecoration: 'none' }}>
-                <div className="footer-div">
+              <Link to='karir' style={{ textDecoration: 'none' }}>
+                <div className='footer-div'>
                   <p style={{ color: '#ffff' }}>
-                    Open Recruitment Manager
+                    Open Recruitment Customer Relation Officer
                   </p>
                 </div>
               </Link>
@@ -88,7 +106,12 @@ const Footer = () => {
                 {produk.map((item, index) => (
                   <Grid item xs={2} md={4} lg={4} key={index}>
                     <a href='#produk'>
-                      <img src={item} alt='produk' width='100%' className="footer-img" />
+                      <img
+                        src={item}
+                        alt='produk'
+                        width='100%'
+                        className='footer-img'
+                      />
                     </a>
                   </Grid>
                 ))}

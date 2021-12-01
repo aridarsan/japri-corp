@@ -88,7 +88,7 @@ const Navbar = (props) => {
             <NavLink to='/cara-pesan' activeClassName="active">Cara Pesan</NavLink>
             <NavLink to='/about' activeClassName="active">Tentang Japri</NavLink>
             <NavLink to='/testimoni' activeClassName="active">Testimoni</NavLink>
-            <NavLink to='/karier' activeClassName="active">Karier</NavLink>
+            <NavLink to='/karir' activeClassName="active">Karir</NavLink>
             <a href='https://wa.me/628992021306' target="_blank" rel="noreferrer"><WhatsAppIcon/></a>
             <a href='https://www.instagram.com/japricorp/' target="_blank" rel="noreferrer"><InstagramIcon/></a>
             <a href='mailto:japri.corporation@gmail.com' target="_blank" rel="noreferrer"><MailOutlineIcon/></a>
