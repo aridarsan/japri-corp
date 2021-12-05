@@ -80,7 +80,7 @@ const Karier = () => {
               <span className='borderBottom'>Open Recruitment</span>
             </h3>
 
-            <p className='pjudul'>Begabunglah bersama kami</p>
+            <p className='pjudul'>Bergabunglah bersama kami</p>
           </Grid>
         </Grid>
 
@@ -97,7 +97,7 @@ const Karier = () => {
             <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
 
             <p>
-              Hallo sahabat Japri? Apa kabar? Semoga selalu dalam keadaan baik
+              Halo sahabat Japri? Apa kabar? Semoga selalu dalam keadaan baik
               ya sob 😘
             </p>
 
@@ -227,13 +227,13 @@ const Karier = () => {
             </a>
 
             <h5>Waktu pendaftaran:</h5>
-            <p>Kamis, 2 Desember 2021 s/d Minggu 5 Desember 2021</p>
+            <p>Kamis, 2 Desember 2021 s/d Rabu 8 Desember 2021</p>
 
             <h5> Seleksi berkas:</h5>
-            <p>Senin, 6 Desember 2021</p>
+            <p>Kamis, 9 Desember 2021</p>
 
             <h5> Pengumuman:</h5>
-            <p>Selasa, 7 Desember 2021</p>
+            <p>Jumat, 10 Desember 2021</p>
 
             <p>
               Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
