@@ -15,21 +15,26 @@ const NotFound = () => {
       <Container maxWidth='lg'>
         <Grid container justify='center' style={{ marginTop: '6rem' }}>
           <h4> Maaf halaman {location.pathname} tidak ditemukan</h4>
-          <img src={NotFounds} alt='NotFound' width='80%' />
-          <Button
-            variant='contained'
-            style={{
-              backgroundColor: '#0094F4',
-              fontWeight: '600',
-              color: '#ffffff',
-              borderRadius: '0',
-              fontFamily: 'Montserrat',
-            }}
-            onClick={handleClick}
-            size='medium'
-          >
-            Kembali ke Halaman Utama
-          </Button>
+          <Grid container justify='center'>
+            <img src={NotFounds} alt='NotFound' width='80%' />
+        </Grid>
+
+        <Grid container justify="center">
+            <Button
+              variant='contained'
+              style={{
+                backgroundColor: '#0094F4',
+                fontWeight: '600',
+                color: '#ffffff',
+                borderRadius: '0',
+                fontFamily: 'Montserrat',
+              }}
+              onClick={handleClick}
+              size='medium'
+            >
+              Kembali ke Beranda
+            </Button>
+          </Grid>
         </Grid>
       </Container>
     </React.Fragment>

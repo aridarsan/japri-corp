@@ -227,13 +227,13 @@ const Karier = () => {
             </a>
 
             <h5>Waktu pendaftaran:</h5>
-            <p>Kamis, 2 Desember 2021 s/d Rabu 8 Desember 2021</p>
+            <p>Kamis, 2 Desember 2021 s/d Rabu, 15 Desember 2021</p>
 
             <h5> Seleksi berkas:</h5>
-            <p>Kamis, 9 Desember 2021</p>
+            <p>Kamis, 16 Desember 2021</p>
 
             <h5> Pengumuman:</h5>
-            <p>Jumat, 10 Desember 2021</p>
+            <p>Jumat, 17 Desember 2021</p>
 
             <p>
               Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
