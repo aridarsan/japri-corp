@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from './Components/NavBar/Navbar';
 import GlobalStyle from "./Styles/Global"
@@ -15,12 +15,21 @@ import CaraPesan from "./Components/CaraPesan"
 import NotFound from "./Components/NotFound"
 import ScrollToTop from "./Components/ScrollToTop"
 import ContextState from './Context/ContextState';
+import ReactGA from 'react-ga';
 
 function App() {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
+
+  useEffect(() => {
+    ReactGA.initialize('G-K66V8KGJB2');
+    // To Report Page View 
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    // console.log(window.location.pathname)
+  }, [])
+
   return (
     <React.Fragment>
       <Navbar navbarState={navbarOpen} handleNavbar={handleNavbar} />
