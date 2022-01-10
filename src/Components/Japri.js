@@ -36,7 +36,7 @@ const Japri = () => {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Container maxWidth='lg' style={{ marginTop: '5rem' }}>
+      <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
             <h3 className="heading3"

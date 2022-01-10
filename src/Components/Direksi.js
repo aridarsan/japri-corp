@@ -1,26 +1,45 @@
 import React from 'react';
-import { Grid, Card, CardContent, Container, IconButton } from '@material-ui/core';
+import {
+  Grid,
+  Card,
+  CardContent,
+  Container,
+  IconButton,
+} from '@material-ui/core';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
-import wanda from '../Images/direksi/wanda.png';
+// import wanda from '../Images/direksi/wanda.png';
 import roni from '../Images/direksi/roni.png';
 import reza from '../Images/direksi/reza.png';
 import ade from '../Images/direksi/ade.png';
-import ahmad from '../Images/direksi/ahmad.png';
+// import ahmad from '../Images/direksi/ahmad.png';
 import ari from '../Images/direksi/ari.png';
+import alam from '../Images/direksi/alam.png';
+import widi from '../Images/direksi/widi.png';
+import zacky from '../Images/direksi/zacky.png';
+import asikin from '../Images/direksi/asikin.png';
 
 const tim = [
   {
-    nama: 'Wanda Lugina',
+    nama: 'M Reza Maulana',
     jabatan: 'Chief Executive Officer',
-    foto: wanda,
-    whatsapp: 'https://wa.me/6282216017320',
-    instagram: 'https://www.instagram.com/wandalugina/',
-    email: 'mailto:wandalugina@gmail.com',
+    foto: reza,
+    whatsapp: 'https://wa.me/6285720705717',
+    instagram: 'https://www.instagram.com/rezamaulard/',
+    email: 'mailto:rezamaulana1327.rm@gmail.com',
     web: '',
   },
+  // {
+  //   nama: 'Wanda Lugina',
+  //   jabatan: 'Chief Executive Officer',
+  //   foto: wanda,
+  //   whatsapp: 'https://wa.me/6282216017320',
+  //   instagram: 'https://www.instagram.com/wandalugina/',
+  //   email: 'mailto:wandalugina@gmail.com',
+  //   web: '',
+  // },
   {
     nama: 'Roni Iskandar',
     jabatan: 'Chief Financial Officer',
@@ -28,15 +47,6 @@ const tim = [
     whatsapp: 'https://wa.me/6281222651518',
     instagram: 'https://www.instagram.com/roni_iskan/',
     email: 'mailto:roniiskan0409@gmail.com',
-    web: '',
-  },
-  {
-    nama: 'M Reza Maulana A',
-    jabatan: 'Chief Operational Officer',
-    foto: reza,
-    whatsapp: 'https://wa.me/6285720705717',
-    instagram: 'https://www.instagram.com/rezamaulard/',
-    email: 'mailto:rezamaulana1327.rm@gmail.com',
     web: '',
   },
   {
@@ -48,23 +58,59 @@ const tim = [
     email: 'mailto:aderohimat163@gmail.com',
     web: '',
   },
-  {
-    nama: 'Muchamad Ahmad M',
-    jabatan: 'Digital Marketing dan Desain',
-    foto: ahmad,
-    whatsapp: 'https://wa.me/6285770002426',
-    instagram: 'https://www.instagram.com/mucheahmad/',
-    email: 'mailto:@gmail.com',
-    web: '',
-  },
+  // {
+  //   nama: 'Muchamad Ahmad M',
+  //   jabatan: 'Digital Marketing dan Desain',
+  //   foto: ahmad,
+  //   whatsapp: 'https://wa.me/6285770002426',
+  //   instagram: 'https://www.instagram.com/mucheahmad/',
+  //   email: 'mailto:@gmail.com',
+  //   web: '',
+  // },
   {
     nama: 'Ari Darsan',
-    jabatan: 'DMD & Web Developer',
+    jabatan: 'Web Developer',
     foto: ari,
     whatsapp: 'https://wa.me/6281222288153',
     instagram: 'https://www.instagram.com/ari_darsan/',
     email: 'mailto:aridarsan09@gmail.com',
     web: 'https://aridarsan.xyz',
+  },
+  {
+    nama: 'Rizky M. Asikin',
+    jabatan: 'General Manager',
+    foto: asikin,
+    whatsapp: 'https://wa.me/6285161060648',
+    instagram: 'https://www.instagram.com/rzkyaskn',
+    email: 'mailto:rizky.asikin123@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Alam Dewa S',
+    jabatan: 'Manager Financial',
+    foto: alam,
+    whatsapp: 'https://wa.me/6285794673613',
+    instagram: 'https://www.instagram.com/alamdewa26_',
+    email: 'mailto:dewalam26@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Widhi Hatmoko',
+    jabatan: 'Manager DMD',
+    foto: widi,
+    whatsapp: 'https://wa.me/62899664423566',
+    instagram: 'https://www.instagram.com/folklurs',
+    email: 'mailto:hatmokowidhi@hotmail.com',
+    web: '',
+  },
+  {
+    nama: 'Zacky Ahmad N',
+    jabatan: 'Manager Operasional',
+    foto: zacky,
+    whatsapp: 'https://wa.me/6287881574771',
+    instagram: 'https://www.instagram.com/',
+    email: 'mailto:zackynopal40@gmail.com',
+    web: '',
   },
 ];
 
@@ -74,17 +120,11 @@ const Direksi = () => {
       <Container maxWidth='lg'>
         <Grid container>
           <Grid item xs={12}>
-            <h3 className="heading3"
-            >
-              <span
-                className='borderBottom'
-              >
-                Tim Japri
-              </span>
+            <h3 className='heading3'>
+              <span className='borderBottom'>Tim Japri</span>
             </h3>
 
-            <p className="pjudul"
-            >
+            <p className='pjudul'>
               Inilah orang-orang dibalik Japri Corporation
             </p>
           </Grid>
@@ -92,7 +132,7 @@ const Direksi = () => {
 
         <Grid container spacing={2}>
           {tim.map((item, index) => (
-            <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
+            <Grid item xs={12} sm={6} md={6} lg={3} key={index}>
               <Card
                 style={{
                   padding: '2rem',
@@ -126,7 +166,10 @@ const Direksi = () => {
                         {item.nama}
                       </h4>
 
-                      <h6 className='direksi' style={{ textAlign: 'center', color: "#4f4f4f" }}>
+                      <h6
+                        className='direksi'
+                        style={{ textAlign: 'center', color: '#4f4f4f' }}
+                      >
                         {item.jabatan}
                       </h6>
                     </Grid>
@@ -147,30 +190,43 @@ const Direksi = () => {
                     textAlign: 'center',
                   }}
                 >
-                  <a href={item.whatsapp} target="_blank" rel="noreferrer">
+                  <a href={item.whatsapp} target='_blank' rel='noreferrer'>
                     {' '}
-                    <IconButton className="icon-btn"> <WhatsAppIcon className='icon-direksi' /></IconButton>{' '}
+                    <IconButton className='icon-btn'>
+                      {' '}
+                      <WhatsAppIcon className='icon-direksi' />
+                    </IconButton>{' '}
                   </a>
-                  <a href={item.instagram} target="_blank" rel="noreferrer">
+                  <a href={item.instagram} target='_blank' rel='noreferrer'>
                     {' '}
-                    <IconButton className="icon-btn"> <InstagramIcon className='icon-direksi' /></IconButton>{' '}
+                    <IconButton className='icon-btn'>
+                      {' '}
+                      <InstagramIcon className='icon-direksi' />
+                    </IconButton>{' '}
                   </a>
-                  <a href={item.email} target="_blank" rel="noreferrer">
+                  <a href={item.email} target='_blank' rel='noreferrer'>
                     {' '}
-                    <IconButton className="icon-btn"> <MailOutlineIcon className='icon-direksi' /></IconButton>{' '}
+                    <IconButton className='icon-btn'>
+                      {' '}
+                      <MailOutlineIcon className='icon-direksi' />
+                    </IconButton>{' '}
                   </a>
-                  <a href={item.web} target="_blank" rel="noreferrer">
+                  <a href={item.web} target='_blank' rel='noreferrer'>
                     {' '}
-                  <IconButton 
-                  className="icon-btn"                      
-                    style={{
-                        display: item.web !== '' ? '' : 'none',
-                      }}> <LanguageIcon
-                      className='icon-direksi'
+                    <IconButton
+                      className='icon-btn'
                       style={{
                         display: item.web !== '' ? '' : 'none',
                       }}
-                    /></IconButton>{' '}
+                    >
+                      {' '}
+                      <LanguageIcon
+                        className='icon-direksi'
+                        style={{
+                          display: item.web !== '' ? '' : 'none',
+                        }}
+                      />
+                    </IconButton>{' '}
                   </a>
                 </h5>
               </div>
