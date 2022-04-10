@@ -11,15 +11,15 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
 // import wanda from '../Images/direksi/wanda.png';
-import roni from '../Images/direksi/roni.png';
-import reza from '../Images/direksi/reza.png';
-import ade from '../Images/direksi/ade.png';
 // import ahmad from '../Images/direksi/ahmad.png';
-import ari from '../Images/direksi/ari.png';
-import alam from '../Images/direksi/alam.png';
-import widi from '../Images/direksi/widi.png';
-import zacky from '../Images/direksi/zacky.png';
-import asikin from '../Images/direksi/asikin.png';
+import roni from '../Images/direksi/Roni.png';
+import reza from '../Images/direksi/Reza.png';
+import ade from '../Images/direksi/Ade.png';
+import ari from '../Images/direksi/Ari.png';
+import alam from '../Images/direksi/Alam.png';
+import widi from '../Images/direksi/Widi.png';
+import zacky from '../Images/direksi/Zacky.png';
+import asikin from '../Images/direksi/Asikin.png';
 
 const tim = [
   {
@@ -74,7 +74,7 @@ const tim = [
     whatsapp: 'https://wa.me/6281222288153',
     instagram: 'https://www.instagram.com/ari_darsan/',
     email: 'mailto:aridarsan09@gmail.com',
-    web: 'https://aridarsan.xyz',
+    web: 'https://aridarsan.netlify.app',
   },
   {
     nama: 'Rizky M. Asikin',
