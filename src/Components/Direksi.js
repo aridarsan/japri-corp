@@ -12,14 +12,14 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
 // import wanda from '../Images/direksi/wanda.png';
 // import ahmad from '../Images/direksi/ahmad.png';
-import roni from '../Images/direksi/Roni.png';
-import reza from '../Images/direksi/Reza.png';
-import ade from '../Images/direksi/Ade.png';
-import ari from '../Images/direksi/Ari.png';
-import alam from '../Images/direksi/Alam.png';
-import widi from '../Images/direksi/Widi.png';
-import zacky from '../Images/direksi/Zacky.png';
-import asikin from '../Images/direksi/Asikin.png';
+import roni from '../Images/direksi/roni.png';
+import reza from '../Images/direksi/reza.png';
+import ade from '../Images/direksi/ade.png';
+import ari from '../Images/direksi/ari.png';
+import alam from '../Images/direksi/alam.png';
+import widi from '../Images/direksi/widi.png';
+import zacky from '../Images/direksi/zacky.png';
+import asikin from '../Images/direksi/asikin.png';
 
 const tim = [
   {
