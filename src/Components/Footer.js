@@ -34,7 +34,7 @@ const Footer = () => {
               <a
                 href='https://goo.gl/maps/SAm6i6vMKKK5Au9y8'
                 target='_blank'
-                rel='noreferrer'
+                rel="noopener noreferrer"
                 style={{ color: '#ffff', textDecoration: 'none' }}
                 alt='maps'
               >
@@ -53,7 +53,7 @@ const Footer = () => {
               <a
                 href='https://wa.me/628992021306'
                 target='_blank'
-                rel='noreferrer'
+                rel="noopener noreferrer"
                 style={{ color: '#ffff', textDecoration: 'none' }}
               >
                 <div className='footer-div'>
@@ -65,7 +65,7 @@ const Footer = () => {
               <a
                 href='https://www.instagram.com/japricorp/'
                 target='_blank'
-                rel='noreferrer'
+                rel="noopener noreferrer"
                 style={{ color: '#ffff', textDecoration: 'none' }}
               >
                 <div className='footer-div'>
@@ -77,7 +77,7 @@ const Footer = () => {
               <a
                 href='mailto:japri.corporation@gmail.com'
                 target='_blank'
-                rel='noreferrer'
+                rel="noopener noreferrer"
                 style={{ color: '#ffff', textDecoration: 'none' }}
               >
                 <div className='footer-div'>

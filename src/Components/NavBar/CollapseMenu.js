@@ -137,7 +137,7 @@ const CollapseMenu = (props) => {
               href='https://wa.me/628992021306'
               onClick={props.handleNavbar}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
             >
               <div>
                 <p>
@@ -152,7 +152,7 @@ const CollapseMenu = (props) => {
               href='https://www.instagram.com/japricorp/'
               onClick={props.handleNavbar}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
             >
               <div>
                 <p>
@@ -167,7 +167,7 @@ const CollapseMenu = (props) => {
               href='mailto:japri.corporation@gmail.com'
               onClick={props.handleNavbar}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
             >
               <div>
                 <p>

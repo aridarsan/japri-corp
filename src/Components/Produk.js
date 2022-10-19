@@ -131,7 +131,7 @@ const Produk = () => {
                         href={card.wa}
                         style={{ textDecoration: 'none' }}
                         target='_blank'
-                        rel='noreferrer'
+                        rel="noopener noreferrer"
                       >
                         <Button
                           variant='contained'

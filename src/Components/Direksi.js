@@ -190,28 +190,28 @@ const Direksi = () => {
                     textAlign: 'center',
                   }}
                 >
-                  <a href={item.whatsapp} target='_blank' rel='noreferrer'>
+                  <a href={item.whatsapp} target='_blank' rel="noopener noreferrer">
                     {' '}
                     <IconButton className='icon-btn'>
                       {' '}
                       <WhatsAppIcon className='icon-direksi' />
                     </IconButton>{' '}
                   </a>
-                  <a href={item.instagram} target='_blank' rel='noreferrer'>
+                  <a href={item.instagram} target='_blank' rel="noopener noreferrer">
                     {' '}
                     <IconButton className='icon-btn'>
                       {' '}
                       <InstagramIcon className='icon-direksi' />
                     </IconButton>{' '}
                   </a>
-                  <a href={item.email} target='_blank' rel='noreferrer'>
+                  <a href={item.email} target='_blank' rel="noopener noreferrer">
                     {' '}
                     <IconButton className='icon-btn'>
                       {' '}
                       <MailOutlineIcon className='icon-direksi' />
                     </IconButton>{' '}
                   </a>
-                  <a href={item.web} target='_blank' rel='noreferrer'>
+                  <a href={item.web} target='_blank' rel="noopener noreferrer">
                     {' '}
                     <IconButton
                       className='icon-btn'
