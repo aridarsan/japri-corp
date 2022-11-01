@@ -121,12 +121,12 @@ const CollapseMenu = (props) => {
 
           <li>
             <NavLink
-              to='/karier'
+              to='/karir'
               activeClassName='active'
               onClick={props.handleNavbar}
             >
               <div>
-                <p>Karier</p>
+                <p>Karir</p>
               </div>
             </NavLink>
           </li>

@@ -7,7 +7,7 @@ import {
   // AccordionDetails,
   // AccordionSummary,
 } from '@material-ui/core';
-import oprec from '../Images/cro.png';
+import oprec from '../Images/cro 22.jpg';
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 // const Detail = [
@@ -97,14 +97,12 @@ const Karier = () => {
             <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
 
             <p>
-              Halo sahabat Japri? Apa kabar? Semoga selalu dalam keadaan baik
-              ya sob 😘
+            JAPRI Corp merupakan Start up mahasiswa yang sedang berkembang di wilayah priangan timur mengajak kamu masuk menjadi bagian dari kami
             </p>
 
             <p>
               {' '}
-              Kali ini Japri Corp sedang membuka pendaftaran bagi yang berminat
-              untuk mengisi posisi
+              POSISI
             </p>
 
             {/* <ul>
@@ -121,8 +119,13 @@ const Karier = () => {
             {/* <h5> Syarat Umum</h5> */}
 
             <ol>
-              <li>Mahasiswa tingkat akhir</li>
-              <li>Aktif di media sosial</li>
+              <li> Mahasiswa/i Angkatan 2019</li>
+              <li> Berasal dari kampus UNSIL, UNPER, UPI, BTH, POLTEKKES, STAI, STIA, dan UMTAS</li>
+              <li> Memiliki Keinginan untuk belajar dan berprogres</li>
+              <li> Berkomitmen </li>
+              <li> Mengisi formulir pada link pendaftaran yang tersedia</li>
+              <li> Berkeinginan untuk menambah uang saku</li>
+              <li> Aktif bersosial media.</li>
               {/* <li>
                 {' '}
                 Follow account sosial media japri (Instagram{' '}
@@ -193,7 +196,7 @@ const Karier = () => {
               <li> Beriman dan bertaqwa kepada Tuhan YME</li>
               <li> Berjiwa wirausaha dan mau belajar berwirausaha </li>
             </ol> */}
-            <p>
+            {/* <p>
               Apa sih yang akan kamu dapatkan ketika terpilih menjadi CRO di
               Japri Corp? Tentu kamu nanti akan mendapatkan:
             </p>
@@ -204,7 +207,7 @@ const Karier = () => {
               <li>Menambah relasi</li>
               <li>Mendapatkan sertifikat</li>
               <li>Mendapatkan diskon print up to 50%</li>
-            </ol>
+            </ol> */}
 
             <p>
               Apabila kamu berminat dan memenuhi kualifikasi diatas, silakan klik
@@ -212,9 +215,9 @@ const Karier = () => {
             </p>
 
             <a
-              href='https://bit.ly/formoprecCROJapri'
+              href='https://bit.ly/PendaftaranCRO2022'
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
             >
               <Button
                 variant='contained'
@@ -227,13 +230,17 @@ const Karier = () => {
             </a>
 
             <h5>Waktu pendaftaran:</h5>
-            <p>Kamis, 2 Desember 2021 s/d Rabu, 15 Desember 2021</p>
+            <p>Selasa, 1 November 2022 s/d Sabtu, 12 November 2022</p>
 
-            <h5> Seleksi berkas:</h5>
+            {/* <h5> Seleksi berkas:</h5>
             <p>Kamis, 16 Desember 2021</p>
 
             <h5> Pengumuman:</h5>
-            <p>Jumat, 17 Desember 2021</p>
+            <p>Jumat, 17 Desember 2021</p> */}
+            <p>Don't miss it..</p>
+
+            <h5>JAPRI CORP</h5>
+            <h5>Bisnisnya Mahasiswa</h5>
 
             <p>
               Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
