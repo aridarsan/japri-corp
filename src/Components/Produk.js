@@ -1,12 +1,12 @@
 import React from 'react';
 import { Grid, Card, CardContent, Container, Button } from '@material-ui/core';
 import DoneIcon from '@material-ui/icons/Done';
-import print from '../Images/produk/print.svg';
-import konveksi from '../Images/produk/konveksi.svg';
-import percetakan from '../Images/produk/percetakan.svg';
-import wisuda from '../Images/produk/wisuda.svg';
-import service from '../Images/produk/service.svg';
-import referensi from '../Images/produk/referensi.svg';
+import print from '../Images/produk/print.png';
+import konveksi from '../Images/produk/konveksi.png';
+import percetakan from '../Images/produk/percetakan.png';
+import wisuda from '../Images/produk/wisuda.png';
+import service from '../Images/produk/service.png';
+import referensi from '../Images/produk/referensi.png';
 import { Link } from 'react-router-dom';
 
 const produk = [
@@ -19,7 +19,7 @@ const produk = [
     wa: 'https://wa.me/+628992021306?text=Hallo%20mang%20japs%2C%20aku%20mau%20order%20Print%20nih%20%F0%9F%98%81%0ADiambil%20pukul%20berapa%20%20%20%20%20%20%3A%0ABerapa%20rangkap%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%0APascabayar%2Fprabayar%20%20%20%20%20%20%20%3A%0A%0A%0ADiisi%20dulu%20ya%20guys%20..%0A%23BisnisnyaMahasiswa%0A%23WaktuIndonesiaSkripsi',
   },
   {
-    src: percetakan,
+    src: konveksi,
     title: 'Japri Percetakan',
     description:
       'Japri menawarkan produk percetakan kualitas tinggi dengan harga murah',
@@ -27,7 +27,7 @@ const produk = [
     wa: 'https://wa.me/+628992021306?text=Hallo%20mang%20japs%2C%20aku%20mau%20order%20Percetakan%20nih%20%F0%9F%98%81%0ABuat%20kapan%20%20%20%20%20%20%20%20%20%3A%20%0ABerapa%20pcs%20%20%20%20%20%20%20%20%20%3A%20%0ABahan%20produk%20%20%20%20%20%3A%0ADesignnya%20ada%20%20%3F%20%20%3A%0A%0A%0ADiisi%20dulu%20ya%20guys%20..%0A%23BisnisnyaMahasiswa',
   },
   {
-    src: konveksi,
+    src: percetakan,
     title: 'Japri Konveksi',
     description:
       'Japri menawarkan produk konveksi kualitas nomor 1 dan harga bersahabat',
