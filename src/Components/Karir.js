@@ -7,7 +7,9 @@ import {
   // AccordionDetails,
   // AccordionSummary,
 } from '@material-ui/core';
-import oprec from '../Images/cro 22.jpg';
+// import oprec from '../Images/cro 22.jpg';
+import ops from '../Images/ops.png';
+
 // import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 // const Detail = [
@@ -79,21 +81,79 @@ const Karier = () => {
             <h3 className='heading3'>
               <span className='borderBottom'>Open Recruitment</span>
             </h3>
-
+            
             <p className='pjudul'>Bergabunglah bersama kami</p>
           </Grid>
         </Grid>
 
         <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <img src={oprec} width='100%' alt='oprec' />
+          <Grid item xs={12} sm={6} lg={6}>
+            <img src={ops} width='100%' alt='oprec' style={{borderRadius:"1rem"}}/>
+          </Grid>
+          <Grid item xs={12} sm={6} lg={6}>
+            <h4>OPREC STAFF OPERASIONAL JAPRI CORP</h4>
+
+            <p>
+            Japri Corp merupakan perusahaan start up mahasiswa yang sedang berkembang di wilayah priangan timur, kali ini kami mengajak kamu untuk menjadi bagian penting dari Japri Corp.
+            </p>
+
+            <h5>POSISI : Staff Operasional</h5>
+            
+            <p>Staff Operasional merupakan staff khusus Japri di bawah naungan manager operasional yang akan mengerjakan berbagai kegiatan operasional di Japri Corp dengan kualifikasi sebagai berikut:</p>
+
+            <ol>
+              <li> Mahasiswa aktif Universitas Siliwangi angkatan 2021 & 2022</li>
+              <li> Memiliki keinginan belajar yang tinggi dan berkomitmen</li>
+              <li> Sigap, cekatan, dan siap dalam menghadapi segala situasi yang mendadak dan butuh tindakan yang cepat</li>
+              <li> Memiliki kemampuan manajemen waktu yang baik</li>
+              <li> Disiplin dan memiliki kepribadian yang baik</li>
+              <li> Memiliki kendaraan pribadi dan SIM C menjadi nilai tambah</li>
+              <li> Aktif bersosial media</li>
+              <li> Mengirimkan CV</li>
+              <li> Mengisi formulir pendaftaran yang sudah disediakan</li>
+
+            </ol>
+            <h5>Timeline:</h5>
+            <p>Pendaftaran & Seleksi Berkas (2 - 3 Desember 2022)<br/>
+            Narahubung : 0878-8157-4771 (Zacky M. Nopal).</p>
+            
+            <p>
+              Bagi kalian yang sudah memenuhi persyaratan di atas dan berminat untuk begabung menjadi bagian kami silahkan mengisi formulir dibawah ini :
+            </p>
+
+            <a
+              href='https://bit.ly/HiringStaffOperasional'
+              target='_blank'
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant='contained'
+                className='btn-submit'
+                size='medium'
+                style={{ marginBottom: '1rem' }}
+              >
+                Daftar Menjadi Staff Japri
+              </Button>
+            </a>
+
+            <h5>JAPRI CORP<br/>
+            Bisnisnya Mahasiswa</h5>
+
+            <p>
+            Let's come and join us!!<br/>
+            Don't miss it!!!
+            </p>
+
+            <p>
+            #BisnisnyaMahasiswa<br/>
+            #SeeTheQuality
+            </p>
           </Grid>
         </Grid>
 
-        <br />
-
-        <Grid container spacing={2}>
+        {/* <Grid container spacing={2}>
           <Grid item xs={12}>
+            <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
             <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
 
             <p>
@@ -105,18 +165,18 @@ const Karier = () => {
               POSISI
             </p>
 
-            {/* <ul>
+            <ul>
               <li>Financial Manager</li>
               <li>Marketing Manager</li>
               <li>Operational Manager</li>
               <li>Digital Marketing dan Design Manager</li>
-            </ul> */}
+            </ul>
 
             <h5>Customer Relation Officer (CRO)</h5>
 
             <p>dengan kualifikasi sebagai berikut:</p>
 
-            {/* <h5> Syarat Umum</h5> */}
+            <h5> Syarat Umum</h5>
 
             <ol>
               <li> Mahasiswa/i Angkatan 2019</li>
@@ -126,7 +186,8 @@ const Karier = () => {
               <li> Mengisi formulir pada link pendaftaran yang tersedia</li>
               <li> Berkeinginan untuk menambah uang saku</li>
               <li> Aktif bersosial media.</li>
-              {/* <li>
+              
+              <li>
                 {' '}
                 Follow account sosial media japri (Instagram{' '}
                 <a
@@ -152,10 +213,10 @@ const Karier = () => {
                 </a>{' '}
                 ke 3 group whatsapp lalu screenshot{' '}
               </li>
-              <li> Upload screenshot ke link pendaftaran </li> */}
+              <li> Upload screenshot ke link pendaftaran </li>
             </ol>
 
-            {/* <h5> Syarat Khusus</h5>
+            <h5> Syarat Khusus</h5>
 
             <Grid item xs={12}>
               {Detail.map((item, index) => (
@@ -187,16 +248,16 @@ const Karier = () => {
                   </AccordionDetails>
                 </Accordion>
               ))}
-            </Grid> */}
+            </Grid>
 
-            {/* <br /> */}
+            <br />
 
-            {/* <h5> Ketentuan Umum</h5>
+            <h5> Ketentuan Umum</h5>
             <ol>
               <li> Beriman dan bertaqwa kepada Tuhan YME</li>
               <li> Berjiwa wirausaha dan mau belajar berwirausaha </li>
-            </ol> */}
-            {/* <p>
+            </ol>
+            <p>
               Apa sih yang akan kamu dapatkan ketika terpilih menjadi CRO di
               Japri Corp? Tentu kamu nanti akan mendapatkan:
             </p>
@@ -207,7 +268,7 @@ const Karier = () => {
               <li>Menambah relasi</li>
               <li>Mendapatkan sertifikat</li>
               <li>Mendapatkan diskon print up to 50%</li>
-            </ol> */}
+            </ol>
 
             <p>
               Apabila kamu berminat dan memenuhi kualifikasi diatas, silakan klik
@@ -232,11 +293,11 @@ const Karier = () => {
             <h5>Waktu pendaftaran:</h5>
             <p>Selasa, 1 November 2022 s/d Sabtu, 12 November 2022</p>
 
-            {/* <h5> Seleksi berkas:</h5>
+            <h5> Seleksi berkas:</h5>
             <p>Kamis, 16 Desember 2021</p>
 
             <h5> Pengumuman:</h5>
-            <p>Jumat, 17 Desember 2021</p> */}
+            <p>Jumat, 17 Desember 2021</p>
             <p>Don't miss it..</p>
 
             <h5>JAPRI CORP</h5>
@@ -248,7 +309,7 @@ const Karier = () => {
               muda!! dan jangan lupa terus pantau media sosial Japri untuk mendapatkan informasi terbaru.
             </p>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
     </React.Fragment>
   );
