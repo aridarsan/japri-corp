@@ -94,7 +94,7 @@ const Footer = () => {
               <Link to='karir' style={{ textDecoration: 'none' }}>
                 <div className='footer-div'>
                   <p style={{ color: '#ffff' }}>
-                    Open Recruitment Customer Relation Officer
+                    Open Recruitment
                   </p>
                 </div>
               </Link>
