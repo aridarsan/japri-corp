@@ -1,169 +1,183 @@
-import React from 'react';
+import React from "react";
 import {
   Grid,
   Container,
   Button,
-  // Accordion,
-  // AccordionDetails,
-  // AccordionSummary,
-} from '@material-ui/core';
-// import oprec from '../Images/cro 22.jpg';
-import ops from '../Images/ops.png';
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+} from "@material-ui/core";
+import oprec from "../Images/cro 22.jpg";
+import ops from "../Images/op1.jpeg";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
-// const Detail = [
-//   {
-//     panel: 'panel1',
-//     aria: 'panel1bh-content',
-//     id: 'panel1bh-header',
-//     tanya: 'Financial Manager',
-//     jawab: [
-//       'Paham dan mengerti dasar akuntansi',
-//       'Paham tentang laporan keuangan',
-//       'Menguasai Microsoft office (word, excel, power point)',
-//       'Siap bekerja dalam tekanan',
-//       'Siap bertanggung jawab dan berkomitmen',
-//     ],
-//   },
-//   {
-//     panel: 'panel2',
-//     aria: 'panel2bh-content',
-//     id: 'panel2bh-header',
-//     tanya: 'Marketing Manager',
-//     jawab: [
-//       'Memahami dasar-dasar marketing',
-//       'Komunikasi level up',
-//       'Berani mengambil resiko',
-//       'Tidak pemalu',
-//       'Siap berkomitmen aktif di Japri',
-//       'Memiliki tekad yang kuat',
-//     ],
-//   },
-//   {
-//     panel: 'panel3',
-//     aria: 'panel3bh-content',
-//     id: 'panel3bh-header',
-//     tanya: 'Operational Manager',
-//     jawab: [
-//       'Siap berkomitmen aktif di Japri',
-//       'Jujur dan bertanggung jawab',
-//       'Menguasai Microsoft office (word, excel, power point)',
-//       'Mampu mengelola persediaan barang',
-//       'Siap bekerja everytime dan dibawah tekanan',
-//     ],
-//   },
-//   {
-//     panel: 'panel4',
-//     aria: 'panel4bh-content',
-//     id: 'panel4bh-header',
-//     tanya: 'Digital Marketing dan Design Manager',
-//     jawab: [
-//       'Memahami dan dapat mengaplikasikan software design grafis (corel draw/Adobe Illustarator)',
-//       'Memahami dan dapat mengaplikasikan software editing  (Adobe Premiere dll)',
-//       'Siap bekerja everytime, everywhere and under pressure',
-//     ],
-//   },
-// ];
+const Detail = [
+  {
+    panel: "panel1",
+    aria: "panel1bh-content",
+    id: "panel1bh-header",
+    tanya: "Financial Manager",
+    jawab: [
+      {
+        Kualifikasi: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Persyaratan: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Benefit: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+      },
+    ],
+  },
+  {
+    panel: "panel2",
+    aria: "panel2bh-content",
+    id: "panel2bh-header",
+    tanya: "Marketing Manager",
+    jawab: [
+      {
+        Kualifikasi: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Persyaratan: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Benefit: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+      },
+    ],
+  },
+  {
+    panel: "panel3",
+    aria: "panel3bh-content",
+    id: "panel3bh-header",
+    tanya: "Operational Manager",
+    jawab: [
+      {
+        Kualifikasi: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Persyaratan: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Benefit: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+      },
+    ],
+  },
+  {
+    panel: "panel4",
+    aria: "panel4bh-content",
+    id: "panel4bh-header",
+    tanya: "Digital Marketing dan Design Manager",
+    jawab: [
+      {
+        Kualifikasi: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Persyaratan: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+        Benefit: [
+          "Paham dan mengerti dasar akuntansi",
+          "Paham tentang laporan keuangan",
+          "Menguasai Microsoft office (word, excel, power point)",
+          "Siap bekerja dalam tekanan",
+          "Siap bertanggung jawab dan berkomitmen",
+        ],
+      },
+    ],
+  },
+];
 
 const Karier = () => {
-  // const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(false);
 
-  // const handleChange = (panel) => (event, isExpanded) => {
-  //   setExpanded(isExpanded ? panel : false);
-  // };
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
 
   return (
     <React.Fragment>
-      <Container maxWidth='lg' style={{ marginTop: '5rem' }}>
+      <Container maxWidth="lg" style={{ marginTop: "5rem" }}>
         <Grid container>
           <Grid item xs={12}>
-            <h3 className='heading3'>
-              <span className='borderBottom'>Open Recruitment</span>
+            <h3 className="heading3">
+              <span className="borderBottom">Open Recruitment</span>
             </h3>
-            
-            <p className='pjudul'>Bergabunglah bersama kami</p>
+
+            <p className="pjudul">Bergabunglah bersama kami</p>
           </Grid>
         </Grid>
 
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} lg={6}>
-            <img src={ops} width='100%' alt='oprec' style={{borderRadius:"1rem"}}/>
+            <img
+              src={ops}
+              width="100%"
+              alt="oprec"
+              style={{ borderRadius: "1rem" }}
+            />
           </Grid>
+
           <Grid item xs={12} sm={6} lg={6}>
-            <h4>OPREC STAFF OPERASIONAL JAPRI CORP</h4>
-
-            <p>
-            Japri Corp merupakan perusahaan start up mahasiswa yang sedang berkembang di wilayah priangan timur, kali ini kami mengajak kamu untuk menjadi bagian penting dari Japri Corp.
-            </p>
-
-            <h5>POSISI : Staff Operasional</h5>
-            
-            <p>Staff Operasional merupakan staff khusus Japri di bawah naungan manager operasional yang akan mengerjakan berbagai kegiatan operasional di Japri Corp dengan kualifikasi sebagai berikut:</p>
-
-            <ol>
-              <li> Mahasiswa aktif Universitas Siliwangi angkatan 2021 & 2022</li>
-              <li> Memiliki keinginan belajar yang tinggi dan berkomitmen</li>
-              <li> Sigap, cekatan, dan siap dalam menghadapi segala situasi yang mendadak dan butuh tindakan yang cepat</li>
-              <li> Memiliki kemampuan manajemen waktu yang baik</li>
-              <li> Disiplin dan memiliki kepribadian yang baik</li>
-              <li> Memiliki kendaraan pribadi dan SIM C menjadi nilai tambah</li>
-              <li> Aktif bersosial media</li>
-              <li> Mengirimkan CV</li>
-              <li> Mengisi formulir pendaftaran yang sudah disediakan</li>
-
-            </ol>
-            <h5>Timeline:</h5>
-            <p>Pendaftaran & Seleksi Berkas (2 - 3 Desember 2022)<br/>
-            Narahubung : 0878-8157-4771 (Zacky M. Nopal).</p>
-            
-            <p>
-              Bagi kalian yang sudah memenuhi persyaratan di atas dan berminat untuk begabung menjadi bagian kami silahkan mengisi formulir dibawah ini :
-            </p>
-
-            <a
-              href='https://bit.ly/HiringStaffOperasional'
-              target='_blank'
-              rel="noopener noreferrer"
-            >
-              <Button
-                variant='contained'
-                className='btn-submit'
-                size='medium'
-                style={{ marginBottom: '1rem' }}
-              >
-                Daftar Menjadi Staff Japri
-              </Button>
-            </a>
-
-            <h5>JAPRI CORP<br/>
-            Bisnisnya Mahasiswa</h5>
-
-            <p>
-            Let's come and join us!!<br/>
-            Don't miss it!!!
-            </p>
-
-            <p>
-            #BisnisnyaMahasiswa<br/>
-            #SeeTheQuality
-            </p>
-          </Grid>
-        </Grid>
-
-        {/* <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
             <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
 
             <p>
-            JAPRI Corp merupakan Start up mahasiswa yang sedang berkembang di wilayah priangan timur mengajak kamu masuk menjadi bagian dari kami
+              JAPRI Corp merupakan Start up mahasiswa yang sedang berkembang di
+              wilayah priangan timur mengajak kamu masuk menjadi bagian dari
+              kami
             </p>
 
-            <p>
-              {' '}
-              POSISI
-            </p>
+            <p> POSISI</p>
 
             <ul>
               <li>Financial Manager</li>
@@ -172,76 +186,94 @@ const Karier = () => {
               <li>Digital Marketing dan Design Manager</li>
             </ul>
 
-            <h5>Customer Relation Officer (CRO)</h5>
+            <h5 style={{ marginBottom: "0.5rem" }}>
+              Customer Relation Officer (CRO)
+            </h5>
 
             <p>dengan kualifikasi sebagai berikut:</p>
 
-            <h5> Syarat Umum</h5>
+            <h5 style={{ marginBottom: "0.5rem" }}> Syarat Umum</h5>
 
             <ol>
               <li> Mahasiswa/i Angkatan 2019</li>
-              <li> Berasal dari kampus UNSIL, UNPER, UPI, BTH, POLTEKKES, STAI, STIA, dan UMTAS</li>
+              <li>
+                {" "}
+                Berasal dari kampus UNSIL, UNPER, UPI, BTH, POLTEKKES, STAI,
+                STIA, dan UMTAS
+              </li>
               <li> Memiliki Keinginan untuk belajar dan berprogres</li>
               <li> Berkomitmen </li>
               <li> Mengisi formulir pada link pendaftaran yang tersedia</li>
               <li> Berkeinginan untuk menambah uang saku</li>
               <li> Aktif bersosial media.</li>
-              
+
               <li>
-                {' '}
-                Follow account sosial media japri (Instagram{' '}
+                {" "}
+                Follow account sosial media japri (Instagram{" "}
                 <a
-                  href='https://www.instagram.com/japricorp/'
-                  target='_blank'
-                  rel='noreferrer'
-                  style={{ textDecoration: 'none' }}
+                  href="https://www.instagram.com/japricorp/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
                   @japricorp
                 </a>
-                ) lalu screenshot{' '}
+                ) lalu screenshot{" "}
               </li>
               <li>
-                {' '}
-                Sebarluaskan pamplet{' '}
+                {" "}
+                Sebarluaskan pamplet{" "}
                 <a
                   href={oprec}
-                  target='_blank'
-                  rel='noreferrer'
-                  style={{ textDecoration: 'none' }}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ textDecoration: "none" }}
                 >
                   ini
-                </a>{' '}
-                ke 3 group whatsapp lalu screenshot{' '}
+                </a>{" "}
+                ke 3 group whatsapp lalu screenshot{" "}
               </li>
               <li> Upload screenshot ke link pendaftaran </li>
             </ol>
+          </Grid>
+        </Grid>
 
-            <h5> Syarat Khusus</h5>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={12} lg={12}>
+            <h5 style={{ marginBottom: "0.5rem" }}> Syarat Khusus</h5>
 
             <Grid item xs={12}>
               {Detail.map((item, index) => (
                 <Accordion
                   expanded={expanded === item.panel}
                   onChange={handleChange(item.panel)}
-                  style={{ borderRadius: '0px', border: '2px solid #0094F4' }}
+                  style={{ borderRadius: "0px", border: "2px solid #0094F4" }}
                   key={index}
                 >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon style={{ color: '#0094F4' }} />}
+                    expandIcon={<ExpandMoreIcon style={{ color: "#0094F4" }} />}
                     aria-controls={item.aria}
                     id={item.id}
                   >
-                    <h6 style={{ margin: 0, lineHeight: '1.5' }}>
+                    <p
+                      style={{
+                        margin: 0,
+                        lineHeight: "1.5",
+                        fontWeight: "500",
+                      }}
+                    >
                       {item.tanya}
-                    </h6>
+                    </p>
                   </AccordionSummary>
                   <AccordionDetails>
                     <ol>
                       {item.jawab.map((detail, index) => (
-                        <li>
+                        <li key={index}>
+                          {detail.Kualifikasi.map((k1, index)=>(
                           <p style={{ margin: 0 }} key={index}>
-                            {detail}
+                            {k1}
                           </p>
+                          ))}
                         </li>
                       ))}
                     </ol>
@@ -252,7 +284,7 @@ const Karier = () => {
 
             <br />
 
-            <h5> Ketentuan Umum</h5>
+            <h5 style={{ marginBottom: "0.5rem" }}> Ketentuan Umum</h5>
             <ol>
               <li> Beriman dan bertaqwa kepada Tuhan YME</li>
               <li> Berjiwa wirausaha dan mau belajar berwirausaha </li>
@@ -271,20 +303,20 @@ const Karier = () => {
             </ol>
 
             <p>
-              Apabila kamu berminat dan memenuhi kualifikasi diatas, silakan klik
-              gabung
+              Apabila kamu berminat dan memenuhi kualifikasi diatas, silakan
+              klik gabung
             </p>
 
             <a
-              href='https://bit.ly/PendaftaranCRO2022'
-              target='_blank'
+              href="https://bit.ly/PendaftaranCRO2022"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Button
-                variant='contained'
-                className='btn-submit'
-                size='medium'
-                style={{ marginBottom: '1rem' }}
+                variant="contained"
+                className="btn-submit"
+                size="medium"
+                style={{ marginBottom: "1rem" }}
               >
                 Gabung menjadi CRO
               </Button>
@@ -305,11 +337,12 @@ const Karier = () => {
 
             <p>
               Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
-              Tasikmalaya. Jadi tunggu apalagi mari bergabung bersama kami untuk menjadi wirausaha
-              muda!! dan jangan lupa terus pantau media sosial Japri untuk mendapatkan informasi terbaru.
+              Tasikmalaya. Jadi tunggu apalagi mari bergabung bersama kami untuk
+              menjadi wirausaha muda!! dan jangan lupa terus pantau media sosial
+              Japri untuk mendapatkan informasi terbaru.
             </p>
           </Grid>
-        </Grid> */}
+        </Grid>
       </Container>
     </React.Fragment>
   );

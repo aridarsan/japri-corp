@@ -38,7 +38,7 @@ const NavLinks = styled(animated.ul)`
   & a {
     color: #dfe6e9;
     font-weight: 600;
-    border-bottom: 1px solid transparent;
+    // border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
     transition: all 300ms linear 0s;
     text-decoration: none;
