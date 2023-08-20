@@ -287,7 +287,7 @@ const Karier = () => {
               <p>Senin, 21 Agustus 2023 s/d Sabtu, 26 Agustus 2023</p>
 
               <h5> Seleksi berkas:</h5>
-              <p>Kamis-Sabtu, 3-5 September 2023</p>
+              <p>Minggu-Selasa, 3-5 September 2023</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
               <p>Rabu, 6 September 2023</p>
