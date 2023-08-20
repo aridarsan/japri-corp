@@ -7,38 +7,32 @@ import {
   AccordionDetails,
   AccordionSummary,
 } from "@material-ui/core";
-import oprec from "../Images/cro 22.jpg";
+// import oprec from "../Images/cro 22.jpg";
 import ops from "../Images/op1.jpeg";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+// import Timeline from "./Timeline";
 
 const Detail = [
   {
     panel: "panel1",
     aria: "panel1bh-content",
     id: "panel1bh-header",
-    tanya: "Financial Manager",
+    tanya: "Marketing",
     jawab: [
       {
+        nama1: "Kualifikasi",
         Kualifikasi: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
+          "Dapat bekerja sama secara tim maupun individu",
+          "Mempunyai Basic Marketing & Konten Kreator",
+          "Memiliki kemampuan analisa data, negosiasi dan strategi marketing yang baik",
+          "Memiliki kemampuan manajemen waktu dan public speaking yang baik",
+          "Aktif di media sosial",
         ],
+        nama2: "Persyaratan",
         Persyaratan: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
-        ],
-        Benefit: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
+          "Mahasiswa aktif Tasikmalaya Angkatan 2021 & 2022",
+          "Melampirkan CV, KTP & KTM",
+          "Laki-laki",
         ],
       },
     ],
@@ -47,29 +41,22 @@ const Detail = [
     panel: "panel2",
     aria: "panel2bh-content",
     id: "panel2bh-header",
-    tanya: "Marketing Manager",
+    tanya: "Operasional",
     jawab: [
       {
+        nama1: "Kualifikasi",
         Kualifikasi: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
+          "Menguasai Microsoft office",
+          "Menguasai salah satu aplikasi design grafis (menjadi nilai tambah)",
+          "Mempunyai Sim C",
+          "Dapat bekerja sama secara tim maupun individu",
+          "Sigap, cekatan dan siap dalam menghadapi situasi yang mendadak",
         ],
+        nama2: "Persyaratan",
         Persyaratan: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
-        ],
-        Benefit: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
+          "Mahasiswa aktif Tasikmalaya Angkatan 2022 & 2023",
+          "Melampirkan CV, KTP & KTM, SIM C",
+          "Laki-laki",
         ],
       },
     ],
@@ -78,60 +65,22 @@ const Detail = [
     panel: "panel3",
     aria: "panel3bh-content",
     id: "panel3bh-header",
-    tanya: "Operational Manager",
+    tanya: "Finance",
     jawab: [
       {
+        nama1: "Kualifikasi",
         Kualifikasi: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
+          "Mengerti laporan keuangan",
+          "Paham dan mahir akuntansi",
+          "Mahir Microsoft excel",
+          "Teliti dan bertanggungjawab",
         ],
+        nama2: "Persyaratan",
         Persyaratan: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
-        ],
-        Benefit: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
-        ],
-      },
-    ],
-  },
-  {
-    panel: "panel4",
-    aria: "panel4bh-content",
-    id: "panel4bh-header",
-    tanya: "Digital Marketing dan Design Manager",
-    jawab: [
-      {
-        Kualifikasi: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
-        ],
-        Persyaratan: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
-        ],
-        Benefit: [
-          "Paham dan mengerti dasar akuntansi",
-          "Paham tentang laporan keuangan",
-          "Menguasai Microsoft office (word, excel, power point)",
-          "Siap bekerja dalam tekanan",
-          "Siap bertanggung jawab dan berkomitmen",
+          "Mahasiswa aktif Tasikmalaya Angkatan 2021, 2022 & 2023",
+          "Melampirkan CV, KTP & KTM",
+          "Melampirkan Motivation Letter",
+          "Laki-laki",
         ],
       },
     ],
@@ -159,7 +108,7 @@ const Karier = () => {
         </Grid>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} lg={6}>
+          <Grid item xs={12} sm={6} lg={4}>
             <img
               src={ops}
               width="100%"
@@ -168,79 +117,44 @@ const Karier = () => {
             />
           </Grid>
 
-          <Grid item xs={12} sm={6} lg={6}>
-            <h4>WE ARE HIRING CUSTOMER RELATION OFFICER (CRO) JAPRI CORP</h4>
+          <Grid item xs={12} sm={6} lg={8}>
+            <h4>WE ARE HIRING PART-TIME JOB JAPRI CORP</h4>
+            <br />
 
             <p>
-              JAPRI Corp merupakan Start up mahasiswa yang sedang berkembang di
-              wilayah priangan timur mengajak kamu masuk menjadi bagian dari
-              kami
+              Japri Corp merupakan Start-Up yang sedang berkembang di
+              Tasikmalaya, maka dari itu kami membutuhkan talenta terbaik yang
+              mampu untuk berkontribusi dalam menjadikan Japri sebagai salah
+              satu perusahaan yang besar di Tasikmalaya. Jika kamu yang kami
+              cari, mari ikut bergabung menjadi bagian dari Japri Corp. Berikut
+              posisi part-time job yang sedang kami butuhkan
             </p>
-
-            <p> POSISI</p>
-
             <ul>
-              <li>Financial Manager</li>
-              <li>Marketing Manager</li>
-              <li>Operational Manager</li>
-              <li>Digital Marketing dan Design Manager</li>
+              <li>Marketing</li>
+              <li>Operasional</li>
+              <li>Finance</li>
             </ul>
-
-            <h5 style={{ marginBottom: "0.5rem" }}>
-              Customer Relation Officer (CRO)
-            </h5>
-
-            <p>dengan kualifikasi sebagai berikut:</p>
-
-            <h5 style={{ marginBottom: "0.5rem" }}> Syarat Umum</h5>
-
+            <h5 style={{ marginBottom: "0.5rem" }}> Benefit</h5>
             <ol>
-              <li> Mahasiswa/i Angkatan 2019</li>
-              <li>
-                {" "}
-                Berasal dari kampus UNSIL, UNPER, UPI, BTH, POLTEKKES, STAI,
-                STIA, dan UMTAS
-              </li>
-              <li> Memiliki Keinginan untuk belajar dan berprogres</li>
-              <li> Berkomitmen </li>
-              <li> Mengisi formulir pada link pendaftaran yang tersedia</li>
-              <li> Berkeinginan untuk menambah uang saku</li>
-              <li> Aktif bersosial media.</li>
-
-              <li>
-                {" "}
-                Follow account sosial media japri (Instagram{" "}
-                <a
-                  href="https://www.instagram.com/japricorp/"
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  @japricorp
-                </a>
-                ) lalu screenshot{" "}
-              </li>
-              <li>
-                {" "}
-                Sebarluaskan pamplet{" "}
-                <a
-                  href={oprec}
-                  target="_blank"
-                  rel="noreferrer"
-                  style={{ textDecoration: "none" }}
-                >
-                  ini
-                </a>{" "}
-                ke 3 group whatsapp lalu screenshot{" "}
-              </li>
-              <li> Upload screenshot ke link pendaftaran </li>
+              <li>Mendapatkan pendapatan bulanan</li>
+              <li>Mendapatkan fasilitas yang disediakan oleh japricorp</li>
+              <li>Mendapatkan bonus jika melebihi target</li>
             </ol>
           </Grid>
         </Grid>
 
         <Grid container spacing={2}>
-          <Grid item xs={12} sm={12} lg={12}>
-            <h5 style={{ marginBottom: "0.5rem" }}> Syarat Khusus</h5>
+          <Grid item xs={12} sm={12} lg={6}>
+            <h5
+              style={{
+                marginBottom: "0.5rem",
+                textAlign: "center",
+                alignItems: "center",
+              }}
+            >
+              {" "}
+              Kualifikasi dan Persyaratan
+            </h5>
 
             <Grid item xs={12}>
               {Detail.map((item, index) => (
@@ -251,85 +165,143 @@ const Karier = () => {
                   key={index}
                 >
                   <AccordionSummary
-                    expandIcon={<ExpandMoreIcon style={{ color: "#0094F4" }} />}
+                    expandIcon={
+                      <ExpandMoreIcon
+                        style={{ color: "#0094F4", padding: "0" }}
+                      />
+                    }
                     aria-controls={item.aria}
                     id={item.id}
                   >
-                    <p
+                    <h5
                       style={{
                         margin: 0,
                         lineHeight: "1.5",
-                        fontWeight: "500",
                       }}
                     >
                       {item.tanya}
-                    </p>
+                    </h5>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <ol>
-                      {item.jawab.map((detail, index) => (
-                        <li key={index}>
-                          {detail.Kualifikasi.map((k1, index)=>(
-                          <p style={{ margin: 0 }} key={index}>
-                            {k1}
-                          </p>
-                          ))}
-                        </li>
-                      ))}
-                    </ol>
+                    {item.jawab.map((detail, index) => (
+                      <Grid container spacing={2}>
+                        <Grid item xs={12} sm={12} lg={12}>
+                          <h5
+                            style={{ marginBottom: "0.5rem", color: "#000000" }}
+                          >
+                            {" "}
+                            {detail.nama1}
+                          </h5>
+
+                          <Grid item xs={12}>
+                            <ol
+                              key={index}
+                              style={{ margin: 0, paddingLeft: "1rem" }}
+                            >
+                              {detail.Kualifikasi.map((isi, index) => (
+                                <li key={index}>
+                                  <p style={{ margin: 0 }} key={index}>
+                                    {isi}
+                                  </p>
+                                </li>
+                              ))}
+                            </ol>
+                          </Grid>
+                        </Grid>
+
+                        <Grid item xs={12} sm={12} lg={12}>
+                          <h5
+                            style={{ marginBottom: "0.5rem", color: "#000000" }}
+                          >
+                            {" "}
+                            {detail.nama2}
+                          </h5>
+
+                          <Grid item xs={12}>
+                            <ol
+                              key={index}
+                              style={{ margin: 0, paddingLeft: "1rem" }}
+                            >
+                              {detail.Persyaratan.map((isi, index) => (
+                                <li key={index}>
+                                  <p style={{ margin: 0 }} key={index}>
+                                    {isi}
+                                  </p>
+                                </li>
+                              ))}
+                            </ol>
+                          </Grid>
+                        </Grid>
+                      </Grid>
+                    ))}
                   </AccordionDetails>
                 </Accordion>
               ))}
             </Grid>
+          </Grid>
 
-            <br />
+          <br />
 
-            <h5 style={{ marginBottom: "0.5rem" }}> Ketentuan Umum</h5>
-            <ol>
-              <li> Beriman dan bertaqwa kepada Tuhan YME</li>
-              <li> Berjiwa wirausaha dan mau belajar berwirausaha </li>
-            </ol>
-            <p>
-              Apa sih yang akan kamu dapatkan ketika terpilih menjadi CRO di
-              Japri Corp? Tentu kamu nanti akan mendapatkan:
-            </p>
-
-            <ol>
-              <li>Uang ratusan ribu rupiah</li>
-              <li>Mentoring bisnis</li>
-              <li>Menambah relasi</li>
-              <li>Mendapatkan sertifikat</li>
-              <li>Mendapatkan diskon print up to 50%</li>
-            </ol>
-
-            <p>
-              Apabila kamu berminat dan memenuhi kualifikasi diatas, silakan
-              klik gabung
-            </p>
-
-            <a
-              href="https://bit.ly/PendaftaranCRO2022"
-              target="_blank"
-              rel="noopener noreferrer"
+          <Grid item xs={12} sm={12} lg={6}>
+            <h5
+              style={{
+                marginBottom: "0.5rem",
+                textAlign: "center",
+                alignItems: "center",
+              }}
             >
-              <Button
-                variant="contained"
-                className="btn-submit"
-                size="medium"
-                style={{ marginBottom: "1rem" }}
+              {" "}
+              Timeline Recruitment
+            </h5>
+            {/* <Timeline/> */}
+
+            <Grid
+              style={{
+                padding: "1rem",
+                border: "2px solid #0094F4",
+              }}
+            >
+              <h5>Waktu pendaftaran:</h5>
+              <p>Senin, 21 Agustus 2023 s/d Sabtu, 26 Agustus 2023</p>
+              <p>
+                Jika kamu berminat dan memenuhi kualifikasi serta persyaratan
+                diatas, silakan klik gabung pada tombol dibawah ini
+              </p>
+
+              <a
+                href="https://bit.ly/PendaftaranCRO2022"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Gabung menjadi CRO
-              </Button>
-            </a>
+                <Button
+                  variant="contained"
+                  className="btn-submit"
+                  size="medium"
+                  style={{ marginBottom: "1rem" }}
+                >
+                  Gabung Bersama Japri
+                </Button>
+              </a>
 
-            <h5>Waktu pendaftaran:</h5>
-            <p>Selasa, 1 November 2022 s/d Sabtu, 12 November 2022</p>
+              <h5> Seleksi berkas:</h5>
+              <p>3-5 September 2023</p>
 
-            <h5> Seleksi berkas:</h5>
-            <p>Kamis, 16 Desember 2021</p>
+              <h5> Pengumuman Seleksi Berkas:</h5>
+              <p>Rabu, 6 September 2023</p>
 
-            <h5> Pengumuman:</h5>
-            <p>Jumat, 17 Desember 2021</p>
+              <h5> Test Kepribadian</h5>
+              <p>Jumat, 8 September 2023</p>
+
+              <h5> Pengumuman Test Kepribadian:</h5>
+              <p>Minggu, 10 September 2023</p>
+
+              <h5> Seleksi Wawancara:</h5>
+              <p>Senin & Selasa, 11-12 September 2023</p>
+
+              <h5> Pengumuman Akhir:</h5>
+              <p>Kamis, 14 September 2023</p>
+            </Grid>
+
             <p>Don't miss it..</p>
 
             <h5>JAPRI CORP</h5>
