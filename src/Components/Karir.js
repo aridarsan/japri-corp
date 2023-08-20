@@ -88,7 +88,7 @@ const Detail = [
 ];
 
 const Karier = () => {
-  const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -140,6 +140,7 @@ const Karier = () => {
               <li>Mendapatkan fasilitas yang disediakan oleh japricorp</li>
               <li>Mendapatkan bonus jika melebihi target</li>
             </ol>
+
           </Grid>
         </Grid>
 
@@ -231,6 +232,27 @@ const Karier = () => {
                               ))}
                             </ol>
                           </Grid>
+                        
+                        <p>
+                          Jika kamu berminat dan memenuhi kualifikasi serta
+                          persyaratan diatas, silakan klik gabung pada tombol
+                          dibawah ini
+                        </p>
+
+                        <a
+                          href="https://bit.ly/parttime-japri2023"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Button
+                            variant="contained"
+                            className="btn-submit"
+                            size="medium"
+                            style={{ marginBottom: "1rem" }}
+                          >
+                            Gabung Bersama Japri
+                          </Button>
+                        </a>
                         </Grid>
                       </Grid>
                     ))}
@@ -263,28 +285,9 @@ const Karier = () => {
             >
               <h5>Waktu pendaftaran:</h5>
               <p>Senin, 21 Agustus 2023 s/d Sabtu, 26 Agustus 2023</p>
-              <p>
-                Jika kamu berminat dan memenuhi kualifikasi serta persyaratan
-                diatas, silakan klik gabung pada tombol dibawah ini
-              </p>
-
-              <a
-                href="https://bit.ly/PendaftaranCRO2022"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button
-                  variant="contained"
-                  className="btn-submit"
-                  size="medium"
-                  style={{ marginBottom: "1rem" }}
-                >
-                  Gabung Bersama Japri
-                </Button>
-              </a>
 
               <h5> Seleksi berkas:</h5>
-              <p>3-5 September 2023</p>
+              <p>Kamis-Sabtu, 3-5 September 2023</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
               <p>Rabu, 6 September 2023</p>
@@ -300,19 +303,15 @@ const Karier = () => {
 
               <h5> Pengumuman Akhir:</h5>
               <p>Kamis, 14 September 2023</p>
-            </Grid>
 
-            <p>Don't miss it..</p>
-
-            <h5>JAPRI CORP</h5>
-            <h5>Bisnisnya Mahasiswa</h5>
-
-            <p>
+              <p>
               Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
               Tasikmalaya. Jadi tunggu apalagi mari bergabung bersama kami untuk
               menjadi wirausaha muda!! dan jangan lupa terus pantau media sosial
               Japri untuk mendapatkan informasi terbaru.
             </p>
+            </Grid>
+
           </Grid>
         </Grid>
       </Container>
