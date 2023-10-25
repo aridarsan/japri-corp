@@ -10,6 +10,8 @@
 
 # production
 /build
+japri-corp.zip
+node_modules.zip
 
 # misc
 .DS_Store

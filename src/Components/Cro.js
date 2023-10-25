@@ -231,16 +231,16 @@ const Karier = () => {
               }}
             >
               <h5>Waktu pendaftaran:</h5>
-              <p>Kamis, 26 Oktober 2023 s/d Rabu, 1 November 2023</p>
+              <p>Kamis, 26 Oktober 2023 s/d Kamis, 2 November 2023</p>
 
               <h5> Seleksi berkas:</h5>
-              <p>Kamis s/d Sabtu, 2-4 November 2023</p>
+              <p>Jumat s/d Minggu, 3-5 November 2023</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
-              <p>Minggu, 5 November 2023</p>
+              <p>Senin,  6 November 2023</p>
 
               <h5> Seleksi Wawancara:</h5>
-              <p>Selasa s/d Sabtu, 7-11 November 2023</p>
+              <p>Rabu s/d Minggu, 8-12 November 2023</p>
 
               {/* <h5> Pengumuman Akhir:</h5>
               <p>Kamis, 14 September 2023</p> */}
