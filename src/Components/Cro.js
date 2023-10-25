@@ -22,13 +22,13 @@ const Detail = [
       {
         nama1: "Kualifikasi",
         Kualifikasi: [
-          "Berjiwa Wirausaha",
-          "Memiliki Komunikasi yang baik",
+          "Berjiwa wirausaha",
+          "Memiliki komunikasi yang baik",
           "Memiliki skill selling"
         ],
         nama2: "Persyaratan",
         Persyaratan: [
-          "Mahasiswa Laki-laki/Perempuan (Angkatan 2020, 2021, 2022)",
+          "Mahasiswa Laki-laki/Perempuan (Angkatan 2020, 2021, 2022, 2023)",
           "Berasal dari kampus Universitas Siliwangi",
           "Aktif bermedia sosial"
         ],
@@ -231,22 +231,22 @@ const Karier = () => {
               }}
             >
               <h5>Waktu pendaftaran:</h5>
-              <p>Rabu, 25 Oktober 2023 s/d Rabu, 1 November 2023</p>
+              <p>Kamis, 26 Oktober 2023 s/d Rabu, 1 November 2023</p>
 
               <h5> Seleksi berkas:</h5>
-              <p>Kamis-Sabtu, 2-4 November 2023</p>
+              <p>Kamis s/d Sabtu, 2-4 November 2023</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
               <p>Minggu, 5 November 2023</p>
 
               <h5> Seleksi Wawancara:</h5>
-              <p>Selasa-Sabtu, 7-11 November 2023</p>
+              <p>Selasa s/d Sabtu, 7-11 November 2023</p>
 
               {/* <h5> Pengumuman Akhir:</h5>
               <p>Kamis, 14 September 2023</p> */}
 
               <p>
-              Pendaftaran terbuka untuk mahasiswa angkatan 2020, 2021 dan 2022. Jadi tunggu apalagi mari bergabung bersama kami untuk
+              Pendaftaran terbuka untuk mahasiswa angkatan 2020, 2021, 2022 dan 2023. Jadi tunggu apalagi mari bergabung bersama kami untuk
               menjadi wirausaha muda!! dan jangan lupa terus pantau media sosial
               Japri untuk mendapatkan informasi terbaru.
             </p>
