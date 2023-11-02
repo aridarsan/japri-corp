@@ -76,7 +76,13 @@ const Karier = () => {
               Tasikmalaya, maka dari itu kami membutuhkan talenta terbaik yang
               mampu untuk berkontribusi dalam menjadikan Japri sebagai salah
               satu perusahaan yang besar di Tasikmalaya. Jika kamu yang kami
-              cari, mari ikut bergabung menjadi bagian dari Japri Corp yaitu sebagai CRO
+              cari, mari ikut bergabung menjadi bagian dari Japri Corp yaitu sebagai CRO. 
+            </p>
+
+            <p>
+              CRO itu sistem kerjanya freelance dan bisa dilakuin dimana aja (work from anywhere). Tugasnya mempromosikan
+              dan mensosialisasikan produk-produk Japri Corp secara online, jadi ga akan memneratkan kau. 
+              Kerja dimana aja, kapan aja, dan dijamin dapat penghasilan setiap bulan
             </p>
 
             <h5 style={{ marginBottom: "0.5rem" }}> Benefit</h5>
@@ -85,6 +91,8 @@ const Karier = () => {
               <li>Mendapatkan discount khusus produk print (Mahasiswa tingkat akhir 30%-50% dan mahasiswa biasa 20%)</li>
               <li>Mentoring bisnis</li>
               <li>Mendapatkan bonus jika melebihi target</li>
+              <li>Mendapatkan paklaring</li>
+              <li>Mendaparkan CRO Apreciation</li>
             </ol>
 
           </Grid>
@@ -231,19 +239,19 @@ const Karier = () => {
               }}
             >
               <h5>Waktu pendaftaran:</h5>
-              <p>Kamis, 26 Oktober 2023 s/d Kamis, 2 November 2023</p>
+              <p>Kamis, 26 Oktober 2023 s/d Jumat, 10 November 2023</p>
 
               <h5> Seleksi berkas:</h5>
-              <p>Jumat s/d Minggu, 3-5 November 2023</p>
+              <p>Sabtu, 11 November 2023</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
-              <p>Senin,  6 November 2023</p>
+              <p>Minggu,  12 November 2023</p>
 
               <h5> Seleksi Wawancara:</h5>
-              <p>Rabu s/d Minggu, 8-12 November 2023</p>
+              <p>Selasa s/d Sabtu, 14-18 November 2023</p>
 
-              {/* <h5> Pengumuman Akhir:</h5>
-              <p>Kamis, 14 September 2023</p> */}
+              <h5> Pengumuman Lolos:</h5>
+              <p>Senin, 20 November 2023</p>
 
               <p>
               Pendaftaran terbuka untuk mahasiswa angkatan 2020, 2021, 2022 dan 2023. Jadi tunggu apalagi mari bergabung bersama kami untuk
