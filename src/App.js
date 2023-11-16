@@ -10,8 +10,8 @@ import GaleriPel from './Pages/GaleriPel';
 import TestiContextApi from './Pages/TestiContextApi';
 import Footer from './Components/Footer';
 // import Karir from "./Components/Karir";
-import Cro from "./Components/Cro"
-// import ComingSoon from './Components/ComingSoon';
+// import Cro from "./Components/Cro"
+import ComingSoon from './Components/ComingSoon';
 import CaraPesan from './Components/CaraPesan';
 import NotFound from './Components/NotFound';
 import ScrollToTop from './Components/ScrollToTop';
@@ -63,8 +63,8 @@ function App() {
           </Route>
 
           <Route path='/karir'>
-            {/* <ComingSoon /> */}
-            <Cro/>
+            <ComingSoon />
+            {/* <Cro/> */}
           </Route>
 
           <Route path='*'>
