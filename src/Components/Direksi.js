@@ -10,21 +10,30 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
-// import wanda from '../Images/direksi/wanda.png';
+import wanda from '../Images/direksi/roni.png';
 // import ahmad from '../Images/direksi/ahmad.png';
-import roni from '../Images/direksi/roni.png';
+// import roni from '../Images/direksi/roni.png';
 import reza from '../Images/direksi/reza.png';
-import ade from '../Images/direksi/ade.png';
+// import ade from '../Images/direksi/ade.png';
 import ari from '../Images/direksi/ari.png';
-import alam from '../Images/direksi/alam.png';
+// import alam from '../Images/direksi/alam.png';
 import widi from '../Images/direksi/widi.png';
 import zacky from '../Images/direksi/zacky.png';
-import asikin from '../Images/direksi/asikin.png';
+// import asikin from '../Images/direksi/asikin.png';
 
 const tim = [
   {
-    nama: 'M Reza Maulana',
+    nama: 'Wanda Lugina',
     jabatan: 'Chief Executive Officer',
+    foto: wanda,
+    whatsapp: 'https://wa.me/6282216017320',
+    instagram: 'https://www.instagram.com/wandalugina/',
+    email: 'mailto:wandalugina@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'M Reza Maulana',
+    jabatan: 'Chief Operational Officer',
     foto: reza,
     whatsapp: 'https://wa.me/6285720705717',
     instagram: 'https://www.instagram.com/rezamaulard/',
@@ -32,32 +41,23 @@ const tim = [
     web: '',
   },
   // {
-  //   nama: 'Wanda Lugina',
-  //   jabatan: 'Chief Executive Officer',
-  //   foto: wanda,
-  //   whatsapp: 'https://wa.me/6282216017320',
-  //   instagram: 'https://www.instagram.com/wandalugina/',
-  //   email: 'mailto:wandalugina@gmail.com',
+  //   nama: 'Roni Iskandar',
+  //   jabatan: 'Chief Financial Officer',
+  //   foto: roni,
+  //   whatsapp: 'https://wa.me/6281222651518',
+  //   instagram: 'https://www.instagram.com/roni_iskan/',
+  //   email: 'mailto:roniiskan0409@gmail.com',
   //   web: '',
   // },
-  {
-    nama: 'Roni Iskandar',
-    jabatan: 'Chief Financial Officer',
-    foto: roni,
-    whatsapp: 'https://wa.me/6281222651518',
-    instagram: 'https://www.instagram.com/roni_iskan/',
-    email: 'mailto:roniiskan0409@gmail.com',
-    web: '',
-  },
-  {
-    nama: 'Ade Rohimat',
-    jabatan: 'Chief Marketing Officer',
-    foto: ade,
-    whatsapp: 'https://wa.me/6287773148887',
-    instagram: 'https://www.instagram.com/aderohimat62/',
-    email: 'mailto:aderohimat163@gmail.com',
-    web: '',
-  },
+  // {
+  //   nama: 'Ade Rohimat',
+  //   jabatan: 'Chief Marketing Officer',
+  //   foto: ade,
+  //   whatsapp: 'https://wa.me/6287773148887',
+  //   instagram: 'https://www.instagram.com/aderohimat62/',
+  //   email: 'mailto:aderohimat163@gmail.com',
+  //   web: '',
+  // },
   // {
   //   nama: 'Muchamad Ahmad M',
   //   jabatan: 'Digital Marketing dan Desain',
@@ -76,24 +76,24 @@ const tim = [
     email: 'mailto:aridarsan09@gmail.com',
     web: 'https://aridarsan.netlify.app',
   },
-  {
-    nama: 'Rizky M. Asikin',
-    jabatan: 'General Manager',
-    foto: asikin,
-    whatsapp: 'https://wa.me/6285161060648',
-    instagram: 'https://www.instagram.com/rzkyaskn',
-    email: 'mailto:rizky.asikin123@gmail.com',
-    web: '',
-  },
-  {
-    nama: 'Alam Dewa S',
-    jabatan: 'Manager Financial',
-    foto: alam,
-    whatsapp: 'https://wa.me/6285794673613',
-    instagram: 'https://www.instagram.com/alamdewa26_',
-    email: 'mailto:dewalam26@gmail.com',
-    web: '',
-  },
+  // {
+  //   nama: 'Rizky M. Asikin',
+  //   jabatan: 'General Manager',
+  //   foto: asikin,
+  //   whatsapp: 'https://wa.me/6285161060648',
+  //   instagram: 'https://www.instagram.com/rzkyaskn',
+  //   email: 'mailto:rizky.asikin123@gmail.com',
+  //   web: '',
+  // },
+  // {
+  //   nama: 'Alam Dewa S',
+  //   jabatan: 'Manager Financial',
+  //   foto: alam,
+  //   whatsapp: 'https://wa.me/6285794673613',
+  //   instagram: 'https://www.instagram.com/alamdewa26_',
+  //   email: 'mailto:dewalam26@gmail.com',
+  //   web: '',
+  // },
   {
     nama: 'Widhi Hatmoko',
     jabatan: 'Manager DMD',
@@ -166,12 +166,12 @@ const Direksi = () => {
                         {item.nama}
                       </h4>
 
-                      <h6
+                      <p
                         className='direksi'
                         style={{ textAlign: 'center', color: '#4f4f4f' }}
                       >
                         {item.jabatan}
-                      </h6>
+                      </p>
                     </Grid>
                   </Grid>
                 </CardContent>
