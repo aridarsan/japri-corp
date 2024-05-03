@@ -10,15 +10,16 @@ import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
+
 import wanda from '../Images/direksi/roni.png';
-// import ahmad from '../Images/direksi/ahmad.png';
-// import roni from '../Images/direksi/roni.png';
-import reza from '../Images/direksi/reza.png';
-// import ade from '../Images/direksi/ade.png';
 import ari from '../Images/direksi/ari.png';
+import reza from '../Images/direksi/reza.png';
+// import roni from '../Images/direksi/roni.png';
+// import ade from '../Images/direksi/ade.png';
+// import wanda from '../Images/direksi/roni.png';
 // import alam from '../Images/direksi/alam.png';
 import widi from '../Images/direksi/widi.png';
-import zacky from '../Images/direksi/zacky.png';
+// import zacky from '../Images/direksi/zacky.png';
 // import asikin from '../Images/direksi/asikin.png';
 
 const tim = [
@@ -39,6 +40,15 @@ const tim = [
     instagram: 'https://www.instagram.com/rezamaulard/',
     email: 'mailto:rezamaulana1327.rm@gmail.com',
     web: '',
+  },
+  {
+    nama: 'Ari Darsan',
+    jabatan: 'Web Developer',
+    foto: ari,
+    whatsapp: 'https://wa.me/6281222288153',
+    instagram: 'https://www.instagram.com/ari_darsan/',
+    email: 'mailto:aridarsan09@gmail.com',
+    web: 'https://aridarsan.netlify.app',
   },
   // {
   //   nama: 'Roni Iskandar',
@@ -67,15 +77,6 @@ const tim = [
   //   email: 'mailto:@gmail.com',
   //   web: '',
   // },
-  {
-    nama: 'Ari Darsan',
-    jabatan: 'Web Developer',
-    foto: ari,
-    whatsapp: 'https://wa.me/6281222288153',
-    instagram: 'https://www.instagram.com/ari_darsan/',
-    email: 'mailto:aridarsan09@gmail.com',
-    web: 'https://aridarsan.netlify.app',
-  },
   // {
   //   nama: 'Rizky M. Asikin',
   //   jabatan: 'General Manager',
@@ -103,15 +104,15 @@ const tim = [
     email: 'mailto:hatmokowidhi@hotmail.com',
     web: '',
   },
-  {
-    nama: 'Zacky Ahmad N',
-    jabatan: 'Manager Operasional',
-    foto: zacky,
-    whatsapp: 'https://wa.me/6287881574771',
-    instagram: 'https://www.instagram.com/',
-    email: 'mailto:zackynopal40@gmail.com',
-    web: '',
-  },
+  // {
+  //   nama: 'Zacky Ahmad N',
+  //   jabatan: 'Manager Operasional',
+  //   foto: zacky,
+  //   whatsapp: 'https://wa.me/6287881574771',
+  //   instagram: 'https://www.instagram.com/',
+  //   email: 'mailto:zackynopal40@gmail.com',
+  //   web: '',
+  // },
 ];
 
 const Direksi = () => {

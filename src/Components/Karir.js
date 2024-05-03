@@ -10,81 +10,81 @@ import {
 // import oprec from "../Images/cro 22.jpg";
 import ops from "../Images/op1.jpeg";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-// import Timeline from "./Timeline";
 
 const Detail = [
   {
     panel: "panel1",
     aria: "panel1bh-content",
     id: "panel1bh-header",
-    tanya: "Marketing",
+    tanya: "Digital Marketing",
     jawab: [
       {
         nama1: "Kualifikasi",
         Kualifikasi: [
-          "Dapat bekerja sama secara tim maupun individu",
-          "Mempunyai Basic Marketing & Konten Kreator",
-          "Memiliki kemampuan analisa data, negosiasi dan strategi marketing yang baik",
-          "Memiliki kemampuan manajemen waktu dan public speaking yang baik",
-          "Aktif di media sosial",
+          "Menguasai Software Desain Grafis",
+          "Menguasai Software Video Editing",
+          "Memiliki kemampuan mengelola sosial media",
+          "Familiar dengan Advertisement /ADS",
         ],
         nama2: "Persyaratan",
         Persyaratan: [
-          "Mahasiswa aktif Tasikmalaya Angkatan 2021 & 2022",
-          "Melampirkan CV, KTP & KTM",
-          "Laki-laki",
+          "Mahasiswa aktif Tasikmalaya Angkatan 2022, 2023 dan 2024",
+          "Melampirkan CV, KTP dan KTM",
+          "Membuat Motivation Letter",
+          "Berjenis Kelamin Laki-laki",
+          "Memiliki Laptop",
         ],
       },
     ],
   },
-  {
-    panel: "panel2",
-    aria: "panel2bh-content",
-    id: "panel2bh-header",
-    tanya: "Operasional",
-    jawab: [
-      {
-        nama1: "Kualifikasi",
-        Kualifikasi: [
-          "Menguasai Microsoft office",
-          "Menguasai salah satu aplikasi design grafis (menjadi nilai tambah)",
-          "Mempunyai Sim C",
-          "Dapat bekerja sama secara tim maupun individu",
-          "Sigap, cekatan dan siap dalam menghadapi situasi yang mendadak",
-        ],
-        nama2: "Persyaratan",
-        Persyaratan: [
-          "Mahasiswa aktif Tasikmalaya Angkatan 2022 & 2023",
-          "Melampirkan CV, KTP & KTM, SIM C",
-          "Laki-laki",
-        ],
-      },
-    ],
-  },
-  {
-    panel: "panel3",
-    aria: "panel3bh-content",
-    id: "panel3bh-header",
-    tanya: "Finance",
-    jawab: [
-      {
-        nama1: "Kualifikasi",
-        Kualifikasi: [
-          "Mengerti laporan keuangan",
-          "Paham dan mahir akuntansi",
-          "Mahir Microsoft excel",
-          "Teliti dan bertanggungjawab",
-        ],
-        nama2: "Persyaratan",
-        Persyaratan: [
-          "Mahasiswa aktif Tasikmalaya Angkatan 2021, 2022 & 2023",
-          "Melampirkan CV, KTP & KTM",
-          "Melampirkan Motivation Letter",
-          "Laki-laki",
-        ],
-      },
-    ],
-  },
+  // {
+  //   panel: "panel2",
+  //   aria: "panel2bh-content",
+  //   id: "panel2bh-header",
+  //   tanya: "Operasional",
+  //   jawab: [
+  //     {
+  //       nama1: "Kualifikasi",
+  //       Kualifikasi: [
+  //         "Menguasai Microsoft office",
+  //         "Menguasai salah satu aplikasi design grafis (menjadi nilai tambah)",
+  //         "Mempunyai Sim C",
+  //         "Dapat bekerja sama secara tim maupun individu",
+  //         "Sigap, cekatan dan siap dalam menghadapi situasi yang mendadak",
+  //       ],
+  //       nama2: "Persyaratan",
+  //       Persyaratan: [
+  //         "Mahasiswa aktif Tasikmalaya Angkatan 2022 & 2023",
+  //         "Melampirkan CV, KTP & KTM, SIM C",
+  //         "Laki-laki",
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   panel: "panel3",
+  //   aria: "panel3bh-content",
+  //   id: "panel3bh-header",
+  //   tanya: "Finance",
+  //   jawab: [
+  //     {
+  //       nama1: "Kualifikasi",
+  //       Kualifikasi: [
+  //         "Mengerti laporan keuangan",
+  //         "Paham dan mahir akuntansi",
+  //         "Mahir Microsoft excel",
+  //         "Teliti dan bertanggungjawab",
+  //       ],
+  //       nama2: "Persyaratan",
+  //       Persyaratan: [
+  //         "Mahasiswa aktif Tasikmalaya Angkatan 2021, 2022 & 2023",
+  //         "Melampirkan CV, KTP & KTM",
+  //         "Melampirkan Motivation Letter",
+  //         "Laki-laki",
+  //       ],
+  //     },
+  //   ],
+  // },
 ];
 
 const Karier = () => {
@@ -118,7 +118,7 @@ const Karier = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} lg={8}>
-            <h4>WE ARE HIRING PART-TIME JOB JAPRI CORP</h4>
+            <h4>WE ARE HIRING DIGITAL MARKETING JAPRI CORP</h4>
             <br />
 
             <p>
@@ -126,21 +126,16 @@ const Karier = () => {
               Tasikmalaya, maka dari itu kami membutuhkan talenta terbaik yang
               mampu untuk berkontribusi dalam menjadikan Japri sebagai salah
               satu perusahaan yang besar di Tasikmalaya. Jika kamu yang kami
-              cari, mari ikut bergabung menjadi bagian dari Japri Corp. Berikut
-              posisi part-time job yang sedang kami butuhkan
+              cari, mari ikut bergabung menjadi bagian dari Japri Corp. Kami
+              sedang membutuhkan Digital Marketing untuk membantu mengembangkan
+              Japri Corp.
             </p>
-            <ul>
-              <li>Marketing</li>
-              <li>Operasional</li>
-              <li>Finance</li>
-            </ul>
             <h5 style={{ marginBottom: "0.5rem" }}> Benefit</h5>
             <ol>
               <li>Mendapatkan pendapatan bulanan</li>
-              <li>Mendapatkan fasilitas yang disediakan oleh japricorp</li>
+              <li>Mendapatkan fasilitas yang disediakan oleh Japri Corp</li>
               <li>Mendapatkan bonus jika melebihi target</li>
             </ol>
-
           </Grid>
         </Grid>
 
@@ -232,27 +227,27 @@ const Karier = () => {
                               ))}
                             </ol>
                           </Grid>
-                        
-                        <p>
-                          Jika kamu berminat dan memenuhi kualifikasi serta
-                          persyaratan diatas, silakan klik gabung pada tombol
-                          dibawah ini
-                        </p>
 
-                        <a
-                          href="https://bit.ly/parttime-japri2023"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Button
-                            variant="contained"
-                            className="btn-submit"
-                            size="medium"
-                            style={{ marginBottom: "1rem" }}
+                          <p>
+                            Jika kamu berminat dan memenuhi kualifikasi serta
+                            persyaratan diatas, silakan klik gabung pada tombol
+                            dibawah ini
+                          </p>
+
+                          <a
+                            href="https://bit.ly/OprecDMD"
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
-                            Gabung Bersama Japri
-                          </Button>
-                        </a>
+                            <Button
+                              variant="contained"
+                              className="btn-submit"
+                              size="medium"
+                              style={{ marginBottom: "1rem" }}
+                            >
+                              Gabung Bersama Japri
+                            </Button>
+                          </a>
                         </Grid>
                       </Grid>
                     ))}
@@ -275,43 +270,36 @@ const Karier = () => {
               {" "}
               Timeline Recruitment
             </h5>
-            {/* <Timeline/> */}
 
             <Grid
               style={{
                 padding: "1rem",
                 border: "2px solid #0094F4",
+                backgroundColor: "#FFFFFF",
               }}
             >
               <h5>Waktu pendaftaran:</h5>
-              <p>Senin, 21 Agustus 2023 s/d Sabtu, 26 Agustus 2023</p>
+              <p>Senin, 6 Mei 2024 s/d Sabtu, 11 Mei 2024</p>
 
               <h5> Seleksi berkas:</h5>
-              <p>Minggu-Selasa, 3-5 September 2023</p>
+              <p>Minggu, 12 Mei 2024</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
-              <p>Rabu, 6 September 2023</p>
-
-              <h5> Test Kepribadian</h5>
-              <p>Jumat, 8 September 2023</p>
-
-              <h5> Pengumuman Test Kepribadian:</h5>
-              <p>Minggu, 10 September 2023</p>
+              <p>Senin, 13 Mei 2024</p>
 
               <h5> Seleksi Wawancara:</h5>
-              <p>Senin & Selasa, 11-12 September 2023</p>
+              <p>Kamis, 16 Mei s/d Sabtu, 18 Mei 2024</p>
 
               <h5> Pengumuman Akhir:</h5>
-              <p>Kamis, 14 September 2023</p>
+              <p>Senin, 20 Mei 2024</p>
 
               <p>
-              Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
-              Tasikmalaya. Jadi tunggu apalagi mari bergabung bersama kami untuk
-              menjadi wirausaha muda!! dan jangan lupa terus pantau media sosial
-              Japri untuk mendapatkan informasi terbaru.
-            </p>
+                Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
+                Tasikmalaya. Jadi tunggu apalagi mari bergabung bersama kami
+                untuk menjadi wirausaha muda!! dan jangan lupa terus pantau
+                media sosial Japri untuk mendapatkan informasi terbaru.
+              </p>
             </Grid>
-
           </Grid>
         </Grid>
       </Container>

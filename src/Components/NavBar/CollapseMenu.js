@@ -1,13 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
-import { useSpring, animated } from 'react-spring';
-import WhatsAppIcon from '@material-ui/icons/WhatsApp';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import React from "react";
+import styled from "styled-components";
+import { Link, NavLink } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
+import WhatsAppIcon from "@material-ui/icons/WhatsApp";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
 const CollapseWrapper = styled(animated.div)`
-  background: #0094F4;
+  background: #0094f4;
   position: fixed;
   top: 4.5rem;
   left: 0;
@@ -35,15 +35,15 @@ const NavLinks = styled.ul`
     }
     & :hover {
       color: #fdcb6e;
-      border-bottom: 1px solid #fdcb6e;
+      // border-bottom: 1px solid #fdcb6e;
     }
   }
 `;
 
-const Hr = styled.hr`
-  margin: 0px 2rem 0 0;
-  color: #ffffff;
-`;
+// const Hr = styled.hr`
+//   margin: 0px 1rem 0 0;
+//   color: #fdcb6e;
+// `;
 
 const CollapseMenu = (props) => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
@@ -64,8 +64,8 @@ const CollapseMenu = (props) => {
           <li>
             <NavLink
               exact
-              to='/'
-              activeClassName='active'
+              to="/"
+              activeClassName="active"
               onClick={props.handleNavbar}
             >
               <div>
@@ -73,19 +73,17 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <Hr />
           <li>
-            <Link to='/' onClick={props.handleNavbar}>
+            <Link to="/" onClick={props.handleNavbar}>
               <div>
                 <p>Produk</p>
               </div>
             </Link>
           </li>
-          <Hr />
           <li>
             <NavLink
-              to='/cara-pesan'
-              activeClassName='active'
+              to="/cara-pesan"
+              activeClassName="active"
               onClick={props.handleNavbar}
             >
               <div>
@@ -93,11 +91,10 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <Hr />
           <li>
             <NavLink
-              to='/about'
-              activeClassName='active'
+              to="/about"
+              activeClassName="active"
               onClick={props.handleNavbar}
             >
               <div>
@@ -105,11 +102,10 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <Hr />
           <li>
             <NavLink
-              to='/testimoni'
-              activeClassName='active'
+              to="/testimoni"
+              activeClassName="active"
               onClick={props.handleNavbar}
             >
               <div>
@@ -117,12 +113,11 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <Hr />
 
           <li>
             <NavLink
-              to='/karir'
-              activeClassName='active'
+              to="/karir"
+              activeClassName="active"
               onClick={props.handleNavbar}
             >
               <div>
@@ -130,13 +125,12 @@ const CollapseMenu = (props) => {
               </div>
             </NavLink>
           </li>
-          <Hr />
 
           <li>
             <a
-              href='https://wa.me/628992021306'
+              href="https://wa.me/628992021306"
               onClick={props.handleNavbar}
-              target='_blank'
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div>
@@ -146,12 +140,11 @@ const CollapseMenu = (props) => {
               </div>
             </a>
           </li>
-          <Hr />
           <li>
             <a
-              href='https://www.instagram.com/japricorp/'
+              href="https://www.instagram.com/japricorp/"
               onClick={props.handleNavbar}
-              target='_blank'
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div>
@@ -161,12 +154,11 @@ const CollapseMenu = (props) => {
               </div>
             </a>
           </li>
-          <Hr />
           <li>
             <a
-              href='mailto:japri.corporation@gmail.com'
+              href="mailto:japri.corporation@gmail.com"
               onClick={props.handleNavbar}
-              target='_blank'
+              target="_blank"
               rel="noopener noreferrer"
             >
               <div>

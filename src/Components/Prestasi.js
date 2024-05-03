@@ -66,7 +66,7 @@ const Prestasi = () => {
                 style={{ marginBottom: '1rem' }}
               />
               <h5>{item.peringkat}</h5>
-              <h6>{item.nama}</h6>
+              <p>{item.nama}</p>
               <p>
                 <LocationOnOutlined /> {item.di}
               </p>
