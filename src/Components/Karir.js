@@ -8,7 +8,7 @@ import {
   AccordionSummary,
 } from "@material-ui/core";
 // import oprec from "../Images/cro 22.jpg";
-import ops from "../Images/op1.jpeg";
+import ops from "../Images/oprecdm.png";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const Detail = [
@@ -28,11 +28,12 @@ const Detail = [
         ],
         nama2: "Persyaratan",
         Persyaratan: [
-          "Mahasiswa aktif Tasikmalaya Angkatan 2022, 2023 dan 2024",
+          "Mahasiswa aktif Angkatan 2022, 2023 dan 2024",
           "Melampirkan CV, KTP dan KTM",
           "Membuat Motivation Letter",
           "Berjenis Kelamin Laki-laki",
           "Memiliki Laptop",
+          "Memiliki Portofolio"
         ],
       },
     ],
@@ -127,7 +128,7 @@ const Karier = () => {
               mampu untuk berkontribusi dalam menjadikan Japri sebagai salah
               satu perusahaan yang besar di Tasikmalaya. Jika kamu yang kami
               cari, mari ikut bergabung menjadi bagian dari Japri Corp. Kami
-              sedang membutuhkan Digital Marketing untuk membantu mengembangkan
+              sedang membutuhkan 2 Orang Digital Marketing untuk membantu mengembangkan
               Japri Corp.
             </p>
             <h5 style={{ marginBottom: "0.5rem" }}> Benefit</h5>

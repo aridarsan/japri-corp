@@ -11,7 +11,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LanguageIcon from '@material-ui/icons/Language';
 
-import wanda from '../Images/direksi/roni.png';
+import wanda from '../Images/direksi/wanda.png';
 import ari from '../Images/direksi/ari.png';
 import reza from '../Images/direksi/reza.png';
 // import roni from '../Images/direksi/roni.png';
