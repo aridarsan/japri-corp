@@ -118,7 +118,7 @@ const Karier = () => {
           </Grid>
 
           <Grid item xs={12} sm={6} lg={8}>
-            <h4>WE ARE HIRING DIGITAL MARKETING JAPRI CORP</h4>
+            <h4>WE ARE HIRING DIGITAL MARKETING & STAFF OPERASIONAL JAPRI CORP</h4>
             <br />
 
             <p>
