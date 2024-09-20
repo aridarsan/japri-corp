@@ -19,7 +19,7 @@ import riski from '../Images/direksi/riski.png';
 import wildan from '../Images/direksi/wildan.png';
 import fauzi from '../Images/direksi/fauzi.png';
 import andika from '../Images/direksi/andika.png';
-import dilardi from '../Images/direksi/dilardi.png';
+import dilardi from '../Images/direksi/dilar.png';
 
 const tim = [
   {
