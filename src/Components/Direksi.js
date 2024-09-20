@@ -14,13 +14,12 @@ import LanguageIcon from '@material-ui/icons/Language';
 import wanda from '../Images/direksi/wanda.png';
 import ari from '../Images/direksi/ari.png';
 import reza from '../Images/direksi/reza.png';
-// import roni from '../Images/direksi/roni.png';
-// import ade from '../Images/direksi/ade.png';
-// import wanda from '../Images/direksi/roni.png';
-// import alam from '../Images/direksi/alam.png';
-import widi from '../Images/direksi/widi.png';
-// import zacky from '../Images/direksi/zacky.png';
-// import asikin from '../Images/direksi/asikin.png';
+import bayu from '../Images/direksi/bayu.png';
+import riski from '../Images/direksi/riski.png';
+import wildan from '../Images/direksi/wildan.png';
+import fauzi from '../Images/direksi/fauzi.png';
+import andika from '../Images/direksi/andika.png';
+import dilardi from '../Images/direksi/dilardi.png';
 
 const tim = [
   {
@@ -50,15 +49,60 @@ const tim = [
     email: 'mailto:aridarsan09@gmail.com',
     web: 'https://aridarsan.netlify.app',
   },
-  // {
-  //   nama: 'Roni Iskandar',
-  //   jabatan: 'Chief Financial Officer',
-  //   foto: roni,
-  //   whatsapp: 'https://wa.me/6281222651518',
-  //   instagram: 'https://www.instagram.com/roni_iskan/',
-  //   email: 'mailto:roniiskan0409@gmail.com',
-  //   web: '',
-  // },
+  {
+    nama: 'Bayu Maulana N',
+    jabatan: 'Manager Operasional',
+    foto: bayu,
+    whatsapp: 'https://wa.me/6288220601323',
+    instagram: 'https://www.instagram.com/',
+    email: 'mailto:japri.corporation@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Fauzi Alfauzan',
+    jabatan: 'Staff Operasional',
+    foto: fauzi,
+    whatsapp: 'https://wa.me/6285156136737',
+    instagram: 'https://www.instagram.com/',
+    email: 'mailto:japri.corporation@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Andika Jaya P',
+    jabatan: 'Staff Sales dan Marketing',
+    foto: andika,
+    whatsapp: 'https://wa.me/6282315164636',
+    instagram: 'https://www.instagram.com/',
+    email: 'mailto:japri.corporation@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Riski Nuragung',
+    jabatan: 'Staff Keuangan',
+    foto: riski,
+    whatsapp: 'https://wa.me/6285156869066',
+    instagram: 'https://www.instagram.com/',
+    email: 'mailto:japri.corporation@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Wildan Anshori',
+    jabatan: 'Staff Operasional',
+    foto: wildan,
+    whatsapp: 'https://wa.me/6289508064037',
+    instagram: 'https://www.instagram.com/',
+    email: 'mailto:japri.corporation@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Dilardi Ramadhan',
+    jabatan: 'Digital Marketing',
+    foto: dilardi,
+    whatsapp: 'https://wa.me/6283824806906',
+    instagram: 'https://www.instagram.com/',
+    email: ' ',
+    web: '',
+  },
   // {
   //   nama: 'Ade Rohimat',
   //   jabatan: 'Chief Marketing Officer',
@@ -66,51 +110,6 @@ const tim = [
   //   whatsapp: 'https://wa.me/6287773148887',
   //   instagram: 'https://www.instagram.com/aderohimat62/',
   //   email: 'mailto:aderohimat163@gmail.com',
-  //   web: '',
-  // },
-  // {
-  //   nama: 'Muchamad Ahmad M',
-  //   jabatan: 'Digital Marketing dan Desain',
-  //   foto: ahmad,
-  //   whatsapp: 'https://wa.me/6285770002426',
-  //   instagram: 'https://www.instagram.com/mucheahmad/',
-  //   email: 'mailto:@gmail.com',
-  //   web: '',
-  // },
-  // {
-  //   nama: 'Rizky M. Asikin',
-  //   jabatan: 'General Manager',
-  //   foto: asikin,
-  //   whatsapp: 'https://wa.me/6285161060648',
-  //   instagram: 'https://www.instagram.com/rzkyaskn',
-  //   email: 'mailto:rizky.asikin123@gmail.com',
-  //   web: '',
-  // },
-  // {
-  //   nama: 'Alam Dewa S',
-  //   jabatan: 'Manager Financial',
-  //   foto: alam,
-  //   whatsapp: 'https://wa.me/6285794673613',
-  //   instagram: 'https://www.instagram.com/alamdewa26_',
-  //   email: 'mailto:dewalam26@gmail.com',
-  //   web: '',
-  // },
-  {
-    nama: 'Widhi Hatmoko',
-    jabatan: 'Manager DMD',
-    foto: widi,
-    whatsapp: 'https://wa.me/62899664423566',
-    instagram: 'https://www.instagram.com/folklurs',
-    email: 'mailto:hatmokowidhi@hotmail.com',
-    web: '',
-  },
-  // {
-  //   nama: 'Zacky Ahmad N',
-  //   jabatan: 'Manager Operasional',
-  //   foto: zacky,
-  //   whatsapp: 'https://wa.me/6287881574771',
-  //   instagram: 'https://www.instagram.com/',
-  //   email: 'mailto:zackynopal40@gmail.com',
   //   web: '',
   // },
 ];
@@ -202,14 +201,18 @@ const Direksi = () => {
                     {' '}
                     <IconButton className='icon-btn'>
                       {' '}
-                      <InstagramIcon className='icon-direksi' />
+                      <InstagramIcon className='icon-direksi' style={{
+                        display: item.instagram !== '' ? '' : 'none',
+                      }}/>
                     </IconButton>{' '}
                   </a>
                   <a href={item.email} target='_blank' rel="noopener noreferrer">
                     {' '}
                     <IconButton className='icon-btn'>
                       {' '}
-                      <MailOutlineIcon className='icon-direksi' />
+                      <MailOutlineIcon className='icon-direksi' style={{
+                        display: item.email !== '' ? '' : 'none',
+                      }} />
                     </IconButton>{' '}
                   </a>
                   <a href={item.web} target='_blank' rel="noopener noreferrer">
