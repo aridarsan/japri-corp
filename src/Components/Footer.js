@@ -8,12 +8,12 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import print from '../Images/footer/print.svg';
 import percetakan from '../Images/footer/percetakan.svg';
 import konveksi from '../Images/footer/konveksi.svg';
-import wisuda from '../Images/footer/wisuda.svg';
-import referensi from '../Images/footer/referensi.svg';
-import service from '../Images/footer/service.svg';
+// import wisuda from '../Images/footer/wisuda.svg';
+// import referensi from '../Images/footer/referensi.svg';
+// import service from '../Images/footer/service.svg';
 import { Link } from 'react-router-dom';
 
-const produk = [print, percetakan, konveksi, wisuda, referensi, service];
+const produk = [print, percetakan, konveksi];
 
 const Footer = () => {
   return (

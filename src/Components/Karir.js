@@ -8,7 +8,7 @@ import {
   AccordionSummary,
 } from "@material-ui/core";
 // import oprec from "../Images/cro 22.jpg";
-import ops from "../Images/oprecdm.png";
+import ops from "../Images/oprecdmso.png";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const Detail = [
@@ -30,7 +30,6 @@ const Detail = [
         Persyaratan: [
           "Mahasiswa aktif Angkatan 2022, 2023 dan 2024",
           "Melampirkan CV, KTP dan KTM",
-          "Membuat Motivation Letter",
           "Berjenis Kelamin Laki-laki",
           "Memiliki Laptop",
           "Memiliki Portofolio"
@@ -38,30 +37,30 @@ const Detail = [
       },
     ],
   },
-  // {
-  //   panel: "panel2",
-  //   aria: "panel2bh-content",
-  //   id: "panel2bh-header",
-  //   tanya: "Operasional",
-  //   jawab: [
-  //     {
-  //       nama1: "Kualifikasi",
-  //       Kualifikasi: [
-  //         "Menguasai Microsoft office",
-  //         "Menguasai salah satu aplikasi design grafis (menjadi nilai tambah)",
-  //         "Mempunyai Sim C",
-  //         "Dapat bekerja sama secara tim maupun individu",
-  //         "Sigap, cekatan dan siap dalam menghadapi situasi yang mendadak",
-  //       ],
-  //       nama2: "Persyaratan",
-  //       Persyaratan: [
-  //         "Mahasiswa aktif Tasikmalaya Angkatan 2022 & 2023",
-  //         "Melampirkan CV, KTP & KTM, SIM C",
-  //         "Laki-laki",
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    panel: "panel2",
+    aria: "panel2bh-content",
+    id: "panel2bh-header",
+    tanya: "Staff Operasional",
+    jawab: [
+      {
+        nama1: "Kualifikasi",
+        Kualifikasi: [
+          "Menguasai Microsoft Office",
+          "Menguasai salah satu aplikasi design grafis (menjadi nilai tambah)",
+          "Mempunyai Sim C",
+          "Dapat bekerja sama secara tim maupun individu",
+          "Sigap, cekatan dan siap dalam menghadapi situasi yang mendadak",
+        ],
+        nama2: "Persyaratan",
+        Persyaratan: [
+          "Mahasiswa aktif Tasikmalaya Angkatan 2022, 2023 & 2024",
+          "Melampirkan CV, KTP & KTM, SIM C",
+          "Laki-laki",
+        ],
+      },
+    ],
+  },
   // {
   //   panel: "panel3",
   //   aria: "panel3bh-content",
@@ -128,7 +127,8 @@ const Karier = () => {
               mampu untuk berkontribusi dalam menjadikan Japri sebagai salah
               satu perusahaan yang besar di Tasikmalaya. Jika kamu yang kami
               cari, mari ikut bergabung menjadi bagian dari Japri Corp. Kami
-              sedang membutuhkan 2 Orang Digital Marketing untuk membantu mengembangkan
+              sedang membutuhkan 1 orang Digital Marketing dan 1 orang Staff 
+              Operasional untuk membantu mengembangkan
               Japri Corp.
             </p>
             <h5 style={{ marginBottom: "0.5rem" }}> Benefit</h5>
@@ -236,7 +236,7 @@ const Karier = () => {
                           </p>
 
                           <a
-                            href="https://bit.ly/OprecDMD"
+                            href="https://forms.gle/M5kwZP1sH9UZA8s49"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -280,25 +280,32 @@ const Karier = () => {
               }}
             >
               <h5>Waktu pendaftaran:</h5>
-              <p>Senin, 6 Mei 2024 s/d Sabtu, 11 Mei 2024</p>
+              <p>Sabtu, 21 September 2024 s/d Jumat, 27 September 2024</p>
 
               <h5> Seleksi berkas:</h5>
-              <p>Minggu, 12 Mei 2024</p>
+              <p> Sabtu dan Minggu 28-29 September 2024</p>
 
               <h5> Pengumuman Seleksi Berkas:</h5>
-              <p>Senin, 13 Mei 2024</p>
+              <p>Senin, 30 September 2024</p>
 
               <h5> Seleksi Wawancara:</h5>
-              <p>Kamis, 16 Mei s/d Sabtu, 18 Mei 2024</p>
+              <p>Selasa, 1 Oktober s/d Jumat, 4 Oktober 2024</p>
 
               <h5> Pengumuman Akhir:</h5>
-              <p>Senin, 20 Mei 2024</p>
+              <p>Sabtu, 5 Oktober 2024</p>
 
               <p>
                 Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
                 Tasikmalaya. Jadi tunggu apalagi mari bergabung bersama kami
                 untuk menjadi wirausaha muda!! dan jangan lupa terus pantau
                 media sosial Japri untuk mendapatkan informasi terbaru.
+              </p>
+
+              
+                <h5>NOTE</h5>
+                <p>
+                Semua proses pengumuman dalam tahap seleksi melalui <strong>Email</strong><br/>
+                Open recruitment ini tidak dipungut biaya apapun atau <strong>GRATIS</strong>.
               </p>
             </Grid>
           </Grid>
