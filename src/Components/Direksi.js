@@ -18,8 +18,8 @@ import bayu from '../Images/direksi/bayu.png';
 import riski from '../Images/direksi/riski.png';
 import wildan from '../Images/direksi/wildan.png';
 import fauzi from '../Images/direksi/fauzi.png';
-import andika from '../Images/direksi/andika.png';
-import dilardi from '../Images/direksi/dilar.png';
+import ade from '../Images/direksi/ade.png';
+import roni from '../Images/direksi/roni.png';
 
 const tim = [
   {
@@ -38,6 +38,15 @@ const tim = [
     whatsapp: 'https://wa.me/6285720705717',
     instagram: 'https://www.instagram.com/rezamaulard/',
     email: 'mailto:rezamaulana1327.rm@gmail.com',
+    web: '',
+  },
+  {
+    nama: 'Ade Rohimat',
+    jabatan: 'Chief Marketing Officer',
+    foto: ade,
+    whatsapp: 'https://wa.me/6287773148887',
+    instagram: 'https://www.instagram.com/aderohimat62/',
+    email: 'mailto:aderohimat163@gmail.com',
     web: '',
   },
   {
@@ -68,15 +77,6 @@ const tim = [
     web: '',
   },
   {
-    nama: 'Andika Jaya P',
-    jabatan: 'Staff Sales dan Marketing',
-    foto: andika,
-    whatsapp: 'https://wa.me/6282315164636',
-    instagram: 'https://www.instagram.com/',
-    email: 'mailto:japri.corporation@gmail.com',
-    web: '',
-  },
-  {
     nama: 'Riski Nuragung',
     jabatan: 'Staff Keuangan',
     foto: riski,
@@ -95,21 +95,21 @@ const tim = [
     web: '',
   },
   {
-    nama: 'Dilardi Ramadhan',
-    jabatan: 'Digital Marketing',
-    foto: dilardi,
-    whatsapp: 'https://wa.me/6283824806906',
+    nama: 'Roni Jaelani',
+    jabatan: 'Staff Operasional',
+    foto: roni,
+    whatsapp: 'https://wa.me/6281312050864',
     instagram: 'https://www.instagram.com/',
-    email: ' ',
+    email: 'mailto:japri.corporation@gmail.com',
     web: '',
   },
   // {
-  //   nama: 'Ade Rohimat',
-  //   jabatan: 'Chief Marketing Officer',
-  //   foto: ade,
-  //   whatsapp: 'https://wa.me/6287773148887',
-  //   instagram: 'https://www.instagram.com/aderohimat62/',
-  //   email: 'mailto:aderohimat163@gmail.com',
+  //   nama: 'Dilardi Ramadhan',
+  //   jabatan: 'Digital Marketing',
+  //   foto: dilardi,
+  //   whatsapp: 'https://wa.me/6283824806906',
+  //   instagram: 'https://www.instagram.com/',
+  //   email: ' ',
   //   web: '',
   // },
 ];

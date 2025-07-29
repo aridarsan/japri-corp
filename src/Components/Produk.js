@@ -19,7 +19,7 @@ const produk = [
     wa: 'https://wa.me/+628992021306?text=Hallo%20mang%20japs%2C%20aku%20mau%20order%20Print%20nih%20%F0%9F%98%81%0ADiambil%20pukul%20berapa%20%20%20%20%20%20%3A%0ABerapa%20rangkap%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%0APascabayar%2Fprabayar%20%20%20%20%20%20%20%3A%0A%0A%0ADiisi%20dulu%20ya%20guys%20..%0A%23BisnisnyaMahasiswa%0A%23WaktuIndonesiaSkripsi',
   },
   {
-    src: konveksi,
+    src: percetakan,
     title: 'Japri Percetakan',
     description:
       'Japri menawarkan produk percetakan kualitas tinggi dengan harga murah',
@@ -27,7 +27,7 @@ const produk = [
     wa: 'https://wa.me/+628992021306?text=Hallo%20mang%20japs%2C%20aku%20mau%20order%20Percetakan%20nih%20%F0%9F%98%81%0ABuat%20kapan%20%20%20%20%20%20%20%20%20%3A%20%0ABerapa%20pcs%20%20%20%20%20%20%20%20%20%3A%20%0ABahan%20produk%20%20%20%20%20%3A%0ADesignnya%20ada%20%20%3F%20%20%3A%0A%0A%0ADiisi%20dulu%20ya%20guys%20..%0A%23BisnisnyaMahasiswa',
   },
   {
-    src: percetakan,
+    src: konveksi,
     title: 'Japri Konveksi',
     description:
       'Japri menawarkan produk konveksi kualitas nomor 1 dan harga bersahabat',
