@@ -8,7 +8,7 @@ import {
   AccordionSummary,
 } from "@material-ui/core";
 // import oprec from "../Images/cro 22.jpg";
-import ops from "../Images/oprecdmso.png";
+import ops from "../Images/oprecdmso26.png";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const Detail = [
@@ -21,18 +21,18 @@ const Detail = [
       {
         nama1: "Kualifikasi",
         Kualifikasi: [
+          "Menguasai Microsoft Office",
           "Menguasai Software Desain Grafis",
-          "Menguasai Software Video Editing",
+          "Menguasai Software Video Editor",
           "Memiliki kemampuan mengelola sosial media",
-          "Familiar dengan Advertisement /ADS",
         ],
         nama2: "Persyaratan",
         Persyaratan: [
-          "Mahasiswa aktif Angkatan 2022, 2023 dan 2024",
+          "Mahasiswa Aktif Angkatan 2023, 2024 dan 2025",
           "Melampirkan CV, KTP dan KTM",
           "Berjenis Kelamin Laki-laki",
-          "Memiliki Laptop",
-          "Memiliki Portofolio"
+          "Memiliki Portofolio",
+          "Melampirkan Motivation Letter"
         ],
       },
     ],
@@ -47,16 +47,14 @@ const Detail = [
         nama1: "Kualifikasi",
         Kualifikasi: [
           "Menguasai Microsoft Office",
-          "Menguasai salah satu aplikasi design grafis (menjadi nilai tambah)",
-          "Mempunyai Sim C",
-          "Dapat bekerja sama secara tim maupun individu",
-          "Sigap, cekatan dan siap dalam menghadapi situasi yang mendadak",
+          "Menguasai Corel Draw",
+          "Menguasai Software Vide Editor (lebih diutamakan)",
         ],
         nama2: "Persyaratan",
         Persyaratan: [
-          "Mahasiswa aktif Tasikmalaya Angkatan 2022, 2023 & 2024",
-          "Melampirkan CV, KTP & KTM, SIM C",
-          "Laki-laki",
+          "Mahasiswa aktif Tasikmalaya Angkatan 2023, 2024 dan 2025",
+          "Melampirkan CV, KTP & KTM",
+          "Berjenis Kelamin Laki-laki",
         ],
       },
     ],
@@ -107,37 +105,47 @@ const Karier = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6} lg={4}>
+        {/* <Grid container spacing={2}> */}
+          {/* <Grid item xs={12} sm={6} lg={4}> */}
             <img
               src={ops}
               width="100%"
               alt="oprec"
               style={{ borderRadius: "1rem" }}
             />
-          </Grid>
+          {/* </Grid> */}
 
-          <Grid item xs={12} sm={6} lg={8}>
-            <h4>WE ARE HIRING DIGITAL MARKETING & STAFF OPERASIONAL JAPRI CORP</h4>
-            <br />
-
+<Grid container spacing={2}>
+  {/* <br/>
+            <h4 style={{
+                marginBottom: "0.5rem",
+                textAlign: "center",
+                alignItems: "center",
+              }}>WE ARE HIRING DIGITAL MARKETING & STAFF OPERASIONAL JAPRI CORP</h4>
+            <br /> */}
+          <Grid item xs={12} sm={12} lg={12}>
+            <br/>
             <p>
               Japri Corp merupakan Start-Up yang sedang berkembang di
               Tasikmalaya, maka dari itu kami membutuhkan talenta terbaik yang
               mampu untuk berkontribusi dalam menjadikan Japri sebagai salah
               satu perusahaan yang besar di Tasikmalaya. Jika kamu yang kami
               cari, mari ikut bergabung menjadi bagian dari Japri Corp. Kami
-              sedang membutuhkan 1 orang Digital Marketing dan 1 orang Staff 
-              Operasional untuk membantu mengembangkan
+              sedang membutuhkan <b>Digital Marketing </b> dan <b>Staff 
+              Operasional</b> untuk membantu mengembangkan
               Japri Corp.
             </p>
+        {/* </Grid> */}
+            {/* <Grid item xs={12} sm={6} lg={6}> */}
             <h5 style={{ marginBottom: "0.5rem" }}> Benefit</h5>
             <ol>
               <li>Mendapatkan pendapatan bulanan</li>
               <li>Mendapatkan fasilitas yang disediakan oleh Japri Corp</li>
               <li>Mendapatkan bonus jika melebihi target</li>
             </ol>
+            {/* </Grid> */}
           </Grid>
+          {/* </Grid> */}
         </Grid>
 
         <Grid container spacing={2}>
@@ -236,7 +244,7 @@ const Karier = () => {
                           </p>
 
                           <a
-                            href="https://forms.gle/M5kwZP1sH9UZA8s49"
+                            href="https://forms.gle/cEdjbJKpDH84BbUs7"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -280,19 +288,19 @@ const Karier = () => {
               }}
             >
               <h5>Waktu pendaftaran:</h5>
-              <p>Sabtu, 21 September 2024 s/d Jumat, 27 September 2024</p>
+              <p>Senin, 1 Desember 2025 s/d Sabtu, 13 Desember 2025</p>
 
               <h5> Seleksi berkas:</h5>
-              <p> Sabtu dan Minggu 28-29 September 2024</p>
+              <p> Minggu, 14 Desember 2025 s/d Senin, 15 Desember 2025</p>
 
-              <h5> Pengumuman Seleksi Berkas:</h5>
-              <p>Senin, 30 September 2024</p>
+              <h5> Pengumuman Seleksi Administrasi:</h5>
+              <p>Selasa, 16 Desember 2025</p>
 
               <h5> Seleksi Wawancara:</h5>
-              <p>Selasa, 1 Oktober s/d Jumat, 4 Oktober 2024</p>
+              <p>Jumat, 19 Desember 2025 s/d Sabtu, 20 Desember 2025</p>
 
               <h5> Pengumuman Akhir:</h5>
-              <p>Sabtu, 5 Oktober 2024</p>
+              <p>Selasa, 23 Desember 2025</p>
 
               <p>
                 Pendaftaran terbuka untuk mahasiswa umum yang kuliah di
